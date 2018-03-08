@@ -1,0 +1,221 @@
+
+.version--three {
+
+  /**
+   * Mixins
+   */
+   @mixin list--sidenav($space-between-rows) {
+    ol {
+      list-style: none;
+      margin: 0;
+    }
+    li {
+      margin: $space-between-rows 0;
+      &:first-child,
+      &:nth-last-child(3) {
+        border-bottom: 1px solid #CBC9CD;
+        padding-bottom: $space-between-rows;
+      }
+    }
+  }
+
+  /**
+   * Container
+   */
+  .container--large {
+    max-width: 1080px;
+    padding: 0 18px;
+    margin: auto;
+  }
+
+  /**
+   * @temp: Flex for article
+   */
+  .flex--2__2-1--article {
+    @include media($desktop) {
+      padding: 0 78px; // 60px + 18px
+      @include flex(40%, 60%, 60px);
+    }
+  }
+
+  .flex--2__2-1--g24 { // g24 means gutter is 24 px
+    @include media($desktop) {
+      @include flex(50%, $gutter-width:24px);
+    }
+  }
+
+  /**
+   * Block
+   */
+  .block--large {
+    @extend .block;
+    .lead + h1 {
+      margin-top: 12px;
+    }
+    @include media($desktop) {
+      padding: 60px calc(40% + 60px) 60px 60px;
+      margin-top: 12px;
+      h1 {
+        font-size: 66px;
+      }
+    }
+  }
+
+  /**
+   * Sticky nav
+   */
+  .nav--sticky {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #EBE9E8;
+    padding: 18px 0;
+    &.active {
+      display: block;
+    }
+    h2 {
+      @include gamma;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 24px 0 0;
+    }
+    .back-to-top {
+      float: right;
+      margin-top: 6px;
+    }
+    @include media($desktop) {
+      .container--large {
+        padding: 0 78px;
+      }
+    }
+  }
+
+  .nav--sticky__menu {
+    @include list--sidenav(6px);
+    vertical-align: top;
+    &.active li {
+      display: block;
+    }
+    li {
+      display: none;
+    }
+    button {
+      text-decoration: underline;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      margin: 4px 0 0;
+      cursor: pointer;
+      &::after {
+        content: '';
+        display: inline-block;
+        border: 6px solid transparent;
+        border-top-color: #373151;
+        margin-left: 12px;
+        transform: translateY(3px);
+      }
+    }
+    @include media($desktop) {
+      display: inline-block;
+    }
+  }
+
+  /**
+   * Sidebar
+   */
+  aside {
+    @include list--sidenav(12px);
+    li:not(:first-child) {
+      counter-increment: number;
+      &::before {
+        content: counter(number)'. ';
+      }
+    }
+    dd {
+      margin: 12px 0;
+    }
+    @include media($desktop) {
+      margin-top: -252px;
+    }
+    @media (max-width: $desktop) {
+      padding-top: 0;
+    }
+  }
+
+  /**
+   * Article
+   */
+  article {
+
+    h2:not(:first-child) {
+      counter-increment: number;
+      &::before {
+        content: counter(number);
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #373151;
+        margin-right: 18px;
+      }
+    }
+
+    blockquote {
+      quotes: "\201C" "\201D";
+      position: relative;
+      border-left: 0;
+      padding-left: 72px;
+      margin: 42px 0;
+      &::before {
+        content: open-quote;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        color: #625A75;
+        font-size: 114px;
+        line-height: 0;
+      }
+    }
+
+    cite {
+      display: block;
+      color: #717171;
+      font-style: normal;
+      border-top: 3px solid #CBC9CD;
+      padding-top: 18px;
+    }
+
+    [class*=list] li::before {
+      content: none;
+      svg {
+        margin-right: 18px;
+      }
+    }
+
+    .block {
+      padding: 24px 30px;
+      margin: 36px 0 48px;
+    }
+
+    @include media($tablet) {
+      order: -1;
+      .list--block {
+        h2, h3, h4, h5, h6 {
+          line-height: inherit;
+          margin-bottom: 0;
+        }
+        [class*=flex] p {
+          text-align: right;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,283 @@
+extends ../../layouts/layout_v3.pug
+
+block content
+  .section--primary
+    .container--large
+      .block--large
+        +link('#', 'Brexit briefing').lead
+        h1 Gibraltar and Brexit
+        p.lead Background and updates to the debates on Gibraltar's status and sovereignty within the context of Brexit.
+        p Last updated on 7th Dec 2017 - #[+link('/templates/briefings-v3/history.html', 'Previous updates')]
+
+  section(tabindex=0)#content
+    .container--large.flex--2__2-1--article
+      aside
+        .block.accent--purple
+          h2 Contents
+          ol
+            li #[+link('#as1', 'Overview (3 min read)')]
+            li #[+link('#as2', 'Background')]
+            li #[+link('#as3', 'Current status')]
+            li #[+link('#as4', 'Referendum results')]
+            li #[+link('#as5', 'Status after Brexit')]
+            li #[+link('#as6', 'References')]
+            li #[+link('#as7', 'Further reading')]
+
+        .block
+          h2 Share
+          dl.list--definition
+            dt
+              include ../../icons/download.svg
+            dd
+              +link('#', 'Download as pdf')
+            dt
+              include ../../../node_modules/parliamentuk-pugin/src/icons/print.svg
+            dd
+              +link('#', 'Print')
+            dt
+              include ../../icons/share.svg
+            dd
+              +link('#', 'Copy link')
+
+      article
+        ul.list--block
+          li
+            .list--details
+              p
+                include ../../icons/bill.svg
+                | This briefing gives background to the #[+link('#', 'Great Repeal Bill')]
+          li
+            .list--details
+              p
+                include ../../icons/live.svg
+                | #[+link('#', 'Watch MPs discuss this bill now')] in the House of Lords
+
+        h2#as1 Overview
+        p
+          | Gibraltar is the only part of the UK in mainland Europe. It voted to remain in 2016's EU referendum. What is its current status and what discussions are being held about its future?
+        p
+          | Gibraltar's population is 32,194. It borders Spain and is self-governing within the UK and the EU. Its current chief minister is Fabian Picardo. The Queen is the head of state and the UK is responsible for defence, foreign relations and internal security.
+        p
+          | 12,000 people cross from Spain every day and 95% of goods entering Gibraltar are from Spain.
+
+        h3 Disputed status
+        p
+          | The UN Special Committee for Decolonisation listed Gibraltar as a 'Non-Self-Governing Territory' in 1946 that should be subject to 'decolonisation'.
+        p
+          | Gibraltar disputes this definition.
+          sup #[+link('/templates/briefings-v3/reference.html#fn1', '[1]')]
+        p
+          | Spanish Prime Minister, Mariano Rajoy, has described Gibraltar as an 'anachronism'.
+          sup #[+link('/templates/briefings-v3/reference.html#fn2', '[2]')]
+
+        h3 Shared Sovereignty
+        p
+          | In 2002 the Spanish and UK governments agreed shared sovereignty.
+          sup #[+link('/templates/briefings-v3/reference.html#fn3', '[3]')]
+          |  99% of Gibraltarians rejected this in a referendum in 2003. Since then the UK has stated it will not enter into discussions on shared sovereignty without Gibraltar's consent.
+
+        h3 Border controls
+        p
+          | In 2013 Spain closed its shared border causing long queues.
+        p
+          | Although EU ruled the controls legal, Gibraltar and the UK rejected the decision.
+          sup #[+link('/templates/briefings-v3/reference.html#fn4', '[4]')]
+
+        h3 Hard Brexit
+        p
+          | Chief minister Picardo was initially concerned about the damage a hard Brexit would cause to Gibraltar's economy. The fact that 90% of its financial sales, insurance and online gaming services are with the UK, however, reassures Mr Picardo that Gibraltar can make a success of Brexit.
+          sup #[+link('/templates/briefings-v3/reference.html#fn5', '[5]')]
+
+        h3 Brexit and sovereignty
+        p
+          | Brexit has resurfaced the issue of sovereignty. Spain sees it as a "unique opportunity".
+          sup #[+link('/templates/briefings-v3/reference.html#fn6', '[6]')]
+          |  Gibraltar dismisses this as a "fantasy".
+          sup #[+link('/templates/briefings-v3/reference.html#fn7', '[7]')]
+        p
+          | In response, the UK government reiterated its commitment to not discuss sovereignty without Gibraltar's consent.
+          sup #[+link('/templates/briefings-v3/reference.html#fn8', '[8]')]
+        p
+          | The Spanish government has since modified its stance. Spanish foreign minister, Alfonso Dastis, states that it will not put Gibraltar at the centre of negotiations.
+          sup #[+link('/templates/briefings-v3/reference.html#fn9', '[9]')]
+
+        h3 Brexit negotiation guidelines
+        p
+          | Paragraph 22 of the European Council's draft Brexit negotiation guidelines, 31 March 2017 states:
+        p
+          | After the United Kingdom leaves the Union, no agreement between the EU and the United Kingdom may apply to the territory of Gibraltar without the agreement between the Kingdom of Spain and the United Kingdom.
+          sup #[+link('/templates/briefings-v3/reference.html#fn10', '[10]')]
+        p
+          | The government of Gibraltar feels this is singling it out for special treatment in which Spain can veto any decision.
+          sup #[+link('/templates/briefings-v3/reference.html#fn11', '[11]')]
+        p
+          | Some in the UK government agree with this view.
+          sup #[+link('/templates/briefings-v3/reference.html#fn12', '[12]')]
+        p
+          | Spain, however, sees there is no reason for the UK to "lose its nerve".
+          sup #[+link('/templates/briefings-v3/reference.html#fn13', '[13]')]
+        p
+          | Its inclusion shows EU loyalty to Spain. A view not denied by the EU itself. According to one senior EU official, "the Union will stick up for its members, and that means Spain now."
+          sup #[+link('/templates/briefings-v3/reference.html#fn14', '[14]')]
+
+        .block.accent--purple
+          h3 This topic in Parliament
+          .flex--2__2-1--g24
+            div
+              strong.alpha 3rd
+              p
+
+                | most spoken about topic in this month
+              +link('#', 'View activity on Brexit')
+            div
+              strong.alpha 2
+              p
+                | bills about Brexit in Parliament now
+              +link('#', 'View bills')
+
+        h2#as2 Background
+
+        h3 Location and population
+        ul
+         li Gibraltar is a British Overseas Territory in the south of the Iberian Peninsula
+         li In 2012 it had a population of 32,194
+         li Most Gibraltarians are bilingual in English and Spanish
+         li They have full British citizenship under the British Nationality Act 1981
+
+        h3 Hand over to Britain 1713
+        ul
+          li Gibraltar was part of the unified Spanish monarchy from 1462 until 1713
+          li Britain was given "the full and entire propriety of the town and castle of Gibraltar [...] forever, without exception or impediment whatsoever" in the Treaty of Utrecht in 1713 after the War of Spanish Succession
+
+        h3 Status within the UK and EU
+        ul
+          li It is not a member of the Commonwealth although it was granted Associate Membership of the Commonwealth Foundation in 2014
+          li It is part of the EU, though not part of the customs union or common agricultural policy
+
+        h3 Government
+        ul
+          li Gibraltar has almost complete self-governance through a Parliament of 17 elected members and a Speaker
+          li The UK is responsible for defence, foreign relations and internal security
+          li The Queen is head of state
+          li The current chief minister, leader of the Gibraltar Socialist Labour Party (GSLP) Fabian Picardo, was elected in 2015
+          li Picardo leads a coalition government with the Gibraltar Liberal Party (GLP)
+
+        h3 Economy
+        ul
+          li Gibraltar's GDP was forecast to be £1.77bn in 2015/1016
+          li Its main industries are tourism, financial services, online gaming and construction
+          li About 12,000 people cross from Spain to work in Gibraltar every day
+          li 95% of goods that enter Gibraltar are from Spain
+
+        h2#as3 Current status
+
+        h3 UN Status
+        p
+          | Gibraltar's status is disputed. It was listed on the United Nations Special Committee for Decolonization's register of Non-Self-Governing Territories in 1946. According to this definition it should be subject to 'decolonisation' processes.
+        p
+          | The government of Gibraltar has made the case that it is not a colony. In 2009 former Chief Minister Peter Caruana told the Committee that "Gibraltar is a democratically advanced, modern, economically independent and prosperous, and politically, administratively and legislatively self-governing country".
+        p
+          | Spanish Prime Minister Mariano Rajoy, however, has described Gibraltar as an 'anachronism'. Using the Committee's definition of a Non-Self-Governing Territory he has restated Spain's claim to the territory. He has stated that it is the "only such territory in Europe, and one that affects our territorial integrity", and that the UK had "ignored the mandate" of the UN.
+
+        h3 Shared Sovereignty
+        p
+          | In 2001 former Foreign Secretary Jack Straw started discussions with Spain. This led both countries agreeing principles including "that Britain and Spain should share sovereignty over Gibraltar" in 2002.
+        p
+          | In a referendum later that year 99% of Gibraltarians rejected the proposal of shared sovereignty. Since then successive UK governments have stated they will never enter into sovereignty discussions or agreements without the consent of the Government of Gibraltar and its people.
+
+        h3 Border controls
+        p
+          | In 2013 the Spanish government imposed controls on its border with Gibraltar resulting in long queues to cross. This was in response to Gibraltar's construction of an artificial reef in disputed waters used by Spanish fishing boats. Although the European Commission ruled the border checks legal, its decision was rejected by the UK and Gibraltar.
+        p
+          | A House of Commons Foreign Affairs Committee report concluded that, "Spain's measures at the border in 2013 were politically motivated and that it continues to use the border as a coercive tool against Gibraltar". It went on to say that border checks, "amount[ed] to a campaign of harassment and intimidation [...] [and] a pervasive feeling in Gibraltar of being under siege by a bullying and unreasonable power".
+        p
+          | The UK government mostly agreed with report and stated that tight border checks were "disproportionate, politically motivated, and therefore illegal."
+
+        h2#as4 Referendum results
+
+        h3 EU Referendum
+        p
+          | In the 2016 EU referendum, 96% of voters in Gibraltar (19,300) voted to remain, 4% (823) voted to leave. This proportion was the highest of any electoral district.
+
+        h2#as5 Status after Brexit
+
+        h3 Hard Brexit
+        p
+          | The pro-European campaign group, Open Britain, asserts that Gibraltar's economy is significantly reliant on EU rules of free movement of people due to the large proportion of its workforce commuting daily from Spain.
+        p
+          | After the referendum Fabian Picardo stated that a 'hard Brexit' was an 'existential threat' to the Gibraltarian economy. He later told the House of Commons Exiting the European Union Committee, however, that while access to the single market remained 'hugely important' to Gibraltar, the fact that 90% of its sales of financial, insurance and online gaming services with the UK, "steadied his nerves". Mr Picardo later stated "Gibraltar is enthusiastic and energetic about delivering a Brexit which we did not choose, but which we will make a success of".
+
+        h3 Brexit and shared sovereignty
+        p
+          | The referendum result has renewed interest in the issue of Gibraltar's sovereignty. Former Spanish Minister for Foreign Affairs, José García Margallo said Brexit is a "unique opportunity in more than three hundred years to get Gibraltar back". The Government of Gibraltar responded strongly to the Minister's linking of Brexit with "his fantasy of sharing of the sovereignty of Gibraltar between the UK and Spain when one thing has clearly got nothing to do with the other".
+        p
+          | Fabian Picardo stated that shared sovereignty "would strip us of who we are" and that "it would be awful. Our home would be handed over to a party that has no claim to title". In evidence to the Exiting the European Union Committee he indicated the approach to take to the potential Spanish attempts to advance its claims:
+        blockquote
+          p
+            | The less that the UK seeks in the context of the Article 50 negotiations, the harder it is for Spain to try and extract a price [...] It takes leverage away from those who might be trying to use those negotiations in some way to push the issue of Gibraltar.
+          cite Quote by Peter Piper on 7th December 2017
+
+        h3 UK response to issue of sovereignty and Brexit
+        p
+          | On 2 April 2017, following a discussion with Mr Picardo, Prime Minister Theresa May "reiterated our long-standing position that the UK remains steadfastly committed to our support of Gibraltar, its people and its economy". The press release from the discussion added:
+        blockquote
+          p
+            | The Prime Minister said we will never enter into arrangements under which the people of Gibraltar would pass under the sovereignty of another state against their freely and democratically expressed wishes, nor will we ever enter into a process of sovereignty negotiations with which Gibraltar is not content.
+          cite Quote by Peter Piper on 7th December 2017
+        p
+          | In her meeting with Donald Tusk, President of the European Council, said that "the UK would seek the best possible deal for Gibraltar as the UK exits the EU and there would be no negotiations on the sovereignty of Gibraltar without the consent of its people"
+
+        h3 Spanish view of sovereignty and Brexit
+        p
+          | Alfonso Dastis, current Spanish Minister for Foreign Affairs, is more conciliatory than his predecessor. His personal opinion is that "we won't put Gibraltar at the centre of negotiations. The situation is actually very clear and there is nothing for us to ask for. The UK leaves the EU and Gibraltar leaves the EU".
+        p
+          | He was, however, quoted as saying on TV "I am for 'Gibraltar español'" by the Gibraltarian press. He has also said that Spain has to "be intelligent when it comes to tackling this issue".
+
+        h3 Reaction to draft Brexit negotiation guidelines
+        p
+          | Gibraltar is specifically mentioned in paragraph 22 of the European Council's draft Brexit negotiation guidelines released on 31 March 2017:
+        blockquote
+          p
+            | After the United Kingdom leaves the Union, no agreement between the EU and the United Kingdom may apply to the territory of Gibraltar without the agreement between the Kingdom of Spain and the United Kingdom.
+          cite Quote by Peter Piper on 7th December 2017
+        p
+          | Some commentators believe this to mean that a Brexit deal will not automatically apply to Gibraltar. That Spain will be given veto over the inclusion of Gibraltar in Brexit without additional Anglo-Spanish bilateral deal with the territory.
+        p
+          | In response to the clause, the Government of Gibraltar stated that [it] "has shamefully been singled out [...] for unfavourable treatment by the Council, at the behest of Spain".
+        p
+          | Andrew Rosindell, Conservative MP for Romford and vice-chair of the all-party parliamentary group on Gibraltar, said that "an agreement without including Gibraltar means there can be no agreement". He added, "any agreement must apply equally to the whole British family and that includes Gibraltar. There can be no compromise on this".
+        p
+          | Alfonso Dastis said the clause was "no reason" for the UK to "lose their nerve".
+        p
+          | Some commentators believe the inclusion to be of little importance as all EU governments have the power to veto any agreement with the UK. It does show, however, clear EU political loyalty to Spain. A senior EU official confirmed this, "the Union will stick up for its members, and that means Spain now".
+
+        h2#as6 References
+        ul.list--block
+          li
+            .list--details
+              .flex--2__2-1
+                h3
+                  +link('/templates/briefings-v3/reference.html', 'References')
+                p
+                  span 14 References
+
+        h2#as7 Further reading
+        ul
+          li House of Commons Library, Trade with the EU; UK and International Policy and regulation, 9th November 2017
+          li House of Commons Library, Domestic EU Market in the UK, Briefing, 31st January 2017
+          li House of Commons Library, UK Trade with the EU; Briefing, 6th December 2016
+
+  nav.nav--sticky(aria-hidden=true)
+    .container--large.flex--nav-sticky
+      h2 Contents
+      +link('#', 'Back to top').back-to-top
+      .nav--sticky__menu
+        button Overview (3 min read)
+        ol
+          li #[+link('#as1', 'Overview (3 min read)')]
+          li #[+link('#as2', '1. Background')]
+          li #[+link('#as3', '2. Current status')]
+          li #[+link('#as4', '3. Referendum results')]
+          li #[+link('#as5', '4. Status after Brexit')]
+          li #[+link('#as6', '5. References')]
+          li #[+link('#as7', '6. Further reading')]

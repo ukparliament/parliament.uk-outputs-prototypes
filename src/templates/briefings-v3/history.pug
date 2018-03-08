@@ -1,0 +1,27 @@
+extends ../../layouts/layout_v3.pug
+
+block content
+  .section--primary
+    .container--large
+      +link('/templates/briefings-v3/brief.html', '< Gibraltar and Brexit').lead
+      h1 Publishing history
+      p.lead Last updated on 7th Dec 2017 - #[+link('#', 'Previous updates')]
+
+  section(tabindex=0)#content
+    .container--large
+      ol.list--pipe
+        li
+          .list--details
+            h2 February 2018
+            p Minor update to correct a map that showed the incorrect placement of the Gibraltan border.
+            +link('#', 'Show changes')
+        li
+          .list--details
+            h2 June 2017
+            p Updated to show the new trade position of Gibraltar, following the transition from stage one, to two of Brexit negotiations.
+            +link('#', 'Show changes')
+        li
+          .list--details
+            h2 April 2017
+            p First published.
+            +link('#', 'Show changes')

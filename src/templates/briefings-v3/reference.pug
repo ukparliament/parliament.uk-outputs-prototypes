@@ -1,0 +1,66 @@
+extends ../../layouts/layout_v3.pug
+
+block content
+
+  section
+    .container
+      .block.theme--grey-5
+        span
+          | &lt; #[+link('/templates/briefings-v3/brief.html', 'Gibraltar and Brexit')]
+
+  .section--primary
+    .container--offset
+      h1 References
+
+  section(tabindex=0)#content
+    .container--offset
+      .block.theme--grey-5
+        +form('javascript:console.log("reference search submitted")', 'post')
+          .input-group
+            +input('text', 'Search for a reference', 'q', 'search_box')(maxlength='1000', pattern='^(?!.*<script|<Script).*$', required)
+            button(type='submit', class='btn--white', data-tracking='search')
+              include ../../../node_modules/parliamentuk-pugin/src/icons/search.svg
+      .block.theme--grey-5(role="main")
+        ol.adhoc-ol
+          li
+            a#fn1
+            | In 2009 former Chief Minister Peter Caruana told the Committee that &ldquo;Gibraltar is a democratically advanced, modern, economically independent and prosperous, and politically, administratively and legislatively self-governing country&rdquo;.
+          li
+            a#fn2
+            | Spanish Prime Minister Mariano Rajoy described Gibraltar as an ‘anachronism’. Using the Committee’s definition of a Non-Self-Governing Territory he has restated Spain’s claim to the territory. He has stated that it is the &ldquo;only such territory in Europe, and one that affects our territorial integrity&rdquo;, and that the UK had &ldquo;ignored the mandate&rdquo; of the UN.
+          li
+            a#fn3
+            | In 2001 former Foreign Secretary Jack Straw in discussions with Spain agreed principles including &ldquo;that Britain and Spain should share sovereignty over Gibraltar&rdquo; in 2002.
+          li
+            a#fn4
+            | A House of Commons Foreign Affairs Committee report states, &ldquo;Spain’s measures at the border in 2013 were politically motivated and that it continues to use the border as a coercive tool against Gibraltar&rdquo;. It went on to say that border checks, &ldquo;amount[ed] to a campaign of harassment and intimidation […] [and] a pervasive feeling in Gibraltar of being under siege by a bullying and unreasonable power&rdquo;.
+          li
+            a#fn5
+            | At a meeting of the House of Commons Exiting the European Union Committee Picardo stated that while access to the single market remained ‘hugely important’ to Gibraltar, the fact that 90% of its sales of financial, insurance and online gaming services with the UK, &ldquo;steadied his nerves&rdquo;. He later stated &ldquo;Gibraltar is enthusiastic and energetic about delivering a Brexit which we did not choose, but which we will make a success of&rdquo;.
+          li
+            a#fn6
+            | Spanish Minister for Foreign Affairs, José García Margallo described Brexit as a &ldquo;unique opportunity in more than three hundred years to get Gibraltar back&rdquo;.
+          li
+            a#fn7
+            | Picardo stated that shared sovereignty &ldquo;would strip us of who we are&rdquo; and that &ldquo;it would be awful. Our home would be handed over to a party that has no claim to title&rdquo;.
+          li
+            a#fn8
+            | On 2 April 2017, following a discussion with Mr Picardo, Prime Minister Theresa May &ldquo;reiterated our long-standing position that the UK remains steadfastly committed to our support of Gibraltar, its people and its economy&rdquo;. In her meeting with Donald Tusk, President of the European Council, said that &ldquo;the UK would seek the best possible deal for Gibraltar as the UK exits the EU and there would be no negotiations on the sovereignty of Gibraltar without the consent of its people&rdquo;
+          li
+            a#fn9
+            | He stated his personal opinion that &ldquo;we won’t put Gibraltar at the centre of negotiations. The situation is actually very clear and there is nothing for us to ask for. The UK leaves the EU and Gibraltar leaves the EU&rdquo;.
+          li
+            a#fn10
+            | Paragraph 22 of the European Council’s draft Brexit negotiation guidelines 31 March 2017
+          li
+            a#fn11
+            | In response to the clause, the Government of Gibraltar stated that [it] &ldquo;has shamefully been singled out […] for unfavourable treatment by the Council, at the behest of Spain&rdquo;
+          li
+            a#fn12
+            | Andrew Rosindell, Conservative MP for Romford and vice-chair of the all-party parliamentary group on Gibraltar, said that &ldquo;an agreement without including Gibraltar means there can be no agreement&rdquo;. He added, &ldquo;any agreement must apply equally to the whole British family and that includes Gibraltar. There can be no compromise on this&rdquo;.
+          li
+            a#fn13
+            | Alfonso Dastis 9th April 2017, FT
+          li
+            a#fn14
+            | source unknown

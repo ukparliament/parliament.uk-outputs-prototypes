@@ -1,0 +1,12 @@
+.adhoc-report
+  .container
+    .block.theme--grey-4
+      p.toggle Is there something wrong with this briefing? #[+link('#', 'Report an issue')]
+
+      +form('javascript:console.log("report form submmitted")', 'post')(class='toggled')
+        +fieldset('Please provide details of the issue')
+          +input('text', 'Describe the issue', 'txt_issue', 'txt_issue')
+          +textarea('What needs changing?', 'txt_changes')
+          +input('email', 'Your email', 'txt_email', 'txt_email')
+          +input('checkbox', 'I want a response about my issue', 'chk_response', 'chk_response')
+          +button('Submit', 'btn--primary', 'submit', '')
