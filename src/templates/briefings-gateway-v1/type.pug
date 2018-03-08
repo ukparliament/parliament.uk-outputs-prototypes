@@ -1,0 +1,154 @@
+extends ../../layouts/layout.pug
+
+block content
+  .version--one.gateway--type
+
+    .section--primary.theme--purple--light
+      .container
+        h1 Briefings
+        p.lead Impartial information and analysis about a topic or event.
+
+        +form('javascript:console.log("briefings search submitted")', 'post')(class='briefingSearch')
+          .input-group
+            +input('text', 'Search for a briefing, collection or topic', 'briefing', 'briefingSearch')(maxlength='1000', pattern='^(?!.*<script|<Script).*$')
+            +select('Select a search filter', 'filterID', 'filterName')
+              +option('on any date')
+            //- button [value, style, type, datatype]
+            +button('Search', 'btn--primary', 'submit', 'search')
+
+
+    section
+      .container
+        h2 Latest reports
+        .grid
+          article.core
+            .feature--img
+              a(href='#')
+                img(src='../../../images/chuttersnap-255210.jpg' alt='')
+            .content
+              h3
+                a(href='#') The status of Gibraltar following Brexit
+              p December 8th 2017
+              p
+                strong 2 minute read
+              p Background and updates to the debates on Gibraltar's status and sovereignty post Brexit.
+              a.btn--grey(href='#') Brexit
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/brandon-griggs-82205.jpg' alt='')
+            .content
+              h3
+                a(href='#') Council tax: an introduction
+              p December 8th 2017
+              p
+                strong 15 minute breifing
+              a.btn--grey(href='#') Homelessness
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/antoine-dautry-428780.jpg' alt='')
+            .content
+              h3
+                a(href='#') Occupational pension increases
+              p December 8th 2017
+              p
+                strong 15 minute breifing
+              a.btn--grey(href='#') Pensions
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/stijn-te-strake-243973.jpg' alt='')
+            .content
+              h3
+                a(href='#') UK trade with Saudi Arabia
+              p December 8th 2017
+              p
+                strong 15 minute breifing
+              a.btn--grey(href='#') Middle East
+        +buttonLink('#', 'Find a report', 'btn--primary')
+
+
+    section
+      .container
+        h2 Latest collections
+        p Groups of analysis that tells a story or chain of events.
+        ol.list--block__inline-50
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') The Welfare Cap
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') President Trump
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Animal welfare
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Parliamentary reform
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Uk Iranian relations
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Brexit
+              .list--type
+                span.btn--grey Collection
+
+          +buttonLink('#', 'Find a collection', 'btn--primary')
+
+
+    section
+      .container
+        h2 Latest dashboards
+        p Regularly updated information and statistics on topics and current affairs.
+        .grid
+          article.block--mint
+            .content
+              h3
+                a(href='#') UK trade with Ireland
+              p Overall trade is dowb 14% in the last 6 months.
+              p Service exports are up 3% in the last 12 months.
+              p
+                stong Dashboard
+          article.block--mint
+            .content
+              h3
+                a(href='#') Post office statistics
+              ul
+                li There are 11,659 Post Office's in the UK.
+                li There has been a 50% reduction since the 1980s.
+              p
+                stong Dashboard
+          article.block--mint
+            .content
+              h3
+                a(href='#') Disabled employment
+              ul
+                li There are 11,659 Post Office's in the UK.
+                li There has been a 50% reduction since the 1980s.
+              p
+                stong Dashboard
+        +buttonLink('#', 'Find a dashboard', 'btn--primary')

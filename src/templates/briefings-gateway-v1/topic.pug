@@ -1,0 +1,182 @@
+extends ../../layouts/layout.pug
+
+block content
+  .version--one.gateway--type
+
+    .section--primary.theme--purple--light
+      .container
+        h1 Briefings
+        p.lead Impartial information and analysis about a topic or event.
+
+        +form('javascript:console.log("briefings search submitted")', 'post')(class='briefingSearch')
+          .input-group
+            +input('text', 'Search for a briefing, collection or topic', 'briefing', 'briefingSearch')(maxlength='1000', pattern='^(?!.*<script|<Script).*$')
+            +select('Select a search filter', 'filterID', 'filterName')
+              +option('on any date')
+            //- button [value, style, type, datatype]
+            +button('Search', 'btn--primary', 'submit', 'search')
+
+
+    section
+      .container
+        h2 Recent topics
+        p Regularly updated information and statistics on topics and current affairs.
+        .grid
+          article.block
+            .content
+              h3
+                a(href='#') Health
+              p 3 recent votes
+              p 1 recent speech
+          article.block
+            .content
+              h3
+                a(href='#') Education
+              p 1 recent EDM
+              p 2 recent speeches
+          article.block
+            .content
+              h3
+                a(href='#') Brexit
+              p 3 recent votes
+        a.btn--white(href='#') Proportional representation
+        a.btn--white(href='#') House of Lords
+        a.btn--white(href='#') Local government funding
+        a.btn--white(href='#') Digital rights
+        a.btn--white(href='#') Gambling
+        a.btn--white(href='#') Special education needs
+        a.btn--grey(href='#') More topics
+
+
+    section
+      .container
+        h2
+          a(href='#') Brexit
+        p Impartial information and analysis about a topic or event.
+        .grid
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/brandon-griggs-82205.jpg' alt='')
+            .content
+              h3
+                a(href='#') The status of Gibraltar following Brexit
+              p December 8th 2017
+              p
+                strong 3 minute read
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/antoine-dautry-428780.jpg' alt='')
+            .content
+              h3
+                a(href='#') Brexit day: what happens
+              p December 8th 2017
+              p
+                strong 3 minute read
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/stijn-te-strake-243973.jpg' alt='')
+            .content
+              h3
+                a(href='#') Animal sentience and Brexit
+              p December 8th 2017
+              p
+                strong 3 minute read
+
+        ol.list--block__inline-50
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') An introduction to the EU
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Brexit trade negotiations
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') The European Budget
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') The 2016 EU Referendum
+              .list--type
+                span.btn--grey Collection
+
+
+    section
+      .container
+        h2
+          a(href='#') National Health Service
+        p Impartial information and analysis about a topic or event.
+        .grid
+          article.block--mint
+            .content
+              h3
+                a(href='#') NHS A&E waiting times
+              p 81% of people are being seen within 4 hours.
+              p A&E visits are up 12% since last year.
+              p
+                strong Dashboard
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/antoine-dautry-428780.jpg' alt='')
+            .content
+              h3
+                a(href='#') Junk food advertising and childhood obesity
+              p December 8th 2017
+              p
+                strong 3 minute read
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../../images/stijn-te-strake-243973.jpg' alt='')
+            .content
+              h3
+                a(href='#') Mental health services for students
+              p December 8th 2017
+              p
+                strong 2 minute read
+
+        ol.list--block__inline-50
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') A&E waiting times
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') Brexit and the NHS
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') NHS reform
+              .list--type
+                span.btn--grey Collection
+          li
+            .grid
+              .list--content
+                h3
+                  a(href='#') The NHS: an introduction
+              .list--type
+                span.btn--grey Collection

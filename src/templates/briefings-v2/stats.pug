@@ -1,0 +1,155 @@
+extends ../../layouts/layout.pug
+
+block content
+  .version--two
+
+    .section--pre_primary
+      .container
+        .grid
+          .left
+            p
+              a(href='#') Dashboard
+          .right
+            .dropdown
+              .dropdown__toggle
+                h2
+                  a(id='#') What is this?
+              .dropdown__content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum, lectus rhoncus pretium hendrerit, tortor velit luctus erat, in malesuada ante neque sed est. Vivamus diam arcu, vestibulum vel nisi non, lobortis suscipit sapien.
+
+
+    .section--primary.background--cover
+      .container--75
+        img(src='../../images/bg--wharf.jpg' alt='')
+
+
+    section#content
+      .container
+        p
+          a(href='#') UK Trade
+        h1 UK trade with Ireland
+        span Updated on 7th December 2017 - #[+link('#', 'see history')]
+        p.lead Information about trade between the UK and Ireland. Includes information about exports, imports and trade surplus as well as international comparisons.
+
+        +buttonLink('#', 'Add to my briefings', 'btn--primary--inverse', 'download')(download)
+          include ../../../src/icons/Add.svg
+        +buttonLink('#', 'Download', 'btn--primary--inverse', 'download')(download)
+          include ../../../node_modules/parliamentuk-pugin/src/icons/download.svg
+
+        a(href='#')
+        include ../../../src/icons/Facebook.svg
+        a(href='#')
+        include ../../../src/icons/Twitter.svg
+        a(href='#')
+        include ../../../src/icons/Mail.svg
+
+        h2 Key figures
+        p Quick information about the state of trade between the UK and Ireland.
+
+        // 3 cols - Key Figures
+        .grid
+          .figures
+            h3 Exports
+            p.lead £26.7 billion
+            p.small £0.3billion
+          .figures
+            h3 Imports
+            p.lead £20.8 billion
+            p.small £0.7billion
+          .figures
+            h3 Surplus
+            p.lead £5.9 billion
+            p.small £0.6billion
+
+        .tab--panel
+          ul.list--tab__panel
+            li.tab(data-component='list_tab', aria-controls='panel1', aria-selected='true')
+              a(href='#panel1') UK trade with Ireland
+            li.tab(data-component='list_tab', aria-controls='panel2', aria-selected='false')
+              a(href='#panel2') Trade surplus
+
+          #panel1(data-component='tab_panel', aria-hidden='false')
+            article.full_width
+              img(src='../../images/uk_trade_with_ireland.png' alt='' class='chart')
+
+          #panel2(data-component='tab_panel', aria-hidden='true')
+            article.full_width
+              //- p Trade surplus
+              img(src='../../images/uk_trade_with_ireland.png' alt='' class='chart')
+
+
+        h2 Exports and imports
+        .tab--panel
+          ul.list--tab__panel
+            li.tab(data-component='list_tab', aria-controls='panel3', aria-selected='true')
+              a(href='#panel3') UK exports to Ireland in goods
+            li.tab(data-component='list_tab', aria-controls='panel4', aria-selected='false')
+              a(href='#panel4') UK imports from Ireland in goods
+
+          #panel3(data-component='tab_panel', aria-hidden='false')
+            article.full_width
+              img(src='../../images/uk_exports_to_ireland.png' alt='' class='chart')
+
+          #panel4(data-component='tab_panel', aria-hidden='true')
+            article.full_width
+              //- p UK imports from Ireland in goods
+              img(src='../../images/uk_exports_to_ireland.png' alt='' class='chart')
+
+
+        h2 International comparison
+        p In 2016, Ireland was the UK's fifth largest export market and 9th largest source of imports.
+        .tab--panel
+          ul.list--tab__panel
+            li.tab(data-component='list_tab', aria-controls='panel5', aria-selected='true')
+              a(href='#panel5') Top 10 export countries (2016)
+            li.tab(data-component='list_tab', aria-controls='panel6', aria-selected='false')
+              a(href='#panel6') Top 10 import countries
+            li.tab(data-component='list_tab', aria-controls='panel7', aria-selected='false')
+              a(href='#panel7') EU trade
+
+          #panel5(data-component='tab_panel', aria-hidden='false')
+            article.full_width
+              img(src='../../images/trade.png' alt='' class='chart')
+
+          #panel6(data-component='tab_panel', aria-hidden='true')
+            article.full_width
+              //- p Top 10 import countries
+              img(src='../../images/trade.png' alt='' class='chart')
+
+          #panel7(data-component='tab_panel', aria-hidden='true')
+            article.full_width
+              //- p EU trade
+              img(src='../../images/trade.png' alt='' class='chart')
+
+
+    section
+      .container
+        h2.related Related
+        .grid
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../images/brandon-griggs-82205.jpg' alt='')
+            .content
+              h3
+                a(href='#') Housing stock and homelessness: a study
+              p December 8th 2017
+              p 15 minute breifing
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../images/antoine-dautry-428780.jpg' alt='')
+            .content
+              h3
+                a(href='#') Occupational pension increases
+              p December 8th 2017
+              p 15 minute breifing
+          article
+            .feature--img
+              a(href='#')
+                img(src='../../images/chuttersnap-255210.jpg' alt='')
+            .content
+              h3
+                a(href='#') UK trade with Saudi Arabia
+              p December 8th 2017
+              p 15 minute breifing
