@@ -1,9 +1,7 @@
-// Import Pugin settings
-@import 'settings/pugin';
+// Import Pugin base styles
+@import 'node_modules/parliamentuk-pugin/src/stylesheets/main.scss';
 
-// Import app settings
-@import 'settings/colours';
-
-// Import elements
-@import 'elements/body';
-@import 'elements/headings';
+// Import app overrides
+@import 'app/_briefings-v1.scss';
+// @import 'app/v2.scss';
+// @import 'app/v3.scss';

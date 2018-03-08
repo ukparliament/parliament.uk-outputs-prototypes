@@ -1,0 +1,450 @@
+extends ../../layouts/layout.pug
+
+block content
+  .version--one
+
+    .section--primary.background--cover
+      .container--full--width
+        img(src="../../images/bg--money.jpg" alt="")
+
+
+    section
+      .container
+        .block.accent--purple
+          span Last updated on November 10th 2017
+          h1 The UK bee population
+          p
+          p
+            strong 20 minute read
+
+          +buttonLink('#', 'Add to my briefings', 'btn--primary--inverse', 'download')(download)
+            //- include ../../../node_modules/parliamentuk-pugin/src/icons/download.svg
+          +buttonLink('#', 'Download', 'btn--primary--inverse', 'download')(download)
+            include ../../../node_modules/parliamentuk-pugin/src/icons/download.svg
+
+          .hr--thin.accent--grey-4
+            a.btn--grey(href='#') Agriculture and environment
+            a.btn--grey(href='#') Biodiversity
+            a.btn--grey(href='#') Food
+            a.btn--grey(href='#') Nature conservation
+
+
+    section#content
+      .container
+
+        ul.list--tab__panel
+          li#tab1.tab.active(aria-controls='tab_panel1', aria-selected='true')
+            a(href='#tab_panel1') Short read (3 minutes)
+          li#tab2.tab(aria-controls='tab_panel2', aria-selected='false')
+            a(href='#tab_panel2') Long read (20 minutes)
+
+        article#tab_panel1.tabPanel.active(aria-labelledby='tab1', aria-hidden='false')
+          h2 Summary‌
+          ul
+            li There are over 250 species of bee in the UK: 25 species of bumble bee, 224 species of solitary bee and 1 honey bee species.
+            li There has been an overall decline in wild and honey bees over the past 50 years. This was highlighted in an independent review of the evidence on the status and value of pollinators published by Defra in 2014 to support The National Pollinator Strategy: for bees and other pollinators in England. 1
+            li The review estimated that pollinators added approximately £600 million per year to the value of UK crops through increased yield in oil seed rape and the quality of various fruit and vegetables. It set out the potential future risk to the yield or quality of UK crops of pollinator decline and recommended areas for future research.
+            li The trends for managed bees are better. Their numbers in the UK are recovering from large losses due to the Varroa mite in the early 1990s.
+            li In 2013, over 29,000 beekeepers managing around 126,000 colonies were registered in England on the National Bee Unit’s BeeBase database, compared with 15,000 beekeepers managing just under 80,000 colonies in 2008.
+            li The National Bee Unit provides support, health inspections and information to bee keepers in England, Wales and Scotland. In Northern Ireland, the Department of Agriculture Environment and Rural Affairs (DAERA) runs the Bee Health Inspectorate.
+            li Pollinators, including bees, are showing declines worldwide but, although the overall trend is downwards, this is not universal and not all species are declining. Some are threatened whilst others are extending their ranges. The same bee species that are being found to be threatened at EU level are not always the same as those that pollinate commercial crops.
+            li Where declines in bee health and bee numbers have been observed, a number of factors - such as disease, habitat loss, climate change and pesticides – are thought to have contributed. No single factor seems to be responsible for all the observed changes in pollinators and pollination in the UK and worldwide and the importance of different factors varies with the environmental setting.
+            li There are still gaps in data and in the UK a pollinator monitoring and research partnership has been established in collaboration with research institutes, the Devolved Administrations and volunteer organisations. This aims to gather further data and
+
+          h3 How are UK bees being protected?
+          ul
+            li There has been increasing scrutiny of the harmful, sub-lethal impacts of pesticides in general and neonicotinoids in particular on bees.
+            li There are currently EU restrictions relating to the use of three particular neonicotinoids for this reason which were introduced in December 2013. The UK Government did not initially support these restrictions on the grounds of insufficient scientific evidence. However, in November 2017, the Government is supporting European Commission proposals to extend these restrictions after advice from the Expert Committee on Pesticides (ECP) that the scientific evidence now warrants such action.
+            li The National Pollinator Strategy outlines a number of approaches that the UK Government is taking to address pollinator decline including bees. Many of the Strategy's actions are about working with farmers and the public to expand food, shelter and nest sites across types of land (the key requirements for bee colonies) as well as new research and monitoring to fill gaps in knowledge. The Strategy's approach was based on an evidence and policy review and stakeholder consultation and a range of stakeholders have pledged to supports its action timetable.2 The supporting document to the Strategy summarises much of the research to date.
+            li There are also pollinator strategies for Scotland, Wales and an All- Ireland strategy.
+            li The UK Government continues to keep the research evidence base on pollinators and pollination under review through expert advisory groups. E.g the Pollinator Advisory Steering Group and the UK Expert Committee on Pesticides.
+            li The UK Government and Devolved Administrations have been working with farmers, business and conservation organisations to provide pollinator habitat on farmland, in urban areas and in gardens in order to boost pollinator populations.
+            li For example, in England, a Pollinator and Wildlife Package has been introduced as part of the voluntary options which farmers can choose to make up an application for a grant under the Countryside Stewardship Scheme.
+
+          h3 Why are pollinators like bees important?‌
+          ul
+            li Plants that are not pollinated will not set fruits or produce seeds. Many garden plants and agricultural/horticultural crops need bees to bring about pollination by transferring pollen from the flowers’ anthers to the stigmas. These include most tree and soft fruits, and many vegetables including runner beans, broad beans, tomatoes, marrows and courgettes.3
+            li 70 of the 100 crop species that provide 90% of food worldwide are pollinated by bees.4
+            li Pollination services are critical for both ecosystem function and crop production and are estimated to be worth between £430 million and £603 million a year to UK agriculture.5
+            li In 2013, pesticide manufacturer, Syngenta described bee health decline as among the biggest challenges facing agriculture.6
+
+          h3 Status of the UK bee population‌
+          ul
+            li 1500 species of insects pollinate plants in the UK, including bumble bees, honey bees, solitary bees, hoverflies, wasps, flies, beetles, butterflies and moths.
+            li Bees and hoverflies are used as key indicator species in the UK to monitor pollinator distribution and habitat quality as they are often the most numerous pollinators of crops.
+            li There are around 20,000 described bee species worldwide. Most of these bees are known as solitary bees with only 250 bumblebee species, 9 honey bee species and a number of social stingless bees worldwide. 7
+            li There are over 250 species of bee in the UK: 25 species of bumble bee, 224 species of solitary bee and 1 honey bee species.8
+
+          h3 Current trends in population‌
+          ul
+            li The UK insect pollinator biodiversity indicator has been assessed as showing long term decline since 1980 but as remaining stable in the short term. Despite the inter-annual variation, the overall trend for pollinators remains downward.
+            li There has been an overall decline in wild and honey bees over the past 50 years. This was highlighted in an independent review of the evidence on the status and value of pollinators published by Defra in 2014 to support The National Pollinator Strategy: for bees and other pollinators in England.
+            li The review also highlighted evidence that:9
+              ul
+                li Bees and other pollinating insects are generally declining in numbers, with parallel declines in the plants that rely upon them, but these declines are not universal to all species and there has been some more recent increase in the number of managed bees in hives.
+                li Pollinators, including bees, are showing declines worldwide, but not across all species. Some are threatened whilst others are extending their ranges.
+                li In the UK, there has been an overall decline in wild bee diversity over the last 50 years. Managed bees in hives, though, are faring better; their numbers in the UK are recovering from large losses due to the Varroa mite in the early 1990s.
+                li In 2013, over 29,000 beekeepers managing around 126,000 colonies were registered in England on the National Bee Unit’s BeeBase database, compared with 15,000 beekeepers managing just under 80,000 colonies in 2008.
+                li The number of bumble bees managed for commercial pollination of high value crops, notably soft fruits and tomatoes in greenhouses or in poly-tunnels, has increased over the last 20 years. During 2013, Natural England licensed the following for this purpose:
+                  ul
+                    li 16,443 hives of non-native bumble bees (Bombus terrestris terrestris and Bombus terrestris dalmatinus; and,
+                    li 5,356 hives of native bumbles bees (Bombus terrestris audax).
+            li The Royal Horticultural Society has highlighted that the strength and health of honeybee colonies has declined, making it more difficult for beekeepers to maintain their hives in good condition. In Europe (including the UK), however, extensive colony collapse -
+            li Bumblebees and solitary bees that are able to collect nectar and pollen from a wide range of plants, including garden flowers, are thought to be maintaining their numbers and distribution. It is species that are more selective in their flower-visiting habits, or have special requirements for nest sites, that have declined and now have a more restricted distribution
+            li Many species of moth and butterfly are in decline although this is thought to be largely due to habitat loss due to changes in land use. Less is known about the distribution and abundance of other pollinators such as hoverflies.11
+
+          h3 European Trends‌
+          ul
+            li In March 2015, the International Union for Conservation of Nature) reported on its European Red List of Bees and the Status and Trends of European Pollinators (STEP) project. This found that Europe's wild bees are in decline with 9.2% of European wild bee species threatened with extinction, while 5.2% are considered likely to be threatened in the near future.12
+            li The report, which was co-funded by the European Commission, provided for the first time information on all 1,965 wild bee species in Europe, including their status, distribution, population trends and threats. At the same time, it stressed the need for further research to guide effective conservation action and reverse their decline. More than half of all species are classified as "Data Deficient", as lack of experts, data and funding has made it impossible to evaluate their extinction risk.
+            li Looking at the population trends of European bee species, 7.7% (150 species) of the species have declining populations, 12.6% (244 species) are more or less stable and 0.7% (13 species) are increasing. The population trends for 1,535 species (79%) remains unknown.
+            li A high proportion of threatened bee species are endemic to either Europe (20.4%, 400 species) or the EU 27 (14.6%, 277 species), highlighting the responsibility that European countries have to protect the global populations of these species. Almost 30% of all the species threatened (Critically Endangered, Endangered, or Vulnerable) at the European level are endemic to Europe (e.g., found nowhere else in the world).13
+
+          h3 What do the UK’s Biodiversity 2020 indicators for pollinators show?‌
+          ul
+            li The Biodiversity 2020: A Strategy for England’s Wildlife and Ecoystem Services (2011) aims to bring a “halt overall biodiversity loss, support healthy well-functioning ecosystems and establish coherent ecological networks, with more and better places for nature for the benefit of wildlife and people.” As part of this the UK Government regularly reports on 24 biodiversity indicators.
+            li Defra has developed an indicator of the status of the UK’s pollinating insects in partnership with the research community and the voluntary sector. The indicator was first published in 2014 and integrated into the suite of 24 indicators used to track progress with Biodiversity 2020.
+            li The UK Biodiversity Indicators 2017 provide statistical assessments of the status and trends of a range of wildlife populations with specific indictors for pollinating insects, butterflies on farm land and butterflies in woodland:
+            ul
+              li Status of pollinating insects - deteriorating between 1989 and 2014; little change between 2009 and 2014
+              li Butterflies on woodland – deteriorating between 1999 and 2014; little change between 2011 and 2016
+              li Butterflies on farmland - deteriorating between 1999 and 2014; deteriorating between 2011 and 2016
+            li There is an indicator of insect pollinator distribution in Great Britain which covers 389 species of bees and hoverflies (147 species of bee and 242 species of hoverfly) as indicator species to show overall trends for pollinators.14 The latest version of the indicator is not directly comparable with the previous assessment because modelling methods have been improved such that a further 176 species (42 wild bees and 134 hoverfly species) have been included thereby increasing the taxonomic scope of the indicator.15
+            li This indicator has been assessed as showing long term decline since 1980 but as remaining stable in the short term. Despite the inter-annual variation, the overall trend for pollinators remains downward.
+            li The indicator declined by 13% between1980 and 2014 with the long term trend assessed as a decline. Between 2009 and 2014 the indicator fell further before recovering slightly and then
+            li Between 1980 and 2014, 16% of pollinator species became more widespread (8% showed a strong increase), and 32% became less widespread (10% showed a strong decrease).
+            li The ratio between increasing and decreasing species was more balanced between 2009 and 2014, with 34% of species increasing and 41% of species decreasing.
+            li The indicators of butterfly abundance in the UK show significant declines since 1976: by 74% for species most closely associated with flower-rich habitats and 57% for species of the wider countryside, although since 2011 the indicators have been broadly stable.16
+            li As individual pollinator species become more or less widespread, the communities in any given area become more or less diverse, and this may have implications for pollination as more diverse
+
+          h3 What factors are affecting bee populations?‌
+          ul
+            li Factors affecting bee and pollinator populations include: habitat loss, pesticides, disease and climate change. It is not clear how these factors interact or which are having the biggest impacts. In England it is thought that the loss of flower-rich habitat is one of the biggest sources of pollinator decline arising from changes in agricultural land use and urbanisation.17
+            li Wild bees and managed bees are affected by the same factors but in different ways. For example, habitat loss (with the resultant loss of food and nesting resources) is of primary importance for wild pollinators, whereas the managed nature of honey bees means their food can be supplemented.
+            li Parasites and disease, particularly the parasitic Varroa mite and the viruses it transmits, have been identified as a particular threat to honey bees, whereas the impacts of disease on wild species remain little understood. Insecticides, most recently the neonicotinoids, have also been implicated in the declines of both domestic and wild bee species, both on their own and in interaction with other factors. Library briefing, Bees and Neonicotinoids (July 2017) provides further details.
+            li Bees need to be able to maintain the capacity for learning, memory and navigation to get to pollination sources and so any disruption of cognitive function – whether the result of malnutrition, disease or pesticide exposure – has significant implications for survival.18
+            li A study in 2013 suggested that a complex interplay between pressures (such as lack of food sources, diseases and pesticides) and biological processes (such as species dispersal and interactions) at a range of scales (from genes to ecosystems) underpin the general decline in insect-pollinator populations. This, the authors suggested, highlighted the need for interdisciplinary research on these interactions.19
+            li A 2016 study in Germany, highlighted by the European Commission’s Science for Environment Policy bulletin found that pollinators were faring better in urban areas than on agricultural land: 20
+
+          h4 IBPES assessment (February 2016)
+          ul
+            li A key international assessment on pollinators was published in February 2016 by the Intergovernmental Platform on Biodiversity and Ecosystem Services (IPBES). This group includes a leading UK academic on bees, Professor Simon Potts at Reading University. The assessment had 77 authors and over 500 reviewers.
+            li The study highlighted that a diverse community of pollinators generally provides more effective and stable crop pollination than any single species. Pollinator diversity contributes to crop pollination even when managed species (e.g. honey bees) are present in high abundance and the contribution of wild pollinators to crop production is undervalued.22
+            li The assessment also found that pesticides, including neonicotinoid insecticides, threaten pollinators worldwide, although the long- term effects are still unknown. A pioneering study conducted in farm fields showed that one neonicotinoid insecticide had a negative effect on wild bees, but the effect on managed honeybees was less clear.23
+
+          h4 State of Nature report (2016)
+          ul
+            li The State of Nature report 2016 was the second report (the first published in 2013) of a group over 50 nature conservation organisations who work together to assess the State of Nature in the UK, its Crown Dependencies and Overseas Territories.
+            li The study looked at three major taxonomic groups in the UK, insects, vascular plants and vertebrates, with similar results. The major negative impacts where found to be intensive management of agricultural land; climate change and hydrological change. Decreasing forest management and other habitat management were also significant. Climate change, which has increased winter survival, and habitat creation, were the two greatest positive factors.
+
+          h3 Maintaining Bee Health‌
+          ul
+            li BeeBase is the Animal and Plant Health Agency's (APHA) National Bee Unit website. It is designed for beekeepers and supports Defra, Welsh Government and Scotland's Bee Health Programmes and the Healthy Bees Plan, which set out to “protect and sustain our valuable national bee stocks”.
+            li The programme aims to protect honey bees from pests and diseases, including tackling disease outbreaks and monitoring for exotic pests, including the Asian hornet. Inspectors carry out a total of over 6,000 apiary inspections each year during which free training is provided to beekeepers on how to keep their bees healthy. Where key pests and diseases are found the inspectors take necessary statutory action for their control. They also provide beekeepers with training and advice.24
+            li In October 2016, the UK Government set out how it was supporting honey bees: Defra has spent between £1.5 million and £2 million on protecting honey bees in England in each of the last five years. Our programme aims to protect honey bees from pests and diseases, including tackling disease outbreaks and monitoring for exotic pests such as the Asian hornet. Defra also contributed an additional £2.5 million to the £10 million Insect Pollinator Initiative carried out between 2010 and 2015. This was a joint initiative to look at different aspects of pollinator declines. Of the nine projects funded, two were specifically about honey bees and six were aimed at benefiting both honey bees and bumble bees.25
+
+          h3 The neonicotinoid debate‌
+          ul
+            li Since December 2013, the EU has restricted the use of three neonicotinoids, Clothianidin, Imidacloprid and Thiamethoxam, on a number of crops attractive to bees, such as oilseed rape.
+            li The UK did not support the restrictions at the time on the basis that field trial evidence was insufficient. However, the UK has fully implemented the restrictions.
+            li Library briefing Bees and Neonicotinoids (July 2017) provides background to the restrictions, development of government policy and key studies until July 2017.
+            li Earlier this year the Commission proposed further restricting the use of these pesticides so that they could only be used on plants that spend their entire life cycle in permanent greenhouses.26
+            li The UK Government keeps the developing evidence on neonicotinoids under review as advised by the UK Expert Committee on Pesticides. The Government’s recent position has been that decisions on the use of pesticides should protect people and the environment and should be based on a careful scientific assessment of the risks and that “pesticides that carry unacceptable risks to pollinators should not be authorised”27
+            li On 9 November 2017, Environment Secretary Michael Gove announced that the UK supports further restrictions on neonicotinoid pesticides which are justified by the growing weight of scientific evidence they are harmful to bees and other pollinators. The Government has said that unless the scientific evidence changes, the government will maintain these increased restrictions post-Brexit.28
+            li This support follows advice from the Expert Advisory Committee on Pesticides that scientific evidence now suggests the environmental risks posed by neonicotinoids, particularly to bees and pollinators, are greater than previously understood, supporting the case for further restrictions.
+            li The Committee’s advice is that a range of 2016 and 2017 studies indicate that: 29
+            li Defra has supported a range of research relevant to improving understanding of the effects of neonicotinoids (and other pesticides) on bees. Recently completed work includes studies on: 30
+              ul
+                li quantifying the exposure of bumblebees to neonicotinoids and mixtures of pesticides (commenced 2013)
+                li interpreting pesticide residues in honeybees (published 2015)
+                li using radio-frequency identification devices to assess effects of pesticides on foraging bees (commenced 2013)
+                li and protection goals for bee colonies (commenced 2015).
+
+          h3 National Pollinator Plans and Strategies‌
+          h4 England
+          ul
+            li The UK Government’s National Pollinator Strategy – for bees and other pollinators in England (November 2014) sets out a 10 year plan for “taking action to improve the state of our bees and other pollinating insects and to build up our understanding of current populations and of the causes of decline”.
+            li At the time the Government said that the strategy was intended to 'refresh' the UK Government's commitment to safeguarding and supporting pollinators and aimed to build on exisiting initiatives and policies, including habitat and species conservation.31 It was billed as containing a series of policy actions setting a new direction and would be adapted as understanding of the actions needed developed. 32
+            li The House of Commons Environmental Audit Committee published its report on the Strategy in July 2014. It was well received among environmental stakeholders (e.g. Buglife and the Royal Ecological Society) as strong, and hard hitting, mainly because of its reiterated concerns regarding the UK Government's application of the precautionary principle in relation to neonicotinoids.33
+            li The Committee welcomed the commitment to a new monitoring framework for pollinators as a means of helping to provide a baseline picture as a starting point for new pollinator-friendly action but felt that the Government was not supporting pollinators sufficiently through Common Agricultural Policy schemes. The Committee was also critical of the Government’s stance at the time on neonicotinoids and its reliance on pesticide manufacturers for research funding. 34 The Strategy has 5 key themes:
+              ul
+                li Supporting pollinators on farmland
+                li Supporting pollinators across towns, cities and the countryside
+                li Enhancing the response to pest and disease risks
+                li Raising awareness of what pollinators need to survive and thrive
+                li Improving evidence on the status of pollinators and the service they provide
+            li Loss of habitat has been identified as a likely main cause of pollinator declines. Thus key actions focus on expanding food, shelter and nest sites.
+            li The UK National Pollinator Implementation Plan (November 2015) set out actions under the five key delivery themes of the strategy: 35 The Pollinator Advisory Steering Group (PASG) guides and delivers actions under the Plan. The Government encourages wider public action through the Bees’ Needs Campaign.
+            li The Government’s campaign, supported by a range of stakeholders (e.g. the British Beekeeper’s Association), Bees’ Needs: Food and a Home, aims to gives practical and simple steps to help provide pollinators with food and shelter.
+            li Defra’s National Pollinator Strategy: Progress Report 2016 (November 2017) provides an update on the Strategy which Defra describes as showing “encouraging progress on its aims to make farms, towns, cities and the countryside better places for our bees and pollinators”. It reports that “23 policy and 11 evidence actions have progressed over the last 12 months”.
+            li The Government has said that “it will continue to work with partners such as Friends of the Earth, British Beekeepers’ Association and Kew to deliver the ambitious strategy.”
+            li The Strategy includes commitments on measuring progress by developing an indicator on the status of pollinators and by evaluating Nature Improvement Areas (NIAs) and agri- environment schemes.
+            li In January 2017, junior environment minister, Therésè Coffey, said that the Government was determined to leave the natural environment in a better state than it had found it and outlined how the Wild Pollinator and Farm Wildlife package in the Countryside Stewardship Scheme for farmers was supporting pollinators: Our agri-environment schemes also play a major role in the conservation of pollinators. The Wild Pollinator and Farm Wildlife Package in the Countryside Stewardship scheme offers options to improve habitats and provide nectar sources for butterflies and bees, thereby supporting the National Pollinator Strategy.36
+            li In July 2017 the Government said that 40% of all 2016 Countryside Stewardship Mid-Tier agreements were delivering the Pollinator and Farm Wildlife Package.37
+            li In October 2017, a written answer provided a further update on pollinator strategy delivery: …The monitoring and evaluation framework for NIAs was updated in 2014 and included two voluntary indicators on population of threatened or widespread species, including a number of pollinating insects. A report on monitoring and evaluation of NIAs was published in 2015 (www.gov.uk/government/publications/nature- improvement-areas-improved-ecological-networks/nature- improvement-areas-about-the-programme). This found no significant change in any of the species indicators in the NIAs over the short period involved. Collectively, however, the 12 NIAs secured beneficial management on over 13,500 ha of important wildlife habitats and put in place action to create 4,500 ha of new habitats, primarily species rich grasslands and heathland which will provide important sources of pollen and nectar for pollinating insects. For agri-environment schemes, Natural England has a contract in place with the Centre for Ecology and Hydrology and the British Trust for Ornithology to provide a landscape-scale evaluation of the impact of Countryside Stewardship in England on mobile species, including pollinators. Initial findings are expected in 2018. Since 2015, we have initiated a pollinator monitoring and research partnership with the Centre for Ecology and Hydrology, Scottish Government, the Welsh Government and the Joint Nature Conservation Committee, to strengthen pollinator monitoring across Great Britain and improve our capacity to understand trends in pollination services. Details of the partnership are available on the external Centre for Ecology and Hydrology website.38
+
+          h4 Scotland
+          ul
+            li The Scottish Government launched its pollinator strategy in July 2017. The Scottish Pollinator Strategy for 2017-2027 sets out “how Scotland can continue to be a place where pollinators thrive”. It also has an associated implementation plan and a Technical Annex which sets out the available evidence relating to Scotland’s main pollinators (honey bee, bumble bees, solitary bees and hoverflies) and the threats that affect them and other pollinating insects.
+            li In Scotland there are 23 species of bumble bees, 79 solitary bees, and the honey bee.39
+            li The Honey Bee Health Strategy has been in place since 2010.
+
+          h4 Wales
+          ul
+            li The Welsh Government has The Action Plan for Pollinators in Wales (2013) which aims to reduce and reverse the decline in wild and managed pollinator populations.
+            li The Welsh Government has a Pollinators Taskforce to implement the plan bringing together organisations from the public, private and voluntary sectors in Wales.
+
+          h4 Northern Ireland and Eire
+          ul
+            li Northern Ireland and the Republic of Ireland have come together to produce the All Ireland Pollinator Plan (2015-2020) which sets out 81 action to make Ireland “pollinator friendly”.
+
+          h3 Examples of stakeholder initiatives‌
+          ul
+            li There are a vast array of businesses, NGOs and charities working to support pollinators and bees.
+            li A selection are highlighted below.
+            li Buglife, Get Britain Buzzing Campaign with associated Pollinators Manifesto (2014)
+            li Sainsbury’s has a Bee Happy campaign and has its own beekeeper.
+            li Friends of the Earth has a Bee Cause campaign and a Great British Bee Count
+            li Syngenta, Operation Pollinator (and previously Operation Bumblebee)
+            li Operation Pollinator is an international biodiversity program initiated by Syngenta in partnership with a range of other organisations to boost the number of pollinating insects on commercial farms. It works by creating specific habitats, tailored to local conditions and native insects.
+            li Farmers and golf course managers across Europe and the USA are provided with targeted seed mixtures, along with innovative pesticide use practices and agronomic advice designed to benefit pollinators.
+            li Bayer’s BeeCare Programme aims to further promote and develop solutions to improve bee health, actively promote the bee-responsible use of its products, share knowledge and expertise.
+
+
+        article#tab_panel2.tabPanel(aria-labelledby='tab2', aria-hidden='true')
+          .block.theme--grey-4
+            h2 Contents
+            nav.toc(aria-label='Sections in this briefing')
+              ul.list--toc
+                li
+                  a(href="#one") News items
+                li
+                  a(href="#two") Press releases
+                li
+                  a(href="#three") Parliamentary Questions
+              p
+                a(href="#references") References
+
+
+          a(id='one')
+          h2 News items
+          p Guardian
+          p UK will back total ban on bee-harming pesticides, Michael Gove reveals
+          p 9 November 2017
+          p https://www.theguardian.com/environment/2017/nov/09/uk-will-back- total-ban-on-bee-harming-pesticides-michael-gove-reveals
+
+          p Guardian
+          p The evidence points in one direction – we must ban neonicotinoids
+          p With more and more evidence emerging that these pesticides harm bees and other insects, it would be irresponsible not to restrict their use, writes the environment secretary, Michael Gove
+          p 9 November 2017
+          p https://www.theguardian.com/environment/2017/nov/09/the-evidence- points-in-one-direction-we-must-ban-neonicotinoids
+
+          p Times [subscription]
+          p Invasion by bee-killing Asian hornets ‘inevitable’
+          p 29 August 2017
+          p https://www.thetimes.co.uk/article/invasion-by-bee-killing-asian-hornets- inevitable-2bvd5z3nt
+
+          p Nature
+          p Largest-ever study of controversial pesticides finds harm to bees
+          p Scientists say the industry-funded work confirms that neonicotinoids are harmful, but manufacturers question its conclusions.
+          p 29 June 2017
+          p https://www.nature.com/news/largest-ever-study-of-controversial- pesticides-finds-harm-to-bees-1.22229
+
+          p Independent
+          p Decline of bees threatens evolution of plants, study suggests
+          p Field mustard plants pollinated by bumblebees were taller and more scented than those pollinated by hoverflies
+          p 14 March 2017
+          p http://www.independent.co.uk/environment/bees-bumblebees-decline- threatens-plants-evolution-study-suggests-a7629561.html
+
+
+          a(id='two')
+          h2 Press releases
+          h3 DEFRA
+          p Environment Secretary backs further restrictions on neonicotinoid pesticides
+          p 9 November 2017
+          p Michael Gove says the UK supports further restrictions on the use of neonicotinoids due to their effects on bees and other pollinators.
+          p Tougher restrictions on neonicotinoid pesticides are justified by the growing weight of scientific evidence they are harmful to bees and other pollinators, Environment Secretary Michael Gove said today.
+          p Setting out the UK’s position, the Secretary of State said the UK supports further restrictions on the use of these pesticides. Unless the scientific evidence changes, the government will maintain these increased restrictions post-Brexit.
+          p This follows advice from the UK government’s advisory body on pesticides which said scientific evidence now suggests the environmental risks posed by neonicotinoids – particularly to our bees and pollinators – are greater than previously understood, supporting the case for further restrictions.
+          p Research estimates the value of the UK’s 1,500 species of pollinators to crops at £400-680million per year due to improved productivity.
+          p Environment Secretary Michael Gove said:
+          blockquote
+            p I have set out our vision for a Green Brexit in which environmental standards are not only maintained but enhanced.
+            p I’ve always been clear I will be led by the science on this matter. The weight of evidence now shows the risks neonicotinoids pose to our environment, particularly to the bees and other pollinators which play such a key part in our £100bn food industry, is greater than previously understood. I believe this justifies further restrictions on their use. We cannot afford to put our pollinator populations at risk.
+            p I recognise the impact further restrictions will have on farmers and I am keen to work with them to explore alternative approaches both now and as we design a new agricultural policy outside the European Union.
+          p Since December 2013, the EU has banned the use of three neonicotinoids – Clothianidin, Imidacloprid and Thiamethoxam – on a number of crops attractive to bees, such as oilseed rape.
+          p The European Commission has proposed restricting the same three neonicotinoids to only allow their use on plants in glasshouses. Currently, their use is banned for oilseed rape, spring cereals and sprays for winter cereals, but they can be used to treat sugar beet and as seed treatments for winter cereals. Should this proposal be adopted, the UK would have the right to consider emergency authorisations. We would only do so in exceptional circumstances where there is a real need for the products and the risk to bees and other pollinators is sufficiently low.
+          p Defra’s Chief Scientific Advisor Professor Ian Boyd said:
+          blockquote
+            p The important question is whether neonicotinoid use results in harmful effects on populations of bees and other pollinators as a whole.
+            p Recent field-based experiments have suggested these effects could exist. In combination with the observation of widespread and increasing use of these chemicals, the available evidence justifies taking further steps to restrict the use of neonicotinoids.
+          p Defra has today also given an update on its National Pollinator Strategy, which shows encouraging progress on its aims to make farms, towns, cities and the countryside better places for our bees and pollinators. The strategy was launched in 2014, following independent research which showed an overall decline in the UK’s wild bee diversity over the last 50 years. It sets out a collaborative plan to improve the state of bees and other pollinators, and recognises pesticides as one of the key threats to their populations. The government will continue to work with partners such as Friends of the Earth, British Beekeepers’ Association and Kew to deliver the ambitious strategy.
+
+          h3 National Farmers’ Union
+          p NFU reaction to neonicotinoids announcement
+          p 9 November 2017
+          p The UK supports further restrictions on the use of neonicotinoids, Michael Gove has said. Setting out the UK's position in a Defra press release, the Secretary of State said 'the UK supports further restrictions on the use of these pesticides. Unless the scientific evidence changes, the government will maintain these increased restrictions post-Brexit.'
+          p NFU comment:
+          p Dr Chris Hartfield, NFU acting chief science and regulatory affairs adviser, said:
+          blockquote
+            p Farmers are acutely aware that bees play a crucial role in food production. Farmers rely on bees to pollinate crops and have planted around 10,000 football pitches of flower habitat across the country to support a healthy bee population and give them a good home.
+            p We deeply regret the decision the Government has taken on this issue as we don’t believe the evidence justifies this abrupt change in policy. We will continue to speak to the Government about how the impact of the decision can best be mitigated so that farmers can maintain sustainable and productive cropping systems.
+          p Dr Hartfield was also quoted in The Guardian today, he said:
+          blockquote
+            p Farmers are acutely aware that bees play a crucial role in food production and have done an enormous amount to help them.
+          p But he said the committee’s finding of “unacceptable effects” came despite their acknowledgement of a gap in understanding in whether neonicotinoids damage overall ecosystem services.
+
+          h3 British Beekeepers’ Association
+          p Update to BBKA Statement on Neonicotinoid Pesticides
+          p 9th November 2017
+          p Introduction
+          p This statement provides an update on the position of the British Beekeepers Association in relation to the EU ban on Neonicotinoid Pesticides released on 30th June 2017. This update follows a statement made by Michael Gove, Secretary of State for Environment, Food and Rural Affairs (DEFRA) on 9th November 2017
+          p BBKA Comments
+          p The BBKA has maintained that the policy of both the UK and the EU should be led by sound science. It is encouraged to note that Mr Gove’s comments are based on the updated advice of the UK’s Expert Committee on Pesticides (ECP) which has been released today. They have concluded that:
+          ul
+            li Exposure to neonicotinoids under field conditions can have an unacceptable effect on honeybee health.
+            li Such unacceptable effects are occurring at a landscape level and between seasons.
+            li These neonicotinoid pesticides are relatively persistent in the environment and can occur in non-target plants foraged by bees.
+            li Wild bees (bumblebees and solitary bees) are negatively affected by exposure to neonicotinoid residues from across the landscape.
+          p The position of the BBKA has, and continues to be
+          blockquote
+            p That, until there is convincing independent scientific evidence that neonicotinoid pesticides are not harmful to honey bees, the BBKA will support the continuation of the EU moratorium on their use
+          p The advice to ministers indicates that Neonicotinoid pesticides are causing harm to both pollinators in general, honey bees in particular and equally importantly the overall environment. This means that the BBKA will support the continuation of the moratorium on their use and would support an overall banning of their use. The UK government position which will feed into the European discussion is likely to have a significant impact as they were one of the few voices arguing against the moratorium originally, making it more likely that EU wide ban will be extended or made permanent. The BBKA was pleased to be involved in discussions across a wide range of farming related sectors about how the regulatory regime would evolve as the UK leaves the EU. We were encouraged that the government is thinking about the importance of pollinators in general and honey bees in particular in the context of Brexit. Equally we are pleased that the government is offering to work with farmers to develop an alternative approach to treating crops. We remain concerned however that any alternative treatments used do not cause harm to honey bees and other pollinators
+          p We will continue to update both our members and the public as the current debate evolves.
+
+          h3 Friends of the Earth
+          p Gove backs new restrictions on bee-harming neonicotinoid pesticides
+          p 09 Nov 2017
+          p Success for Friends of the Earth bee campaign as Michael Gove listens to the experts
+          p Welcoming Michael Gove’s decision to back tougher restrictions on bee- harming pesticides, Friends of the Earth’s chief executive Craig Bennett said:
+          blockquote
+            p Michael Gove is to be congratulated for listening to the experts. The scientific evidence for a complete ban on bee- harming pesticides is now overwhelming.
+            p Tougher restrictions on neonicotinoids are essential for our precious bees and the wider environment – and a significant victory for the public and supporters of organisations like Friends of the Earth who have called for tougher action on these chemicals.
+            p To their credit farmers across the UK are already finding innovative ways to successfully grow crops without neonicotinoids, even ahead of the ban being extended.
+            p But lessons also need to be learned – we now need to move away from chemical intensive farming and instead boost support for less damaging ways of tackling persistent weeds and pests.
+            p The UK must follow through on today’s announcement by backing current European Commission proposals to get these pesticides completely out of our fields.
+
+          h3 British Beekepers’ Association
+          p British Beekeepers are Losing Fewer Bees over Winter
+          p 18th October 2017
+          p British Beekeepers’ Association BBKA) 10th Annual Colony Survival Survey results are published today and show a reduction in the over- winter losses compared to the previous year, down from 16.7% to 13.2%.
+          p The overall trend continues to show a welcome decline in the number of colony losses. Respondents gave a variety of reasons why they believe their colonies failed and these included various aspects of queen failure, starvation, lack of forage and cold weather restricting foraging activities and forage availability.
+          p Regional analysis showed the highest regional losses were seen in the North East at 23% and the lowest in the Eastern region at 9.7%. This reverses the regional pattern of 2016 which showed higher losses in the South of the country. It is unclear what is driving these regional variations
+          p BBKA Director of Communications, Martin Smith, said:
+          blockquote
+            p One of the key drivers of success in overwintering honey bees is the level of competence of individual beekeepers. The BBKA and its member associations have worked hard to provide educational resources, training courses and other materials to allow beekeepers to improve their husbandry skills. This in turn enables them to maintain healthy bee colonies, despite the various threats to their survival.
+          p The above data preceded the arrival of the Asian Hornet into the UK and this aspect will also be monitored in the 2018 survey in the light of the development of the Asian Hornet invasion.
+          p Notes to Editors
+          p Importance of winter losses of honey bees The honey bee is the only bee to maintain a colony throughout the winter. The colony reduces its size in autumn and relies on its stores of honey to last it through the winter months when it is too cold for foraging or there is no forage available. The loss of honey bee colonies impacts the available pollination resources as well as reducing honey crops, so it is essential that beekeepers rebuild stocks. This is done by ‘splitting’ colonies and building honey bee numbers back up to strength over the season. So if, for example, a beekeeper takes 10 hives into the winter but loses two colonies by the spring, a further two colonies must be ‘split’ to get back up to 10 colonies by the end of the season. The net effect being that the beekeeper has effectively only 6 hives running at full strength during that season. Experienced beekeepers keeping bees in good conditions are able to increase the number of colonies highlighting the importance of beekeepers in managing and growing honey bee colony numbers. Honey bee survival
+          p In winter, worker bees can live for up to five or six months, But in the summer, worker bees only live for around six weeks having to work much harder foraging. Honey bee queens live for three to four years but cannot survive without worker bees. In some other species of bees or wasps only the queen survives by hibernating through the winter months.
+          p About the BBKA
+          p With around 25,000 members the British Beekeepers Association (BBKA) is the leading organisation supporting honey bees and beekeepers within the UK. It aims to promote and further the craft of beekeeping and to advance the education of the public in the importance of bees in the environment.
+
+          h3 Department for Environment, Food & Rural Affairs and Animal and Plant Health Agency
+          p Asian hornet outbreak contained in Devon
+          p 13 October 2017
+          p An Asian hornet nest has been destroyed in the Woolacombe area and no further live Asian hornets have been sighted.
+          p A recent outbreak of Asian hornets has been successfully contained by bee inspectors who promptly tracked down and destroyed their nest in Devon.
+          p The hornets were first discovered in the Woolacombe area in September, but the National Bee Unit moved swiftly to find the nest and remove it.
+          p No further live Asian hornets have been seen since the nest was treated with pesticide and removed earlier this month.
+          p Nicola Spence, Defra Deputy Director for Plant and Bee Health, said:
+          blockquote
+            p I am pleased our well-established protocol to contain Asian hornets has worked so effectively in Devon.
+            p We remain vigilant, however, and will continue to monitor the situation and encourage people to look out for any Asian hornet nests.
+            p Members of the public are a vital tool in spotting Asian hornets and we urge people to report any potential sightings through the Asian hornet app or online.
+          p This included a two mile surveillance zone in Devon, with bee inspectors scouring the area to track the hornets and the nest. The Animal and Plant Health Agency also opened a local control centre to coordinate the response between the various agencies and teams involved.
+          p Asian hornets pose no greater risk to human health than a bee, though they are a threat to honey bee colonies.
+          p The hornet prey on honeybees, disrupting the ecological role which they provide and damaging commercial beekeeping activities. This is why Defra takes quick action to identify and destroy their nests.
+          p The species arrived in France in 2004 and is now common across large areas of Europe. It was discovered for the first time in the British Isles in Jersey, Alderney and Gloucestershire last summer.
+          p Asian hornets can be confused with their larger native European hornet counterparts; the Asian hornet abdomen is almost entirely dark while the European hornet’s abdomen is largely yellow.
+          p It is possible Asian hornets could reappear in the UK and members of the public alongside the nation’s beekeepers are urged to report any suspected sightings.
+          blockquote
+            ul
+              li The ‘Asian Hornet Watch’ app is available to download from the Apple and Android app stores
+              li Members of the public can also report sightings by email to alertnonnative@ceh.ac.uk with a photo or on the Non-native Species Secretariat website.
+              li Details on the appearance of an Asian hornet can be found on the Bee Base guide or the non-native species identification guide.
+
+          h3 University of Warwick
+          p Asian hornet to colonise UK within two decades without action
+          p 8 August 2017
+          ul
+            li Honey bees across Europe have been impacted by Asian hornet since it first arrived in France in 2004
+            li Asian hornet could colonise UK and threaten bee populations in two decades unless action is taken, according to research by the Universities of Warwick and Newcastle working with the National Bee Unit.
+            li Researchers predict the potential for a similar invasion of the Asian hornet in the UK after an active nest was discovered in Gloucestershire in 2016.
+            li Beekeepers and the general public are advised to be vigilant and able to identify Asian hornets and their nests.
+          p The yellow legged or Asian hornet – a voracious predator of honey bees and other beneficial insects – could rapidly colonise the UK unless its spread is combatted, according to new research by the Universities of Warwick and Newcastle, working with the National Bee Unit.
+          p Professor Matt Keeling, from Warwick’s Zeeman Institute for Systems Biology & Infectious Disease Epidemiology Research (SBIDER), predicts that if Asian hornet nests are left to thrive in the UK, there could be hundreds of thousands of them in just over two decades – putting a critical strain on British populations of honey bees and other beneficial insects.
+          p The researchers simulated the likely spread of Asian hornet across the UK over a twenty-five year period, starting from a single active nest in a location near Tetbury, Gloucestershire – where the first verified nest in the UK was discovered and destroyed in 2016.
+          p It is believed that Asian hornet first came to Europe in 2004, in an import of Chinese pottery to France. Since then, Asian hornet has spread through France to infest Italy, Spain, Portugal, Switzerland, Germany and Belgium – and was first identified in the UK in 2016.
+          p Using recent data from the Andernos-les-Bains region in South-West France – where there has been detailed observation and destruction of Asian hornet nests during the past eight years – Professor Keeling and his collaborators mapped a similar potential invasion in the UK.
+          p Professor Matt Keeling, the lead author of the research, commented:
+          blockquote
+            p Our research shows the potential for this predator to successfully invade and colonise the UK, spreading rapidly from any new invasion site. Even if we have managed to successfully control this first invasion, the presence of a growing population of these hornets in Northern Europe makes future invasions inevitable.
+          p The Asian hornet, scientifically named Vespa velutina nigrothorax, preys predominantly on honey bees – hovering outside their hives, waiting to catch and kill them as they return from foraging, but it also eats other beneficial insects such hoverflies and bumblebees.
+          p The likely invasion of Asian hornet in the UK – and consequent destruction of bee populations – could be halted if beekeepers and the general public (especially in the South-West) are vigilant, and able to identify them.
+          p Dr Giles Budge, a fellow author from Fera Science and Newcastle University, commented:
+          blockquote
+            p Our work highlights the importance of early detection for the successful eradication of this hornet. To do this, we need members of the public and beekeepers to familiarise themselves with this hornet, look out for signs of foraging hornets particularly near honey bee colonies, and check the tallest trees for their large nests. Rapid reporting could make all the difference between eradication and widespread establishment.
+          p Vespa velutina nigrithorax is smaller than our native hornet, with adult workers measuring from 25 millimetres in length, and queens measuring 30 millimetres. Its abdomen is mostly black except for its fourth abdominal segment, which has a yellow band located towards the rear. It has yellow legs, and its face is orange with two brownish red compound eyes.
+          p In spring, surviving Asian hornet queens begin a small nest, often in a sheltered location such as in the eaves of a roof or in a garden shed. Here they raise the first clutch of workers who take over the queen’s foraging duties. At this stage the nest grows quickly, and the hornets often move to establish a secondary nest where there is more space to expand. These nests can become very large, and are often located high up in the tree canopy, close to a food source such as apiaries,
+          p Should you find a suspect Asian hornet or nest, you can contact the Non Native Species Secretariat immediately using their alert email address: alertnonnative@ceh.ac.uk giving as much detail as possible such as your name, the location where the hornet was found and if possible an image of the suspect hornet.
+          p Alternatively you can download an app to help you identify the report the hornet ( https://www.gov.uk/government/news/new-app-to-report- asian-hornet-sightings).
+          p A confirmed hornet sighting will trigger an eradication plan by the National Bee Unit, who are using the results of this research to help focus search efforts.
+          p The research, ‘Predicting the spread of the Asian hornet (Vespa velutina) following its incursion into Great Britain’, is published in Nature’s Scientific Reports.
+          p It is co-authored by researchers at the University of Warwick’s School of Life Sciences and Mathematics Institute, Fera, Newcastle University, and the Animal and Plant Health Agency.
+
+          h3 Centre for Ecology and Hydrology
+          p First pan-European field study shows neonicotinoid pesticides harm honeybees and wild bees
+          p 29 June 2017
+          p Researchers from the Centre for Ecology & Hydrology (CEH) publish results of a large-scale, field-realistic experiment to assess neonicotinoid impacts on honeybees and wild bees across Europe, in the peer-review journal Science today (29 June 2017).
+          p The experiment – undertaken in the UK, Germany and Hungary – exposed three bee species to winter oilseed rape crops treated with seed coatings containing neonicotinoid clothianidin, from Bayer CropScience, or Syngenta’s thiamethoxam.
+          p Neonicotinoid seed coatings are designed to kill pests such as the cabbage stem flea beetle, but were effectively banned in the EU in 2013 due to concerns regarding their impact on bee health.
+          p The researchers found that exposure to treated crops reduced overwintering success of honeybee colonies – a key measure of year-to- year viability – in two of the three countries. In Hungary, colony number fell by 24 percent in the following spring. In the UK, honeybee colony survival was generally very low, but lowest where bees fed on clothianidin-treated oilseed rape in the previous year.
+          p No harmful effects on overwintering honeybees were found in Germany.
+          p Lower reproductive success – reflected in queen number (bumblebees) and egg production (red mason bee) – was linked with increasing levels of neonicotinoid residues in the nests of wild bee species buff-tailed bumblebee ( Bombus terrestris) and the Red Mason Bee ( Osmia bicornis) across all three countries.
+          p According to the CEH lead author, Dr Ben Woodcock,
+          blockquote
+            p The neonicotinoids investigated caused a reduced capacity for all three bee species to establish new populations in the following year, at least in the UK and Hungary.
+          p He suggests the differing impacts on honeybees between countries may be associated with interacting factors including the availability of alternative flowering resources for bees to feed on in the farmed landscape as well as general colony health, with Hungarian and UK honeybees tending to be more diseased.
+          p In contrast, the hives in Germany happened to be larger, showed little evidence of disease and had access to a wider range of wild flowers to feed on. Dr Woodcock suggests that this may explain why in this country alone there was no evidence of a negative effect of neonicotinoids on honeybees.
+          p The study, spanning 2,000 hectares, equivalent to 3,000 full scale football pitches, took account of bee disease and surrounding landscape quality in addition to colony growth rate, worker mortality and overwinter survival.
+          p Dr Woodcock explains that,
+          blockquote
+            p Neonicotinoid seed dressings do have positive attributes: they target insects that damage the plant, can be applied to the seed at low dosage rates but protect the whole plant and reduce the need for broad spectrum insecticide sprays. Their use as an alternative chemical control option is also useful in controlling pests where insecticide resistance to other pesticides is already found, so play an important role to play in food production.
+          p In Dr Woodcock’s view,
+          blockquote
+            p There may be opportunities to mitigate negative impacts of neonicotinoid exposure on bees through improved honeybee husbandry or availability of flowering plants for bees to feed on across non-cropped areas of the farmed landscape. Both these issues require further research.
+          p He added,
+          blockquote
+            p The negative effects of neonicotinoids on wild bees may also be the result of diverse mechanisms of exposure that include persistent residues of neonicotinoids in arable systems due to their widespread and often very frequent use.
+          p Co-author Professor Richard Pywell, Science Area Lead, Sustainable Land Management at the Centre of Ecology & Hydrology, said,
+          blockquote
+            p Neonicotinoids remain a highly contentious issue with previous research on both honeybees and wild bees inconclusive.
+            p This latest field study was designed, as far as possible, to reflect the real world due to its size and scope. We therefore believe it goes a considerable way to explaining the inconsistencies in the results of past research, as we were better able to account for natural variation in factors like exposure to the pesticide, bee food resources and bee health for different bee species.
+            p Our findings also raise important questions about the basis for regulatory testing of future pesticides.
+          p Bayer CropScience and Syngenta funded the research assessing the impact of neonicotinoids on honeybees. The Natural Environment Research Council funded the analysis of the impact on the wild bees. The experiment, including design, monitoring and analysis, were scrutinised by an independent scientific advisory committee chaired by Professor Bill Sutherland of Cambridge University.
+          p Additional information
+          p Full paper reference: Woodcock, B A, Bullock, J M, Shore, R F, Heard, M S, Pereira, M G, Redhead, J, Ridding, L, Dean, H, Sleep, D, Henrys, P, Peyton, J, Hulmes, S, Hulmes, L, Sa ́rospataki, M, Saure, C, Edwards, M, Genersch, E, Knäbe, S & Pywell, R F. Country-specific effects of neonicotinoid pesticides on honeybees and wild bees, Science, VOL 356, ISSUE 6345, DOI: 10.1126/science.aaa1190 , published online 29 June 2017.
+          p Read the paper online at http://science.sciencemag.org/cgi/doi/10.1126/science.aaa1190
+
+
+          a(id='three')
+          h2 Parliamentary Questions
+
+
+        .dropdown
+          .dropdown__toggle
+            h2
+              a(href='#')
+                | References
+                span Show all 24 references
+          .dropdown__content
+
+
+    section
+      .container
+        .hr--thick.accent--commons
+          p
+            strong House of Commons Library publications
+          p Written by Nikki Sutherland and Emma Downing
+          p First published on November 10th 2017. #[+link('#', 'View all updates')]

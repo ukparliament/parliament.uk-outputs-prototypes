@@ -1,0 +1,208 @@
+extends ../../layouts/layout.pug
+
+block content
+  .version--one
+
+    .section--primary.background--cover
+      .container--full--width
+        img(src="../../images/bg--money.jpg" alt="")
+
+
+    section
+      .container
+        .block.accent--purple
+          span Last updated on November 27 2017
+          h1 The welfare cap
+          p This policy limits the total amount that Government can spend on certain benefits, including tax credits and housing benefit. Not to be confused with the household benefits cap which limits the amount individual households can receive.
+          p
+            strong 20 minute read
+
+          +buttonLink('#', 'Add to my briefings', 'btn--primary--inverse', 'download')(download)
+            //- include ../../../node_modules/parliamentuk-pugin/src/icons/download.svg
+          +buttonLink('#', 'Download', 'btn--primary--inverse', 'download')(download)
+            include ../../../node_modules/parliamentuk-pugin/src/icons/download.svg
+
+          .hr--thin.accent--grey-4
+            a.btn--grey(href='#') Benefits policy
+            a.btn--grey(href='#') Economic policy
+            a.btn--grey(href='#') Public expenditure
+
+
+    section#content
+      .container
+
+        ul.list--tab__panel
+          li#tab1.tab.active(aria-controls='tab_panel1', aria-selected='true')
+            a(href='#tab_panel1') Short read (3 minutes)
+          li#tab2.tab(aria-controls='tab_panel2', aria-selected='false')
+            a(href='#tab_panel2') Long read (20 minutes)
+
+        article#tab_panel1.tabPanel.active(aria-labelledby='tab1', aria-hidden='false')
+          p The welfare cap is a limit on the amount that government can spend on certain social security benefits and tax credits. The cap aims to better control spending in an area that can be difficult for government to control.
+          p The cap included 55% of total welfare spending in 2016/17. It excludes pensions and Jobseekers’ Allowance, but includes tax credits, child benefit and disability benefit.
+          p The cap was first introduced in Budget 2014 and the Office for Budget Responsibility (OBR) – the UK’s fiscal watchdog – first reported on whether the cap had been met or exceeded alongside Autumn Statement 2014. The operation of welfare cap is laid out in the Charter for Budget Responsibility – the document that sets out the Government’s policy and targets for the public finances.
+          p The Government revised its approach to the welfare cap in Autumn Statement 2016. The new approach, agreed by a vote in the House of Commons, means that spending on welfare must be within the cap and a margin in a single year chosen by the Treasury. The cap will only be formally assessed at the first Budget or first fiscal update of each new Parliament. The previous approach saw the OBR make a formal assessment at each Autumn Statement, and the cap applied for each year of the OBR’s forecast.
+          p At Autumn Budget 2017 the OBR made a formal assessment of the welfare cap, which at the time applied in 2021/22. The OBR judged that the terms of the welfare cap were being met.
+          p At Autumn Statement 2015 and Autumn Statement 2016 the OBR judged that the previous version of the welfare cap was being breached. A member of the Government had to come to the House of Commons on each occasion to explain why the breach of the cap was justified.
+          .block.theme--white
+            p Welfare cap vs. the household benefit cap
+            p The welfare cap on specified elements of social security spending is not to be confused with the household benefit cap – introduced in 2013 – which limits total household benefits at £500 per week for a family and £350 per week for a single person with no children (subject to certain exemptions). See our note on The Household Benefit Cap (SN06294) for more on this.
+
+        article#tab_panel2.tabPanel(aria-labelledby='tab2', aria-hidden='true')
+          .block.theme--grey-4
+            h2 Contents
+            nav(aria-label='Sections in this briefing')
+              ul.list--toc
+                li
+                  a(href='#one') What is the welfare cap? ‌
+                li
+                  a(href='#two') How does the welfare cap operate?
+                li
+                  a(href='#three') Pre-Autumn Statement 2016: the previous welfare cap
+                li
+                  a(href='#four') OBR formal assessment of previous welfare cap
+                li
+                  a(href='#five') Public finances background to the cap
+                li
+                  a(href='#six') Detailed OBR forecast of welfare spending (at Autumn Budget 2017)
+              p
+                a(href="#references") References
+
+
+          a(id='one')
+          h2 What is the welfare cap? ‌
+          p The welfare cap is a limit on the amount that government can spend on certain social security benefits and tax credits. The cap aims to better control spending in an area that can be difficult for government to control.
+          p Welfare spending within the scope of the cap and welfare spending outside of the cap are outlined in the following table from Autumn Budget 2017. 2 55% of welfare spending was included in the cap in 2016/17.
+
+
+          a(id='two')
+          h2 How does the welfare cap operate?
+          p The operation of the welfare cap (the cap) is set out in the Charter for Budget Responsibility (the Charter). 3 The Charter performs a few roles, one of which is setting out the Government's targets for the public finances, including the welfare cap. The Charter sets out how and when the welfare cap is set, how and when it will be assessed, and what happens if it is breached.
+
+          h3 How is the cap set?
+          p The Treasury sets the level of the cap and the year in which it will apply, at or before the first fiscal event of each new Parliament. At the same time the Treasury sets a pathway for relevant welfare spending in each year running up to year of the welfare cap. The Treasury also sets the percentage margin for the cap and pathway in each year.
+          p The Treasury set a new cap and pathway at Autumn Budget 2017, as it was the first fiscal event of the Parliament. The Treasury said that the welfare cap will apply in 2022/23. The cap in 2022/23 will be £130.1 billion, with a margin of £3.9 billion, making an effective cap of £134 billion. The margin is set as a percentage of either the pathway or the cap. In the year of the cap – 2022/23 – this margin is 3%.
+          p The Treasury set the cap and pathway in line with the Office for Budget Responsibility (OBR)’s forecast for welfare spending inside the cap, and the margin was set at a progressively larger percentage starting at 0.5% in 2017/18 and increasing to 3% in 2022/23.
+          p If the Treasury wishes to change any of its decisions about the year of the cap, level of the cap, the margin, or the items of spending included in the cap it will require the approval of the House of Commons.
+
+          h3 When will we know if the cap is met?
+          p The cap is formally assessed by the OBR at the first Budget or fiscal event of each new Parliament. The cap is only officially breached in this formal assessment if spending in the cap year is above the level of the cap and margin. If the current Parliament runs for the five years stipulated in the Fixed-terms Parliament Act, 4 we would expect the next formal assessment of the welfare cap to take place in 2022.
+          p The Charter says that when the OBR assesses the cap it should adjust its spending forecast to remove the impact of changes in inflation, according to a methodology of the Government’s choosing. 5
+          p The OBR monitors welfare spending against the pathway in each of its biannual forecasts leading up to the formal assessment, but this does not constitute a formal assessment of the cap.
+
+          h3 What happens if the cap is exceeded?
+          p If the OBR’s formal assessment shows that the welfare cap is breached, then the Secretary of State for Work and Pensions will either:
+          ul
+            li lay a paper before the House of Commons proposing government policy measures which will reduce welfare spending to within the level of the cap; or,
+            li the Secretary of State for Work and Pensions will explain to the House of Commons why a breach of the welfare cap is considered justified.
+          p A vote will then be held in the House of Commons, normally within 28 sitting days, on the suitability of the Secretary of State’s response to the breach.
+
+          h3 Has the welfare cap operated differently in the past?
+          p The current operation of the welfare cap was introduced at Autumn Statement 2016. 6 A previous version of the welfare cap – established at Budget 2014 – operated up to Autumn Statement 2016. 7
+          p Section 3 discusses the previous welfare cap. The key similarities and main differences between the current and previous approaches to the cap are summarised below:
+          ul
+            li The same welfare spending is included in both approaches.
+            li The OBR assesses performance against the cap in both approaches.
+            li The welfare cap only applies in one year – 2022/23 – under the current approach. The welfare cap covered each year of the OBR’s forecasts under the previous approach.
+            li The only formal assessment of the cap, in the current approach, will be made by the OBR in the first Budget or fiscal update of each new Parliament. A formal assessment was made at each Autumn Statement under the previous approach.
+          p The current approach allows the margin to be used for general pressures on welfare spending, as well as changes in the forecasts. The margin under the previous approach could only be used for volatility and fluctuations in the forecasts.
+
+
+          a(id='three')
+          h2 Pre-Autumn Statement 2016: the previous welfare cap
+          p The previous version of the welfare cap was introduced in Budget 2014 8 and the Office for Budget Responsibility (OBR) first reported on whether the cap had been met or exceeded alongside Autumn Statement 2014.
+
+          h3 Setting the previous cap
+          p The Treasury was required to set the level of the cap at or before the first Budget of each new Parliament. At the same time the Treasury would specify a margin above the cap to allow for volatility and fluctuations in the forecast.
+          p The cap was set for a five year period. The Treasury set a cap for an additional year each time the OBR added an additional year to its forecast, so that a five year period was always covered.
+          p If the Treasury wanted to change the list of benefits included in the cap, approval of the House of Commons was required.
+
+          h3 How did we know if the previous cap was met?
+          p The cap was a limit on the amount forecast to be spent, not the actual amount spent.
+          p At the time of each Autumn Statement, the OBR assessed whether the welfare cap was being met in each year of its forecast.
+          p If the forecasts were higher than the cap for any of the years to which the cap applied, then the cap was judged to have been exceeded.
+          p If spending within the scope of the cap was forecast to be above the level of the cap but within a pre-set margin (set at 2% above the cap level), and this was due to forecast changes rather than discretionary policy action, then the cap was not deemed to be breached. The OBR assessed whether any breach was due to forecast changes or policy action.
+
+          h3 What happened if the cap was exceeded?
+          p If the cap was judged to have been exceeded, then the government was to:
+          ul
+            li Propose policy measures to reduce welfare spending
+            li Seek approval for the cap level to be increased
+            li Explain why a breach of the cap is justified.
+          p A votable motion would follow in the House of Commons within 28 sitting days seeking approval for these actions.
+
+
+          a(id='four')
+          h2 OBR formal assessment of previous welfare cap
+          h3 Autumn Statement 2014
+          p The welfare cap was initially set in the 2014 Budget. The OBR made its first formal assessment around 9 months later at Autumn Statement 2014.
+          p The OBR assessed that the Government were on course to meet the welfare cap. The OBR’s forecast higher welfare cap spending – compared with its forecast at Budget 2014 – in 2015/16 and 2016/17. However, as this was because of forecast revisions and was within the permitted forecast margin the OBR were able to assess that the Government were on course to meet the welfare cap. 9
+
+          h3 Autumn Statement 2015
+          p Alongside the Autumn Statement 2015, the OBR stated that relevant welfare spending would breach the cap in 2016/17, 2017/18 and 2018/19. The OBR found that relevant spending would observe the cap in 2019/20 and 2020/21. The OBR stated that the breaches were due to the cancellation of proposed changes to tax credits that had been proposed in the Summer Budget 2015.
+          p Note that the welfare cap includes a ‘forecast margin’ which allows for breaches of 2% when changes to forecast mean relevant welfare spending exceeds the cap.
+          p The OBR assessment of performance against the cap by year is set out below: 10
+          ul
+            li 2016/17: Relevant welfare spending will be £4.0 billion above the cap level and £1.7 billion above the forecast margin, so the cap is set to be breached.
+            li 2017/18: Relevant welfare spending will be £3.1 billion above the cap level and £0.8 billion above the forecast margin, so the cap is set to be breached.
+            li 2018/19: Relevant welfare spending will be £1.9 billion above the cap level but £0.4 billion below the forecast margin. However, the OBR judges that the spending above the cap is due to policy decisions and is not driven by forecast changes, and therefore, the cap is set to be breached.
+            li 2019/20: Relevant welfare spending will be £1.8 billion above the cap but £0.5 billion below the forecast margin. The OBR judges that the cap is set to be observed because policy changes actually reduce relevant spending in that year. The technical breach of the cap is the result of classification changes.
+            li 2020/21: Relevant welfare spending will be £2.1 billion above the cap level but £0.2 billion below the forecast margin. The OBR judges that the cap will be observed because policy changes reduce relevant welfare spending, and technical breech is again due to classification changes.
+          p A breach of the cap meant that the matter was debated in the House of Commons, as set out in the Charter for Budget Responsibility: 11
+          p If the welfare cap is found to be breached in one or more of the years in which it applies, there will be a debate on a votable motion led by the Department for Work and Pensions, normally within 28 sitting days, giving an assessment of the reasons for the breach. The Department for Work and Pensions will:
+          ul
+            li propose government policy measures which will reduce welfare spending to within the level of the cap;
+            li seek approval for the level of the welfare cap and/or margin to be increased, along with an explanation of why this is considered to be justified; or
+            li explain why a breach of the welfare cap is considered justified.
+          p The following motion was debated in the House of Commons on 16 December 2015:
+          p That, pursuant to the Charter for Budget Responsibility: Summer Budget 2015 update, which was approved by this House on 14 October 2015, under Section 1 of the Budget Responsibility and National Audit Act 2011, this House agrees that the breach of the Welfare cap in 2016-17, 2017-18, and 2018-19 resulting from the decision not to pursue proposed changes to tax credits, as laid out in the Autumn Statement 2015, is justified and that no further debate will be required in relation to this specific breach. 12
+
+          h3 Autumn Statement 2016
+          p The OBR assessed new forecasts of spending within the previous cap alongside Autumn Statement 2016. The assessment was carried out, despite the government’s proposed revised welfare cap having been announced, because this was the version of the welfare cap included in the latest Charter for Budget Responsibility to be approved by the House of Commons.
+          p The OBR’s assessment was that the cap will be breached in each year of its forecast. 13
+          p A breach of the cap meant that the matter was debated in the House of Commons. The following motion was debated in the House of Commons on 12 December 2016:
+          blockquote
+            p That pursuant to the Charter for Budget Responsibility: Autumn 2015 update, which was approved by this House on 14 October 2015, under Section 1 of the Budget Responsibility and National Audit Act 2011, this House agrees that the breach of the Welfare Cap in 2019-20 and 2020-21, due to higher forecast inflation and spend on disability benefits, is justified and that no further debate will be required in relation to this specific breach.
+
+          h3 Autumn Statement 2017
+          p The OBR carried out a formal assessment of the welfare cap at Autumn Budget 2017. The cap assessed was that set in Autumn Statement 2016, which applied in 2021/22. The OBR deemed that the cap was met. Describing the table below the OBR said:
+          blockquote
+            p It shows that we have revised up spending since the cap was set a year ago, so that it is above the cap and the pathway to it from 2018-19 onwards. But the terms of the target have been met, with spending below the cap or pathway plus margin in all years, with or without the small adjustments for revisions to our inflation forecast. 14
+
+
+          a(id='five')
+          h2 Public finances background to the cap
+          p Beyond the political arguments for capping spending on welfare, there are fiscal reasons as to why the Coalition Government and current Government have employed a welfare cap.
+
+          h3 Fiscal consolidation
+          p Both the Coalition Government and the current Government have put ensuring the sustainability of the public finances, and reducing government borrowing – often described as the deficit – at the heart of their objectives for manging the public finances.
+          p Controlling spending across government has been a high priority and the cap on welfare spending is one measure that has been taken in order to achieve this.
+
+          h3 Control of public spending
+          p Government spending is classified as either Departmental Expenditure Limits (DEL) or Annually Managed Expenditure (AME):
+          ul
+            li DEL is spending which departments have direct control over and includes most elements of predictable spending, such as teacher’s salaries, or money used to fund most policy programmes
+            li AME is the less predictable elements of expenditure, such as spending on debt interest and spending on social security. All of the spending within the scope of the welfare cap is classified as AME.
+          p Historically, DEL has accounted for a greater proportion of public spending than AME. In recent years this has been reversed; in 2016/17, AME accounted for 54% of total spending.
+          p By setting a cap on a significant portion of AME spending it is hoped that it will be easier to control AME spending more easily in the future.
+
+
+          a(id='six')
+          h2 Detailed OBR forecast of welfare spending (at Autumn Budget 2017)
+
+        .dropdown
+          .dropdown__toggle
+            h2
+              a(href='#')
+                | References
+                span Show all 24 references
+          .dropdown__content
+
+
+    section
+      .container
+        .hr--thick.accent--commons
+          p
+            strong House of Commons Library publications
+          p Written by Matthew Keep
+          p First published on November 27 2017. #[+link('#', 'View all updates')]

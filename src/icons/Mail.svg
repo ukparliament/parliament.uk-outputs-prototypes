@@ -1,0 +1,16 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mail icon</title>
+    <defs>
+        <path d="M5,7 L12.0409613,7 L19,7 C19.5522847,7 20,7.44771525 20,8 L20,16 C20,16.5522847 19.5522847,17 19,17 L5,17 C4.44771525,17 4,16.5522847 4,16 L4,8 C4,7.44771525 4.44771525,7 5,7 Z" id="path-1"></path>
+    </defs>
+    <g id="Most-recent-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3467.000000, -1738.000000)">
+        <g id="Group-5" transform="translate(3467.000000, 1738.000000)">
+            <circle id="Oval-3" fill="#CBC9CD" cx="12" cy="12" r="12"></circle>
+            <g id="Rectangle-8">
+                <use fill="#2B57AB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#2B57AB" stroke-width="1" d="M5,7.5 C4.72385763,7.5 4.5,7.72385763 4.5,8 L4.5,16 C4.5,16.2761424 4.72385763,16.5 5,16.5 L19,16.5 C19.2761424,16.5 19.5,16.2761424 19.5,16 L19.5,8 C19.5,7.72385763 19.2761424,7.5 19,7.5 L5,7.5 Z"></path>
+            </g>
+            <polyline id="Line-6" stroke="#CBC9CD" stroke-linecap="square" points="4.5 7.5 12 11.5639556 19.5 7.5"></polyline>
+        </g>
+    </g>
+</svg>

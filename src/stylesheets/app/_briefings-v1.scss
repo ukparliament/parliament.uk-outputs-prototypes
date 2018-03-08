@@ -1,0 +1,425 @@
+
+.has-js .version--one {
+  /*--- Tab panel [_list-styles.scss] ---*/
+  .list--tab__panel {
+    display: block;
+  }
+
+  /*---App: List--tab--panel ---*/
+  .tabPanel[aria-hidden="true"] {
+    @extend .visually-hidden;
+    overflow: hidden;
+  }
+  .tabPanel[aria-hidden="false"] {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.version--one {
+
+  /*--- Container [_content-layouts.scss] ---*/
+
+  .container--full--width {
+    width: 100%;
+  }
+
+  [class*="block"][class*="accent"] {
+    h1:after {
+      content: none;
+    }
+  }
+
+
+  /*--- Background Image component [_highlight.scss] ---*/
+
+  @mixin block--background {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  .background--cover {
+    @include block--background;
+
+    img {
+      display: block;
+      height: 396px;
+      object-fit: cover;
+    }
+  }
+
+  .background--cover + section {
+    margin-top: -216px;
+  }
+
+
+  /*--- App Accent [_accents.scss] ---*/
+
+  .block,
+  .hero,
+  .hint,
+  [class*="hr--"],
+  .status--banner,
+  .status--highlight {
+    &.accent--purple {
+      @include accent($purple);
+    }
+    &.accent--commons {
+      @include accent($commons);
+    }
+    &.accent--commons__dark {
+      @include accent($commons--dark);
+    }
+    &.accent--grey-1 {
+      @include accent($grey-1);
+    }
+    &.accent--lords {
+      @include accent($lords);
+    }
+    &.accent--lords__dark {
+      @include accent($lords--dark);
+    }
+  }
+
+
+  /*--- Theme [_highlight.scss] ---*/
+
+  .status--highlight {
+    margin-left: $base-spacing-unit-tiny;
+    padding: $base-spacing-unit-tiny;
+  }
+
+  /*--- Theme Backgrounds [background-colour, typography, link-colour, accent-colour] ---*/
+
+.section--primary {
+  &.theme--deep-purple {
+    @include theme($deep-purple, $grey-5, $grey-5, $grey-3, $deep-purple--light);
+  }
+  &.theme--deep-purple--light {
+    @include theme($deep-purple--light, $grey-5, $grey-5, $grey-3, $deep-purple);
+  }
+  &.theme--grey-3 {
+    @include theme($grey-3, $grey-1, $link, $link-hover, $grey-1);
+  }
+  &.theme--grey-4 {
+    @include theme($grey-4, $grey-1, $link, $link-hover, $grey-1);
+  }
+  &.theme--grey-5 {
+    @include theme($grey-5, $grey-1, $link, $link-hover, $grey-1);
+  }
+  &.theme--mint {
+    @include theme($mint, $grey-1, $deep-purple, $grey-2, $mint--light);
+  }
+  &.theme--mint--light {
+    @include theme($mint--light, $grey-1, $deep-purple, $grey-2, $mint);
+  }
+  &.theme--purple {
+    @include theme($purple, $grey-5, $grey-5, $purple--light, $purple--light);
+  }
+  &.theme--purple--light {
+    @include theme($purple--light, $grey-1, $deep-purple, $grey-2, $purple);
+  }
+  &.theme--white {
+    @include theme($white, $grey-1, $link, $link-hover, $mint);
+  }
+
+  /*--- Theme Status Colours ---*/
+
+  &.theme--caution {
+    @include theme($caution--light, $grey-1, $deep-purple, $grey-2, $caution);
+  }
+  &.theme--caution--light {
+    @include theme($caution, $grey-1, $deep-purple, $grey-2, $caution--light);
+  }
+  &.theme--success {
+    @include theme($success--light, $grey-1, $deep-purple, $grey-2, $success);
+  }
+  &.theme--warning {
+    @include theme($warning--light, $grey-1, $deep-purple, $grey-2, $warning);
+  }
+  &.theme--vibrant--yellow {
+    @include theme($vibrant__yellow, $grey-1, $deep-purple, $grey-2, $vibrant__yellow--dark);
+  }
+
+  &[class*="theme--"] {
+    padding-bottom: $base-spacing-unit-large;
+  }
+}
+
+
+
+  /*--- Tab panel [_list-styles.scss] ---*/
+
+  .list--tab__panel {
+    @include list--inline;
+    border-bottom: 1px solid $grey-3;
+    display: none;
+    margin-bottom: $base-spacing-unit-small;
+    position: relative;
+
+    a:active,
+    a:focus,
+    a:hover {
+      background: none;
+      outline: none;
+    }
+
+    li {
+      margin-bottom: -1px;
+      margin-right: $base-spacing-unit;
+
+      a {
+        border: 1px solid transparent;
+        padding: ($base-spacing-unit + 2);
+        text-decoration: none;
+      }
+
+      &[aria-selected="true"] {
+        background-color: $grey-5;
+        a,
+        a:focus,
+        a:hover {
+          border: 1px solid $grey-3;
+          border-bottom-color: transparent;
+          cursor: default;
+          color: $grey-1;
+          font-weight: 800;
+        }
+      }
+    }
+
+    li.last-child {
+      position: absolute;
+      right: 0;
+      label {
+        @include screenreader;
+      }
+      input, button {
+        background: none;
+        border: none;
+      }
+      button {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .list--toc {
+    list-style-type: none;
+    margin-left: 0;
+    position: relative;
+
+    &:after {
+      background-color: $grey-1;
+      bottom: -36px;
+      content: '';
+      height: 1px;
+      left: 0;
+      margin-bottom: 22px;
+      margin-top: 22px;
+      position: absolute;
+      width: 60px;
+    }
+
+    li {
+      line-height: 40px;
+    }
+  }
+
+
+  /*---App: List--tab--panel ---*/
+
+  .tabPanel[aria-hidden="true"] {
+    height: auto;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+  }
+
+
+  /*--- Links ---*/
+  .dropdown {
+    margin-bottom: ($base-spacing-unit-large * 3);
+  }
+
+  .dropdown__toggle a {
+    // position: relative;
+
+    &:after {
+      content: none;
+    }
+
+    span {
+      position: absolute;
+      right: 18px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-top: 6px solid $grey-1;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        margin-left: -14px;
+        top: calc(50% - 3px); // Vertical centering (50% of the parent div height - (arrow size / 2))
+      }
+    }
+  }
+
+  .open .dropdown__toggle a {
+    // &:after {}
+
+    span {
+      &::before {
+        border-top: none;
+        border-bottom: 6px solid $grey-1;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        top: calc(50% - 3px); // Vertical centering (50% of the parent div height - (arrow size / 2))
+      }
+    }
+  }
+
+
+  /*--- Misc. ---*/
+  nav.toc {
+    a,
+    a:link {
+      text-decoration: none;
+    }
+  }
+
+  [class*="hr--"] {
+    &[class*="accent"] {
+      border-top-style: solid;
+      margin-top: $base-spacing-unit-tiny;
+      padding-top: $base-spacing-unit-tiny;
+    }
+  }
+  [class*="hr--thin"] {
+    border-top-width: 1px;
+  }
+  [class*="hr--thick"] {
+    border-top-width: $base-spacing-unit;
+  }
+
+}
+
+
+.version--one.gateway--type {
+  /*--- Grid ---*/
+  @mixin grid($columns, $width) {
+    // padding: $base-spacing-unit;
+    width: 100%;
+    @include media($tablet) {
+      width: calc(100% / #{$columns} * #{$width} - 5px);
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: $base-spacing-unit-small;
+
+    article {
+      @include grid(12, 4);
+      margin-bottom: $base-spacing-unit;
+    }
+
+    article.core {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      .feature--img {
+        @include grid(12, 8);
+        order: 2;
+      }
+      .content {
+        @include grid(12, 4);
+        order: 1;
+      }
+    }
+
+    .list--content {
+      @include grid(12, 8);
+    }
+    .list--type {
+      @include grid(12, 4);
+    }
+
+  }
+
+  .article--inline article {
+    border-bottom: 1px solid $grey-4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: $base-spacing-unit-small;
+    padding-bottom: $base-spacing-unit;
+
+
+    .feature--img,
+    .head,
+    .content {
+      @include grid(12, 4);
+    }
+
+    .feature--img {
+      order: 3;
+    }
+    .head {
+      order: 1;
+      h3 {
+        margin-top: 0;
+      }
+    }
+    .content {
+      order: 2;
+    }
+  }
+
+  [class*="list--"] .grid {
+    margin-bottom: 0;
+  }
+
+  .briefingSearch {
+    label:nth-of-type(2) {
+      @extend .visually-hidden;
+      display: none;
+    }
+
+    select {
+      display: inline-block;
+      margin-bottom: 0;
+      min-height: 48px;
+      width: auto;
+
+      appearance: none;
+      // background: transparent;
+      // background-image: url('data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==');
+      // background-position: 5px 50%;;
+      // background-repeat: no-repeat;
+      background: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 5px 50%;
+      padding-left: 25px;
+    }
+    select::-ms-expand {
+      display: none; /* IE hack, remove default arrow on ie10 and ie11 */
+    }
+    select,
+    option {
+      background-color: $grey-4;
+    }
+  }
+
+  .block--mint {
+    background-color: $mint;
+    padding: 0 $base-spacing-unit-small;
+  }
+
+}

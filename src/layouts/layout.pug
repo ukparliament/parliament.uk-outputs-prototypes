@@ -1,7 +1,9 @@
 doctype html
 html(lang="en")
   include ../../node_modules/parliamentuk-pugin/src/elements/head.pug
-  body.no-js
+  body
+    script.
+      document.body.className = ((document.body.className) ? document.body.className + ' has-js' : 'has-js');
     include ../../node_modules/parliamentuk-pugin/src/elements/_elements.pug
     //include ../../node_modules/parliamentuk-pugin/src/components/status.pug
     include ../../node_modules/parliamentuk-pugin/src/components/header.pug
