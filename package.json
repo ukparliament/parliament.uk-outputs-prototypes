@@ -1,0 +1,18 @@
+{
+  "name": "parliamentuk-outputs",
+  "version": "0.0.1",
+  "description": "UK Parliament Outputs prototypes",
+  "author": "UK Parliament",
+  "license": "MIT",
+  "engines": {
+    "node": "7.x"
+  },
+  "scripts": {
+    "postinstall": "make install",
+    "start": "make serve"
+  },
+  "devDependencies": {
+    "express": "^4.15.4",
+    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git"
+  }
+}

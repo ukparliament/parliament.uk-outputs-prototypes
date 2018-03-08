@@ -1,0 +1,10 @@
+_public
+node_modules
+parliament-fonts
+npm-debug.log
+reports
+.sass-cache
+.DS_Store
+.idea/
+.vscode/
+package-lock.json

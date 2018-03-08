@@ -1,0 +1,36 @@
+extends ../layouts/layout.pug
+
+block content
+  #content.hero.theme--white.accent--caution
+    .container
+      // Page Title
+      h1 Pugin
+        span Composition
+      p Welcome to Pugin Composition, the UK Parliament Bootstrap Node Application. This application inherits #[+link('https://github.com/ukparliament/parliament.uk-pugin', 'Pugin')]; the UK Parliament brand, its components and mixins enabling rapid prototyping and consistent branding across Parliamentary projects.
+
+
+  section
+    .container
+      h2 List Block
+      p Examples illustrating rendering a list block and list pipe.
+
+      ol.list--block
+        +list--block__generic('Heading for awesome list block item', 'This list item is using the +list--block__generic mixin.')
+        li
+          figure
+            +link('#', '')(tabIndex=-1)
+              picture
+                +image('http://via.placeholder.com/100x100', 'image')
+          .list--details
+            h2 #[+link('#', 'Heading for awesome list block item')]
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas neque vel orci pharetra, maximus mattis nibh cursus.
+
+      h2 Pipe list
+      ol.list--pipe
+        +list--block__generic('Heading for awesome list pipe item', 'This list item is using the +list--block__generic mixin')
+        li
+          figure
+            +image('http://via.placeholder.com/100x100', 'image')
+          .list--details
+            h2 #[+link('#', 'Heading for awesome list pipe item')]
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas neque vel orci pharetra, maximus mattis nibh cursus.
