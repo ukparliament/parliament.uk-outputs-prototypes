@@ -17,7 +17,7 @@ block content
       .block.theme--grey-5
         +form('javascript:console.log("reference search submitted")', 'post')
           .input-group
-            +input('text', 'Search for a reference', 'q', 'search_box')(maxlength='1000', pattern='^(?!.*<script|<Script).*$', required)
+            +input--text('q', 'search_box', 'Search for a reference')(maxlength='1000', pattern='^(?!.*<script|<Script).*$', required)
             button(type='submit', class='btn--white', data-tracking='search')
               include ../../../node_modules/parliamentuk-pugin/src/icons/search.svg
       .block.theme--grey-5(role="main")

@@ -10,10 +10,9 @@ block content
 
         +form('javascript:console.log("briefings search submitted")', 'post')(class='briefingSearch')
           .input-group
-            +input('text', 'Search for a briefing, collection or topic', 'briefing', 'briefingSearch')(maxlength='1000', pattern='^(?!.*<script|<Script).*$')
+            +input--text('briefing', 'briefingSearch', 'Search for a briefing, collection or topic')(maxlength='1000', pattern='^(?!.*<script|<Script).*$')
             +select('Select a search filter', 'filterID', 'filterName')
               +option('on any date')
-            //- button [value, style, type, datatype]
             +button('Search', 'btn--primary', 'submit', 'search')
 
 

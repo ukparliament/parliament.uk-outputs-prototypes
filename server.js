@@ -11,6 +11,11 @@ app.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname, '/_public/templates/index.html'));
 });
 
+// temp: @dana usrt
+app.get('/research', function (req, res) {
+  res.sendFile(path.join(__dirname, '/_public/templates/briefings-v4/brief.html'));
+});
+
 // requested views
 // using regexp to match request to path
 app.get(/([^\/]+)$/g, function(req, res) {
