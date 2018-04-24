@@ -2,6 +2,9 @@
 @import 'node_modules/parliamentuk-pugin/src/stylesheets/main.scss';
 
 // Import app overrides
-@import 'app/_briefings-v1.scss';
-@import 'app/_briefings-v2.scss';
-@import 'app/_briefings-v3.scss';
+@import 'app/briefings-v1';
+@import 'app/briefings-v2';
+@import 'app/briefings-v3';
+@import 'app/briefings-v4';
+
+@import 'app/shame';

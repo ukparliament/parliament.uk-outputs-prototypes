@@ -100,7 +100,7 @@
             // toggled.classList.add('show');
           } else {
             toggled.style.display = 'none';
-            // toggled.classList.remove('show');
+            // toggled.classList.remove('hide');
           }
 
         };
