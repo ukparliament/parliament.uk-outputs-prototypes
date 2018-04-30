@@ -1,0 +1,51 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li.active
+          span Industrial strategy
+
+block content
+
+  .container
+    .flex--2__2-1.block--border__bottom
+      article(tabindex=0)#content
+        header
+          h1 House of Lords: largest votes ever recorded
+          p
+            span.typography--heavy House of Lords Library Research
+            br
+            | Published on 24 April 2018
+          +buttonLink('http://researchbriefings.files.parliament.uk/documents/LIF-2017-0023/LIF-2017-0023.pdf', 'Download as a PDF (1.2MB)', 'btn--primary', 'download')(download)
+            include ../../icons/download.svg
+
+        div(role='main')
+          h2 Summary
+          p.typography--heavy This House of Lords Library Briefing provides information about the largest votes that have taken place in the House of Lords.
+          p On 7 March 2017, the House of Lords voted at report stage on the European Union (Notification of Withdrawal) Bill by 366 votes to 268 to agree to an amendment moved by Lord Pannick (Crossbench). In total 634 Members voted, almost 4 in 5 of those eligible to do so at the time of the vote. This is the largest total number of Members voting in a single division on record.
+          p This beat the largest vote of 621 previously recorded on 14 July 1993. On this occasion, Members voted by 445 to 176 against an amendment to the European Communities (Amendment) Bill, which would have required a referendum to be held. The Times called it the “biggest turnout of peers in modern times”. In terms of the proportion of Members eligible to vote at that time, this represented about three in five. Until 2017, the 1993 vote was thought to have been the largest since 1831. This has been widely assumed to mean a larger vote took place in 1831, possibly on the ‘Great Reform Bill’. However, the House was not large enough at that time to vote in such numbers: figures available for 1830 suggest the House had 399 Members. However, in rejecting the ‘Great Reform Bill’ on 7 October 1831 a total of 357 Members voted. On the basis that the House had around 400 Members in 1831 this would have equated to almost nine in ten of Members voting in that division.
+          p.typography--heavy Votes over 500 Members since 1999
+          p The following table provides details of votes held since the House of Lords Act 1999 where the number of Members voting totalled more than 500.
+
+
+        footer
+          ul.list--inline
+            li.visually-hidden(aria-hidden='true')
+              .list--details
+                include ../../icons/print.svg
+                +link('#', 'Print this page').btn--print
+
+  section
+    .container
+      h2 Related topics
+      a.btn--grey(href='#') House of Lords
+      a.btn--grey(href='#') Parliamentary procedure
+
+  section
+    .container
+      .block.theme--lords
+        h2.beta House of Lords Library research LLN-2018-0048
+        p Written by Matthew Purvis

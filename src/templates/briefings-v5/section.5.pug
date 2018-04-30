@@ -1,0 +1,277 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        li.active
+          span Airspace modernisation
+
+block content
+
+  .container
+    .flex--2__2-1
+      header
+        h1 Airspace modernisation
+    .article--wrapper
+      article(tabindex=0)#content
+        //- header
+        //-   h1 Airspace modernisation
+
+        div(role='main')
+          h3#why-is-it-needed Why is it needed?
+          p
+            | Airspace is in need of modernisation. Many of its elements have remained unchanged for 40 years. These include infrastructure and procedures supporting landing and take-off and the location of flightpaths and holding stacks.
+            a#ref69(href='#fn69')
+              span [69]
+            | Aviation has undergone huge changes, including a hundred-fold increase in demand.
+            a#ref70(href='#fn70')
+              span [70]
+            | The CAA says that the UK&rsquo;s airspace system has become, &ldquo;complex and increasingly difficult to manage as it has been changed to meet different demands In order to meet future demand safely and efficiently a radical rethink is required&rdquo;.
+            a#ref71(href='#fn71')
+              span [71]
+          p
+            | The impact of antiquated airspace on flight delays was set out by the DfT in a February 2017 report:
+          blockquote
+            p
+              | In 2015, a lack of airspace capacity resulted in 78,000 minutes of flight delays (equivalent to 54 days of total delay and an average of 9 minutes per delayed flight). These delays, whilst not substantial, are however forecast to grow to 1 million minutes by 2020 if airspace upgrades are not delivered as a matter of urgency (equivalent to 694 days and an average of 15 minutes per delayed flight). At this level, approximately 1 in 10 flights from UK airports would be delayed by more than half an hour with delay 13 times more than that experienced in 2015, an increase of 1200%.
+            p
+              | Looking forward to 2030, the NATS analysis predicts that air traffic delays will increase to 5.6 million minutes a year (3,889 days or an average of 26.5 minutes per delayed flight), as traffic grows to an expected 3.25 million flights. If delays reach this level, more than 1 in 3 flights from all UK airports are expected to depart over half an hour late and the average delay would be 72 times more than in 2015, an increase of 7100%.
+              a#ref72(href='#fn72')
+                span [72]
+          h3#how-is-airspace-modernised How is airspace modernised?
+          p
+            | Modernisation has to be cross-industry. It involves airlines, airports, air navigation service providers and other aviation stakeholders. They need to work together to bring in the use of modern technologies and procedures. Modernisation affects every phase of flight - en-route, terminal and runway environments.
+            a#ref73(href='#fn73')
+              span [73]
+          p
+            | Switching from traditional ground-based navigation to a satellite-based system is essential to modernisation. This can improve the flight efficiency of aircraft. For example, by reducing the separation distances of aircraft and can enable the use of best practice.
+            a#ref74(href='#fn74')
+              span [74]
+            | Flying more precise routes on different days will help airspace controllers be more accurate in controlling when planes fly.
+          p
+            | Current flight paths are typically 1.5km wide. Advanced satellite navigation produces more precision. It is capable of fitting two aircraft within a single existing flight path.
+            a#ref75(href='#fn75')
+              span [75]
+            | What this means is that communities under current flight paths will experience less traffic. This will be possible by rotating paths during different periods of the day. Concentration, however, can have a significant downside for those living under those paths.
+            a#ref76(href='#fn76')
+              span [76]
+          h3#controlling-noise-concentration Controlling noise concentration
+          p
+            | Satellite navigation allows aircraft to fly more accurately than with previous navigation techniques. These more precise flight paths will see a reduction in the average noise levels per flight.
+          p
+            | The redistribution of noise between areas may lead to more disruption for some living under flight paths. It will create new, more frequent or concentrated noise. This may increase general annoyance, sleep disturbance, lower levels of productivity and health.
+            a#ref77(href='#fn77')
+              span [77]
+          p
+            | The Government aims to limit and where possible reduce the number of people in the UK affected by aircraft noise. This has meant a priority has been placed on reducing the overall number of people over flown.
+            a#ref78(href='#fn78')
+              span [78]
+          p The DfT has summarised how to deal with this problem in #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')].
+          p
+            | New technology can also track aircraft from a departure point and directed to adjust speed to make the best possible use of airspace. For example, an aircraft might be instructed to slow down in its cruise and descent phases to absorb a delay. Or stay higher for longer and only descend when the airport is ready.
+            a#ref79(href='#fn79')
+              span [79]
+          p
+            | Modernisation also involves the introduction of improved airspace procedures. For example, procedures would allow for reduced use of holding stacks which would create more airspace. This will enable aircraft to adopt a smoother and more continuous climb profile. This will reduce engine noise.
+            a#ref80(href='#fn80')
+              span [80]
+          p
+            | Modified airspace and flight paths mean aircraft can arrive and depart at steeper angles than before. They reach a fuel-efficient cruising height much sooner in their journey.
+            a#ref81(href='#fn81')
+              span [81]
+            | This reduces their noise footprint and CO2 emissions.
+            | Greater systemisation and the use of vectoring practices will decline as modernisation progresses. The DfT explains:
+          p
+            | &mldr;trials of new navigational technology have shown that intervention by controllers at the early stages of the departure flight path are much reduced, possibly by as much as 90%. So there would be a gradual reduction in the overall amount of vectoring as modern routes are implemented on departures, and the potential realised for much less direct controller intervention on arrivals in the future.
+            a#ref82(href='#fn82')
+              span [82]
+
+
+      aside
+        p Part of #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        .block
+          nav.navigation--related
+            ul
+              li
+                +link('/templates/briefings-v5/section.1.html', 'An introduction to airspace')
+              li
+                +link('/templates/briefings-v5/section.2.html', 'Airspace management')
+              li
+                +link('/templates/briefings-v5/section.3.html', 'Airspace standards and regulation')
+              li
+                +link('/templates/briefings-v5/section.4.html', 'Planning airspace change')
+              li.active
+                | Airspace modernisation
+              li
+                +link('/templates/briefings-v5/section.6.html', 'Policy progress and modernisation')
+
+  div
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          nav.navigation--article
+            ul.list--2
+              li
+                a(href='/templates/briefings-v5/section.4.html')
+                  span.link-direction(aria-hidden='true') &lt; Previous
+                  span.link-title Planning airspace change
+              li
+                a(href='/templates/briefings-v5/section.6.html')
+                  span.link-direction(aria-hidden='true') Next &gt;
+                  span.link-title Policy progress and modernization References
+
+        ul.list--inline
+          li.visually-hidden(aria-hidden='true')
+            .list--details
+              include ../../icons/print.svg
+              +link('#', 'Print this page').btn--print
+
+  section
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          .footnotes
+            h2 References
+            ol
+              li#fn69
+                a(href='#ref69')
+                  span linkText
+                  span 69
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Ibid., para 3.5
+              li#fn70
+                a(href='#ref70')
+                  span linkText
+                  span 70
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | CAA,
+                    em
+                      span Future Airspace Strategy: Deployment Plan
+                    | , Level 1, iteration 3, version 1.2, December 2012, p11
+              li#fn71
+                a(href='#ref71')
+                  span linkText
+                  span 71
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | CAA,
+                    em
+                      span Future Airspace Strategy, in focus briefing
+                    | , May 2011, p1
+              li#fn72
+                a(href='#ref72')
+                  span linkText
+                  span 72
+                  include ../../icons/download.svg
+                div.reference--text
+                  p DfT, #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], 2 February 2017, p7
+              li#fn73
+                a(href='#ref73')
+                  span linkText
+                  span 73
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Op cit.,
+                    em
+                      span Future Airspace Strategy: Deployment Plan
+                    | , p16
+              li#fn74
+                a(href='#ref74')
+                  span linkText
+                  span 74
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | e.g. a Continuous Descent Approach (CDA), which involves an aircraft descending towards an airport in a gradual, uninterrupted approach with the engine power cut back; for more see: Eurocontrol,
+                    em
+                      span A guide to implementing Continuous Descent
+                    | , October 2011
+              li#fn75
+                a(href='#ref75')
+                  span linkText
+                  span 75
+                  include ../../icons/download.svg
+                div.reference--text
+                  p Heathrow Airport, #[+link('http://www.heathrow.com/noise/airspace-modernisation/modernising-uk-airspace/modern-aircraft-and-technologies', 'Modern aircraft and technologies')] [accessed 29 March 2017]
+              li#fn76
+                a(href='#ref76')
+                  span linkText
+                  span 76
+                  include ../../icons/download.svg
+                div.reference--text
+                  p See, e.g. &ldquo; #[+link('http://hacan.org.uk/blog/?p=470', 'Flight paths for people on the way?')] HACAN Clearskies blog, 2 April 2016
+              li#fn77
+                a(href='#ref77')
+                  span linkText
+                  span 77
+                  include ../../icons/download.svg
+                div.reference--text
+                  p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], para 1.27
+              li#fn78
+                a(href='#ref78')
+                  span linkText
+                  span 78
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Ibid., para 11.2
+              li#fn79
+                a(href='#ref79')
+                  span linkText
+                  span 79
+                  include ../../icons/download.svg
+                div.reference--text
+                  p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p23
+              li#fn80
+                a(href='#ref80')
+                  span linkText
+                  span 80
+                  include ../../icons/download.svg
+                div.reference--text
+                  p As NATS explains: &ldquo;holding stacks are the airport&rsquo;s &lsquo;waiting rooms&rsquo; for arriving aircraft. Whenever aircraft cannot proceed to land immediately, flights enter at the top of the stack &ndash; usually at around 11 or 12 thousand feet before gradually spiralling down to 7,000ft.&rdquo;, from: &ldquo; #[+link('http://nats.aero/blog/2016/05/is-this-the-end-of-stack-holding/', 'Is this the end of stack holding?')]
+                    | &rdquo;,
+                    em NATS blog
+                    | , 20 May 2016
+              li#fn81
+                a(href='#ref81')
+                  span linkText
+                  span 81
+                  include ../../icons/download.svg
+                div.reference--text
+                  p Heathrow Airport, #[+link('http://www.heathrow.com/noise/airspace-modernisation/modernising-uk-airspace/modern-aircraft-and-technologies', 'Modern aircraft and technologies')] [accessed 29 March 2017]
+              li#fn82
+                a(href='#ref82')
+                  span linkText
+                  span 82
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Ibid., p31
+
+  section
+    .container
+      h2 Related topics
+      a.btn--grey(href='#') Airspace
+      a.btn--grey(href='#') Transport
+      a.btn--grey(href='#') Infrastructure
+      a.btn--grey(href='#') Aviation
+      a.btn--grey(href='#') Technology
+      a.btn--grey(href='#') Heathrow Expansion
+      a.btn--grey(href='#') Travel
+      a.btn--grey(href='#') Defense and aerospace industry
+      a.btn--grey(href='#') European Union
+
+  section
+    .container
+      .block.theme--commons
+        h2.beta House of Commons Library research CBP-7682
+        p Written by Louise Butcher

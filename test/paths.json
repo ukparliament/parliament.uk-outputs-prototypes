@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "timeouts": 1000
+  },
+  "urls": [
+    "http://localhost:5000/templates/briefings-v5/pdf.html",
+    "http://localhost:5000/templates/briefings-v5/summary.html",
+    "http://localhost:5000/templates/briefings-v5/section.1.html",
+    "http://localhost:5000/templates/briefings-v5/section.2.html",
+    "http://localhost:5000/templates/briefings-v5/section.3.html",
+    "http://localhost:5000/templates/briefings-v5/section.4.html",
+    "http://localhost:5000/templates/briefings-v5/section.5.html",
+    "http://localhost:5000/templates/briefings-v5/section.6.html",
+    "http://localhost:5000/templates/briefings-v5/brief.html"
+  ]
+}

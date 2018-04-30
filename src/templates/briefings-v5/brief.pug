@@ -1,0 +1,1874 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li.active
+          span Modernising UK airspace
+
+block content
+
+  .container.flex--2__2-1
+    //- .article--wrapper
+    article(tabindex=0)#content
+      header
+        h1 Modernising UK airspace
+        p
+          span.typography--heavy House of Commons Library Research
+          br
+          | Last edited on 2 April 2017
+
+        ul.list--inline
+          li
+            .list--details
+              include ../../icons/download.svg
+              +link('#', 'Download as a PDF (1.2MB)')
+          li.visually-hidden(aria-hidden='true')
+            .list--details
+              include ../../icons/print.svg
+              +link('#', 'Print research').btn--print
+
+      .article--nav
+        nav(aria-label='Sections in this analysis')
+          .block--border__bottom
+            h2 Contents
+            .toc--wrapper
+              span.article--title Modernising UK airspace
+              ol.list--toc
+                li
+                  //- #[+link('#as1', 'Overview')]
+                  a(href="#as1")
+                    span(aria-hidden='true')
+                    | Overview
+                li
+                  //- #[+link('#as2', 'What is airspace?')]
+                  a(href="#as2")
+                    span(aria-hidden='true')
+                    | What is airspace?
+                li
+                  //- #[+link('#as3', 'Who manages airspace?')]
+                  a(href="#as3")
+                    span(aria-hidden='true')
+                    | Who manages airspace?
+                li
+                  //- #[+link('#as4', 'Airspace standards and regulation')]
+                  a(href="#as4")
+                    span(aria-hidden='true')
+                    | Airspace standards and regulation
+                li
+                  //- #[+link('#as5', 'Planning airspace change')]
+                  a(href="#as5")
+                    span(aria-hidden='true')
+                    | Planning airspace change
+                li
+                  //- #[+link('#as6', 'Airspace modernisation')]
+                  a(href="#as6")
+                    span(aria-hidden='true')
+                    | Airspace modernisation
+                li
+                  //- #[+link('#as7', 'Policy progress and modernization')]
+                  a(href="#as7")
+                    span(aria-hidden='true')
+                    | Policy progress and modernization
+                li
+                  //- #[+link('#as8', 'References')]
+                  a(href="#as8")
+                    span(aria-hidden='true')
+                    | References
+                li
+                  //- #[+link('#as9', 'Related topic')]
+                  a(href="#as9")
+                    span(aria-hidden='true')
+                    | Related topic
+              +buttonLink('#', 'Show contents', 'btn--toggle')
+
+      div(role='main')
+        section#as1
+          h2 Overview
+          P UK airspace is a network of corridors or airways. It is the volume of space above ground level that extends as far as planes can fly. It is either &lsquo;controlled&rsquo; or &lsquo;uncontrolled&rsquo;. Air Traffic Control (ATC) manages aircraft in controlled airspace through a system of structured routes. Uncontrolled airspace is not managed from the ground. Planes have to &ldquo;see and avoid&rdquo; other aircraft and navigate on their own.
+          p Three organisations have responsibility for UK airspace. The Department of Transport manages aviation policy. It creates airspace laws and policy within international and European standards and requirements. The Civil Aviation Authority (CAA) is the UK&rsquo;s aviation regulator. It plans and regulates all UK airspace. National Air Traffic Services (NATS) provides en-route air traffic services to planes flying in UK airspace.
+          p The UK is a member of the International Civil Aviation Organisation (ICAO). Members of the ICAO agree regulations and international standards on a range of issues including access and use of airspace. EU laws put in place several of ICAO&rsquo;s resolutions. The EU&rsquo;s main initiative, the Single European Sky (SES) was launched in 1999. Its aim was to reform the European air traffic management and increase the efficiency of the European air transport system.
+          figure
+            img(src='../../images/air_traffic_controller.jpg', alt='An example of an air traffic control tower at London Heathrow')
+            figcaption An example of an air traffic control tower at London Heathrow.
+          p The UK and Ireland are working together to meet SES requirements through its Future Airspace Strategy. Published in 2011, the strategy aims to modernise UK airspace by 2030. The biggest changes are likely to come in the south east of England where 5 airports and many aerodromes create much of the world&rsquo;s air traffic.
+          p In February 2017 the DoT published a consultation on UK airspace policy reform. In October the government said it would proceed with most of the proposals in the paper. This included proposals for an Independent Commission on Civil Aviation Noise which would:
+          ul
+            li provide ways for industry to assess noise
+            li help industry manage change by providing best route options
+            li bring compensation for airspace changes in line with changes to aviation infrastructure
+          p New Air Navigation Guidance took effect from 1 January 2018. The new airspace change process began on 2 January under #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf#page%253D141', 'CAP 1616')].
+
+          .video-wrap#videotarget
+          script(src="https://cdnapisec.kaltura.com/p/2406281/sp/240628100/embedIframeJs/uiconf_id/42689141/partner_id/2406281")
+          script.
+            kWidget.embed({
+              'targetId': 'videotarget',
+              'wid': '_2406281',
+              'uiconf_id' : '42784291',
+
+              'flashvars': {
+                'titleLabel': {
+                  'plugn': true
+                },
+                'mediaProxy': {
+                  'entry': {
+                    'id': '1',
+                    'thumbnailUrl': 'https://videoplayback.parliamentlive.tv/Content/img/planning.jpg'
+                  },
+                  'sources': [
+                    {
+                      'src': 'https://uniukp-vh.akamaihd.net/i/ukp/vod/0f26bc77-8ba1-4dc3-acfb-6b987625dd15/1_egx7u113/0f26bc77-8ba1-4dc3-acfb-6b987625dd15_01_,25,80,120,0.mp4.csmil/master.m3u8?start=1111',
+                      'type': 'application/vnd.apple.mpegurl'
+                    }
+                  ]
+                }
+              }
+            });
+
+
+        section.section--number#as2
+          h2 What is airspace?
+          p Airspace is the volume of space above ground level. It extends as far as planes can fly. UK airspace contains a network of corridors, or airways. These are usually ten miles wide and reach up to a height of 24,000 feet from a base of between 5,000 and 7,000 feet. Controlled airspace can go from ground level to 66,000 feet in some cases, and &apos;air routes&apos; can have bases down to 3,500 feet.
+          p In the UK airspace is either considered to be &lsquo;controlled&rsquo; or &lsquo;uncontrolled&rsquo;. Air Traffic Control (ATC) manage air traffic control services. They oversee the airspace and track the separation of aircraft to keep them safe as they head towards their destinations.
+          p A large volume of airspace in the UK is uncontrolled. This is where the pilot of the aircraft does not receive a service from the ground. The pilot has to &ldquo;see and avoid&rdquo; other aircraft and navigate independently. Most light aircraft and some military and commercial aircraft operate in this airspace. Arrangements for UK airspace follow internationally agreed safety and operational practices and requirements.
+            a#ref1(href='#fn1', aria-label='reference 1')
+              span [1]
+
+          h3#flight-paths Flight Paths
+          p Within controlled airspace commercial aircraft fly within permanent airspace structures. These are set out in the UK Integrated Aeronautical Information Package (IAIP). They include departure and arrival routes.
+          p A flight path is the actual or planned course of an aircraft. The government&rsquo;s February 2017 consultation explains how aircraft follow flight paths over the course of a journey:
+          blockquote
+            p After take-off from the runway, aircraft will typically follow a pre- defined route up to a given altitude above ground level (usually 4,000 feet). The route is determined by the Standard Instrument Departure procedure (SID). This is a programme on the aircraft&rsquo;s computer system. Next, the aircraft will be directed or &lsquo;vectored&rsquo;
+            p &mldr; by air traffic controllers until they reach an airway. Airways are high-altitude routes which aircraft follow to their eventual destination.
+            p During landing, aircraft leave their airway and enter a Standard Arrival Route (STAR). They may be &lsquo;held&rsquo; in a stack until it is safe to bring them in for landing. Once it is safe, the aircraft are vectored with the assistance of air traffic control to safely approach the runway. For safety reasons, this closing stage requires aircraft to fly in a very straight line on their final approach. An Instrumental Landing System (&lsquo;ILS&rsquo;), is often used to assist with this. It helps pilots to line up with the runway by providing vertical and horizontal guidance, even when they cannot physically see the runway.
+              a#ref2(href='#fn2', aria-label='reference 2')
+                span [2]
+          p Air traffic controllers direct aircraft by way of &lsquo;vectoring&rsquo;. This is the practice of giving a pilot a &apos;heading&apos;. This is a direction to travel towards, as a step on the way to a destination. Controllers give headings depending on a number of factors.
+          p The headings depend to some extent on individual circumstances. They are mainly determined by location. Also by non-location specific Air Navigation Service Provider (ANSP) standard procedures.
+            a#ref3(href='#fn3', aria-label='reference 3')
+              span [3]
+
+
+        section.section--number#as3
+          h2 Who manages airspace?
+          p Three main organisations have responsibility for UK airspace management and design:
+          ul
+            li The government, mainly the Department for Transport or DfT. It sets aviation policy and gives direction to the Civil Aviation Authority (CAA), the UK&apos;s aviation regulator.
+            li The CAA plans and regulates of all UK airspace. Its main duty is to maintain a high standard of safety in the provision of air traffic services. Its other duties include:
+              ul
+                li securing the most efficient use of airspace
+                li satisfying the needs of users of all aircraft (commercial aviation, military, and general aviation)
+                li taking account of environmental objectives in line with Government guidance
+            li NATS Holdings (formerly National Air Traffic Services) is the sole provider of en-route air traffic services. It provides this service to aircraft flying in UK airspace and over the eastern North Atlantic
+              a#ref4(href='#fn4')
+                span [4]
+              | There is competition in some of its activities, terminal control for example.
+          p Other organisations involved on an international level:
+          ul
+            li the International Civil Aviation Organization (ICAO). It has set a common regulatory framework and international standards on various issues. These include the access to and use of airspace.
+            li Eurocontrol is the European Organisation for the Safety of Air Navigation. It is an intergovernmental organisation with 41 Member and 2 Comprehensive Agreement States. Its primary goal is the development of a pan-European ATM system.
+            li The EU Common Transport Policy governs air traffic management. Set up in 2004 it lays down common rules for international transport coming to and from, as well as passing through, countries in EU member states. The European Commission leads on Single European Sky initiative. It aims to create a coordinated European air traffic management system.
+
+          h3#ownership-of-national-air-traffic-service Ownership of National Air Traffic Service
+          p NATS Holdings Ltd. (NATS, formerly National Air Traffic Services) is a UK air navigation service provider. It is the sole provider of en-route air traffic services within UK and Eastern North Atlantic airspace.
+          p It operates through UK controlled airspace and at several UK and international airports. It moves over 6,000 flights daily.
+          p NATS was part-privatised in 2001 by the Labour Government. NATS is a public private partnership between:
+          ul
+            li the Airline Group, a consortium of six airlines and two other investors, which holds 42%
+            li NATS staff who hold 5%
+            li UK airport operator Heathrow Airport Holdings Limited (HAHL) with 4%
+            li and the Government which holds 49%, and a golden share
+          p The Airline Group comprises:
+          ul
+            li USS Sherwood [the Universities Superannuation Scheme]
+            li British Airways
+            li The Pension Protection Fund (PPF)
+            li easyJet
+            li Virgin Atlantic
+            li Lufthansa
+            li Thomson
+            li Thomas Cook
+              a#ref5(href='#fn5')
+                span [5]
+          p USS, a pension fund, in turn owns just less than 50% of the Airlines Group.
+            a#ref6(href='#fn6')
+              span [6]
+          p For further information on NATS, #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN01309', 'Aviation: National Air Traffic Services (NATS)')].
+
+          h3#privatisation-of-nats Privatisation of NATS
+          p There have been various calls for the Government to sell the rest of its shares in NATS. The last time was about five years ago. Richard Deakin, then Chief Executive of NATS, was not in favour of a &lsquo;full privatisation&rsquo; of the company.
+            a#ref7(href='#fn7')
+              span [7]
+          p The proposal was also criticised by some airlines (for example easyJet) and unions.
+            a#ref8(href='#fn8')
+              span [8]
+            | The Labour Party called the proposals &ldquo;ideologically driven&rdquo;.
+            a#ref9(href='#fn9')
+              span [9]
+          p Justine Greening, former Secretary of State for Transport, considered the sale in 2012. In July, she announced that the Government decided not to go ahead with the sale of Government shares:
+          blockquote
+            p My Department ran a call for evidence last year to explore the options for the future of the Government&rsquo;s 49% shareholding in the UK&rsquo;s air traffic control provider, NATS Holdings plc (NATS).
+            p The responses, along with work done by my officials in conjunction with other stakeholders, highlighted the strategic importance of NATS to the UK and the far-reaching implications of a sale at this time. These include the continued development of the single European sky agenda and the ongoing work on the single European sky air traffic management research programme (SESAR).
+            p In parallel, I have considered the potential value that could be realised through a sale of the shares alongside the benefits from receiving dividends from a retained shareholding.
+            p After considering these factors, I have concluded that it is in the best interests of the British taxpayer, the travelling public and the company itself to retain the Government&rsquo;s shares in NATS at this time.
+              a#ref10(href='#fn10')
+                span [10]
+
+
+        section.section--number#as4
+          h2 Airspace standards and regulation
+          p The current laws and policies on airspace are set by Government. It is guided in this by International and European standards and requirements.
+
+          h3#international-civil-aviation-organization International Civil Aviation Organization
+          p The UK is a member of International Civil Aviation Organization (ICAO). It provides a common regulatory framework for member states. They agree international standards, including the access to and use of airspace.
+            a#ref11(href='#fn11')
+              span [11]
+          p International Standards and Recommended Practices, ICAO Annexes, contain the ICAO guiding principles. There are 18 Annexes and three Procedures for Air Navigation Services (PANS).
+            a#ref12(href='#fn12')
+              span [12]
+          p ICAO ensures efficient and comprehensive air navigation services through planned initiatives. It uses practices contained in 2013-28 Global Air Navigation Plan and the Aviation System Blocks Upgrade (ASBU).
+            a#ref13(href='#fn13')
+              span [13]
+            | This is a &quot;rolling 15-year strategic methodology which leverages existing technologies and anticipates future developments based on State/industry agreed operational objectives&rdquo;.
+            a#ref14(href='#fn14')
+              span [14]
+          h3#examples-of-icao-policy-development Examples of ICAO policy development
+          p The Balanced Approach lays down a common framework for managing aircraft noise. It consists of identifying the noise problem at an airport and looking at measures available to reduce noise. It does this by looking at four principal elements:
+          ul
+            li reduction of noise at source
+            li land use planning and management
+            li noise abatement operational procedures
+            li operating restrictions).
+              a#ref15(href='#fn15')
+                span [15]
+          p ICAO also developed the Performance-Based Navigation (PBN). These are performance requirements for aircraft that navigate on an ATS route, terminal procedure or in a designated airspace. Its aim is to move away from traditional, limited ground-based navigation aids to performance-based, non-sensor specific navigation. At the 2007 ICAO General Assembly, countries agreed to Resolution 36/23. This implements routes and airport procedures under ICAO PBN criteria.
+            a#ref16(href='#fn16')
+              span [16]
+
+          h3#eurocontrol Eurocontrol
+          p #[+link('lihttp://www.eurocontrol.int/articles/our-rolenk', 'Eurocontrol')] is the European Organisation for the Safety of Air Navigation. It is an intergovernmental organisation with 41 Members and 2 Comprehensive Agreement States. Its primary goal is the development of a pan-European ATM system. Eurocontrol helps its member states run safe, efficient and environmentally-friendly air traffic operations in Europe.
+          p Eurocontrol was set up to be responsible for upper airspace in Europe. ICAO agreed the complete integration of air traffic services. Three international Air Traffic Control centres were set up to operate in the upper airspace. The Eurocontrol Convention was signed on 13 December 1960. It came into force on 1 March 1963 and amended in 1981 and 1997.
+            a#ref17(href='#fn17')
+              span [17]
+
+          h3#uk-agreement-with-the-european-union UK agreement with the European Union
+          p The European Commission (EC) is an international observer at ICAO. Since the end of 2005 the EC has had a permanent representative at the ICAO in Montreal. The European Union and the ICAO signed a Memorandum of Cooperation (MOC) on 4 May 2011. It agrees cooperation in the following areas:
+          ul
+            li aviation safety
+            li aviation security
+            li air traffic management
+            li environmental protection
+              a#ref18(href='#fn18')
+                span [18]
+          p European law implements many of ICAO&rsquo;s resolutions. These include the Balanced Approach and the adoption of Performance Based Navigation (PBN). There are also several pieces of environmental legislation such as the European Noise Directive.
+            a#ref19(href='#fn19')
+              span [19]
+
+          h3#what-is-the-single-european-sky What is the Single European Sky?
+          p In the past Airspace over Europe developed around state geographic borders and boundaries. This led to it being fragmented. The Transport Select Committee explained in a 2009 report:
+          blockquote
+            p International flights currently have to pass through national air traffic zones or &ldquo;blocks&rdquo;, before being handed over from one national authority to another. For example, passenger aircraft travelling between Brussels and Rome must pass through nine different air traffic control zones. This system leads to bottlenecks and delays, forcing aircraft to consume more fuel and jeopardising safety. As a consequence, flights in Europe are on average 49 kilometres longer than needed. The European Commission estimates that the fragmentation of Europe&apos;s airspace costs &euro;1 billion each year and that shorter, direct routes could save five million tonnes of CO&#x2082; annually.
+              a#ref20(href='#fn20')
+                span [20]
+          p European Commission (EC) tackled this by introducing the #[+link('https://ec.europa.eu/transport/modes/air/single_european_sky/ses_2_en', 'Single European Sky')] (SES) initiative in 1999
+          p The #[+link('https://ec.europa.eu/transport/modes/air/sesar_en', 'Single European Sky ATM Research Programme')] (SESAR) is a venture between the European Commission, Eurocontrol and the aviation industry. It aims to develop a new generation air traffic management system. It wants to ensure the safety and fluidity of air transport worldwide over the next 30 years.
+            a#ref21(href='#fn21')
+              span [21]
+          p SES aims to modernise air navigation services by improving airspace design and the use of new technology. The main goals are:
+          ul
+            li to restructure European airspace
+            li create additional capacity
+            li
+              | increase the efficiency of the ATM system.
+              a#ref22(href='#fn22')
+                span [22]
+          p Shorter flight paths and fewer delays should lead to reduced flight times. This in turn should lead to reduced flight costs and aircraft emissions.
+            a#ref23(href='#fn23')
+              span [23]
+          p The EC adopted SES in 2004, bringing ATM under the EU Common Transport Policy. It sets common rules for international transport through, to and from countries in the EU.
+            a#ref24(href='#fn24')
+              span [24]
+            | It intends to create an integrated ATM system by 2020. A system designed, managed and regulated to maintain European Aviation for the next 30 to 40 years.
+          p The EC adopted a second package, the Single European Sky II (SES II) in 2009. It is not likely to be put in place until 2030-35.
+            a#ref25(href='#fn25')
+              span [25]
+          p The Commission further updated the SES Regulations in 2013. Named the SES II+ initiative, it adds to changes brought in by the 2009 SES II package. It also updates other aspects to take account of technical progress.
+            a#ref26(href='#fn26')
+              span [26]
+          p SES II introduced:
+          ul
+            li a comprehensive, EU-wide Performance Scheme
+            li Functional Airspace Blocks which are about service provision and not airspace alone
+            li a Network Manager to co-ordinate certain actions at network level
+          p It also:
+          ul
+            li extended the role of the European Aviation Safety Agency (EASA) to air traffic management
+            li shifted rule-making support for technical implementing rules
+            li moved oversight of member states from Eurocontrol to the European Aviation Safety Agency (EASA)
+              a#ref27(href='#fn27')
+                span [27]
+
+          h3#functional-airspace-blocks-fabs Functional Airspace Blocks (FABS)
+          p SES II also created Functional Airspace Blocks (FABs). FABs are initiatives led by EU Member States. They must be set up by 2012. Their aim was to improve cooperation between ANSPs and national supervisory authorities. This allowed them to gain operational efficiency. Strategies included common procurement and training, and optimisation of air traffic controllers&rsquo; resources.
+          p Under SES II+, FABS became more flexible, industry-led and focused on performance. The Commission said it would &ldquo;not try to micromanage the FABs, but rather lets the industry and States devise their own solutions&quot;. That is as long as performance targets were met.
+            a#ref28(href='#fn28')
+              span [28]
+
+          h3#cooperation-between-uk-and-ireland Cooperation between UK and Ireland
+          p The UK and Ireland were the first countries to establish an operational FAB in 2008. Around 90% of North Atlantic air traffic passes through the UK-Ireland FAB. NATS explains its benefits:
+          blockquote
+            p In the first four years of operation it delivered over &euro;70m of enabled savings to customers, including 232,000 tonnes of CO2 and 73,000 tonnes of fuel. Major projects have included the first-ever operational trial of cross-border dynamic sectorisation &ndash; the tactical switching of air traffic services between providers and a world-first operational trial of cross-border arrival management procedures, slowing down aircraft across borders in order to reduce the time they are required to spend in airport holding stacks.
+              a#ref29(href='#fn29')
+                span [29]
+          p While SES has wide support it has not been without its problems and delivery has been slow. The EC reported in December 2015 that the European ATM sector:
+          ul
+            li remains fragmented
+            li the costs of its services are comparatively high (the unit cost of air navigation services is particularly high)
+            li &ldquo;FAB operational objectives have not been achieved regarding the optimisation of airspace and resources, which in turn generates inefficiencies in the entire European air traffic management system and extra costs of close to &euro;5 billion a year&rdquo;.
+              a#ref30(href='#fn30')
+                span [30]
+
+          h3#the-impact-of-brexit The impact of Brexit
+          p Much of the legal framework for airspace derives from international institutions. This includes the European Union. On 23 June 2016 the United Kingdom voted to leave the EU. The Government states in its 2017 consultation on future airspace strategy, that:
+          blockquote
+            p Until exit negotiations are concluded, the UK remains a full member of the European Union and all the rights and obligations of EU membership remain in force. During this period the Government will continue to negotiate, implement and apply EU legislation.
+              a#ref31(href='#fn31')
+                span [31]
+          p Chief Executive of the CAA, Andrew Haines, discussed the UK&rsquo;s future relationship with EASA in a speech on 1 December 2016. He highlighted the fact that the UK and France provide two thirds of all the rule-making input on European Safety Regulation. Together they manage close to 90% of EASA&rsquo;s outsourced activities. He also said that post-Brexit the UK can &rdquo;continue to play a very active role in ICAO &ndash; indeed strengthening but it is not a substitute for European engagement&rdquo;.
+            a#ref32(href='#fn32')
+              span [32]
+          h3#domestic-air-traffic Domestic air traffic
+          p The UK Government, through the Department for Transport, sets the policy framework for aviation in the UK. Its main airspace role relates to the setting of guidance and directions for the CAA. It does not determine specific airspace arrangements. Nor does it decide on particular flight paths or procedures at individual airports.
+            a#ref33(href='#fn33')
+              span [33]
+          p The government does, however:
+          ul
+            li approve noise related operating restrictions for Nationally Significant Infrastructure Projects (NSIPs)
+              a#ref34(href='#fn34')
+                span [34]
+            li assess called-in airspace change proposals, and makes decisions to accept or reject them
+            li approve Noise Action Plans
+              a#ref35(href='#fn35')
+                span [35]
+
+          h3#scotland-and-northern-ireland Scotland and Northern Ireland
+          p Aviation and airspace matters are generally settled by UK government. Issues connected to airspace, like noise management and monitoring are devolved.
+          p The Government states in its 2017 consultation on future airspace strategy, that:
+          blockquote
+            p While noise policy for aerodromes is a devolved matter in relation to Scotland and Northern Ireland and planning is generally a devolved matter, noise policies proposed in this document, which are based on the Noise Policy Statement for England, shall apply where they are relevant to reserved airspace matters, such as the consideration of noise in airspace changes.
+            p &mldr; Some of our proposals relate to how noise is managed at individual airports and use of the Government&rsquo;s powers to set noise controls at airports, as well as controls set through the planning system. As these powers are devolved in relation to Scotland and Northern Ireland and the planning system is also generally devolved, specific proposals &mldr; will be for the Devolved Administrations to formulate policy on.
+              a#ref36(href='#fn36')
+                span [36]
+
+          h3#the-civil-aviation-authority The Civil Aviation Authority
+          p The Transport Act 2000 (section 66) sets out the duties of the Civil Aviation Authority (CAA) to:
+          blockquote
+            p develop, promulgate, monitor and enforce a policy for the sustainable use of UK airspace and for the provision of necessary supporting infrastructure for air navigation
+              a#ref37(href='#fn37')
+                span [37]
+          p The CAA is the national airspace approval and regulatory authority. It manages airspace planning in the UK. The 2000 Transport Act requires it to prioritise a high safety standard in the provision of air traffic services (Section 70[1]). Although this duty overrides the other duties it must consider many other material factors. One of which is securing the most efficient use of airspace is one. The CAA has set out how it balances these material factors in a decision-making framework.
+            a#ref38(href='#fn38')
+              span [38]
+          p The CAA approves the overall layout of the published airspace structure and any proposed changes to it. It does this in the context of legal requirements. These include safety, the environment and the needs of the consumers of aviation services. For example, changes might be needed to enable UK airspace to accommodate more flights. To incorporate new technology or allow aircraft to fly more direct routes or to keep them away from particular areas.
+            a#ref39(href='#fn39')
+              span [39]
+          p The CAA must take account of any guidance on environmental objectives given to it by the Secretary of State (2000 Transport Act section 70 [2]).
+          p The current guidance was published in January 2014. It takes into account policy and technical developments. It clarifies the Government&rsquo;s environmental objectives relating to air navigation. It sets out aims for:
+          ul
+            li improving efficiency in airspace
+            li mitigating the environmental impact of aviation noise (including the altitude based priorities)
+            li reiterates the need to consult local communities on airspace changes at airports.
+              a#ref40(href='#fn40')
+                span [40]
+          p The Government has published new draft guidance. This was alongside its 2017 consultation on future airspace policy.
+
+
+        section.section--number#as5
+          h2 Planning airspace change
+          p Airspace change &ndash; whether temporary or permanent &ndash; can have unwelcome impacts for local communities. There have been concerns about airports consulting those affected by change. Or that the change process itself has not been properly explained.
+          p Changes to airspace design occur for varying reasons. Improvements to flight efficiency, to reduce delays or to allow an increase in flights due to airport expansion. Airspace changes can be modest. Amendments to upper airspace routes, for example, that affect only a small number of stakeholders. Or they can be major. Such as changes in low-level airspace that impact a large number of people. Formal airspace changes occur via the CAA but may be planned ahead of a new development.
+          p If new airspace arrangements are needed, the planning process can serve as a precursor to the airspace change process. Final decisions on the structure of the UK&rsquo;s airspace and detailed route design go through the CAA&rsquo;s Airspace Change Process. The planning process can consider indicative routes and their potential impacts.
+            a#ref41(href='#fn41')
+              span [41]
+          p For example:
+          p &mldr;in developing its application for a Development Consent Order (DCO) for its proposed new runway, Heathrow Airport Limited is expected to use indicative airspace arrangements, which will be considered and decided upon by the Secretary of State. Any subsequent consideration of the airspace arrangements for a new runway by the Secretary of State would not revisit what was agreed at the DCO stage, but would examine the further detail that had been developed in light of the planning agreement.
+            a#ref42(href='#fn42')
+              span [42]
+
+          h3#the-caa-and-the-airspace-change-process The CAA and the airspace change process
+          p An &lsquo;airspace change&rsquo; is defined as &ldquo;a change to the notified airspace arrangements in the UK AIP&rdquo;.
+            a#ref43(href='#fn43')
+              span [43]
+            | As the CAA explains, it is normally characterised by one or more of a number of conditions:
+          ul
+            li Changes to the ICAO airspace classification either through the creation of a higher classification than currently exists, or in some cases through the removal of existing controlled airspace of Classes A, C, D1 or E
+              a#ref44(href='#fn44')
+                span [44]
+            li Changes to the lateral or vertical dimensions of existing Controlled Airspace
+            li The introduction of, or changes to, Standard Instrument Departure routes (SIDs),
+              a#ref45(href='#fn45')
+                span [45]
+              | Standard Arrival Routes (STARs)
+              a#ref46(href='#fn46')
+                span [46]
+              | or Noise Preferential Routes (NPRs)
+              a#ref47(href='#fn47')
+                span [47]
+              | within controlled airspace. Standard Departure Routes (SDRs)
+              a#ref48(href='#fn48')
+                span [48]
+              | and NPRs where they exist outside controlled airspace are not covered by this Process. However, CAA &ldquo;strongly recommend[s]&rdquo; that aerodrome operators adopt the same principles when considering the need for new or amended SDRs and NPRs under these circumstances
+            li Introduction of, or significant changes to existing, Holding Patterns
+              a#ref49(href='#fn49')
+                span [49]
+            li Changes to Area Control Centre (ACC) arrangements resulting in modifications to the existing published ATS route structure. Changes to ACC sector boundaries that have no additional environmental impact over that currently experienced are not normally subject to the Airspace Change Process, unless one of the characteristics described here occurs as a direct consequence of the revised arrangements
+            li Delegation of ATS to an adjacent State
+            li Changes to the lateral or vertical dimensions of Danger Areas, Restricted or Prohibited Airspace, Temporary Reserved Areas or significant changes in their operational use, other than emergency situations or matters of National Security
+            li Changes to existing published terminal patterns and procedures where the net effect results in changes to the lateral dispersion or lowering in altitude of traffic within #[+link('https://www.caa.co.uk/Consumers/Guide-to-aviation/Airspace/How-is-UK-airspace-structured-/', 'controlled airspace')]
+            li Significant changes to the hours of operation of existing airspace structures.
+              a#ref50(href='#fn50')
+                span [50]
+          p Anybody can start and sponsor an airspace change. Sponsors are mainly:
+          ul
+            li aerodrome operators
+            li the Air Navigation Service Provider (ANSP) or a combination of the two)
+            li or the regulator (the CAA)
+          p The CAA&rsquo;s role in airspace change is set out in the guidance. It states that it:
+          ul
+            li Owns and manages the Airspace Change Process
+            li Provides guidance to a sponsor on the application of the Process. It helps in fulfilling the operational, environmental and consultation requirements. It does not to help a sponsor in developing the airspace designs of a formal proposal for submission to the CAA
+            li assesses a sponsor&rsquo;s formal proposal against the regulatory requirements
+            li approves or rejects the sponsor&rsquo;s formal proposal. If the proposal is a &lsquo;significant environmental disbenefit&rsquo; it refers it to the Secretary of State for Transport
+            li must be accountable for the regulatory decision-making
+            li fulfil its duties and meets the Direction from the Secretaries of State for Transport and Defence for the interest of airspace users
+              a#ref51(href='#fn51')
+                span [51]
+
+          h3#old-airspace-change-process-up-to-january-2018 Old airspace change process up to January 2018
+          p A new airspace change process took effect on 2 January 2018. There are still many applications processed through the old CAP 725 process. The CAA&rsquo;s CAP 725 document, Guidance on the Application of the Airspace Change Process
+            a#ref52(href='#fn52')
+              span [52]
+            | , explains this.
+          p A list of applications processed through the old CAP 725 process is on the CAA website. These include proposals for Doncaster-Sheffield, Southend, Birmingham, Belfast and Farnborough.
+          h4#consultation-requirements Consultation requirements
+          p There are seven stages to the Process. CAP 725 states that consultation should form part of stages 2, 3 and 4 (Proposal Development, Preparing for Consultation, and Consultation and Formal Proposal Submission). The actions of the change sponsor should be to:
+          ul
+            li identify stakeholders/consultees and messages
+            li identify the most appropriate method of reaching stakeholders (e.g. workshops, pamphlets, open days)
+            li further develop stakeholder/consultee List and consultation plan
+            li
+              | share their airspace design option(s), consultation list and consultation plan with a focus group and seek for feedback
+            li cover the need for and the merits of their design option(s) with the group
+            li develop solutions to the anticipated issues arise from the consultation exercise
+            li be clear what the design option(s) are, who may be affected and how
+            li
+              | decide the most appropriate consultation method needed to reach all the consultees;
+              a#ref53(href='#fn53')
+                span [53]
+            li
+              | develop consultation material that keeps to the criteria
+              a#ref54(href='#fn54')
+                span [54]
+              | and coordinate the varied events and methods
+            li
+              | seek endorsement from CAA that the consultation material and method are satisfactory
+            li
+              | consult and allow 12 weeks for written consultation during at least one development of the design. Within this timeframe, the sponsor could run alternative consultation events. It must send a copy of all consultation material to the CAA at the time of distribution
+            li
+              | submit the &lsquo;record of consultation&rsquo; (all receipts, responses, etc.) as part of the Airspace Change Proposal
+            li
+              | assess the need to change the design to take account of responses from the consultation exercise
+            li
+              | publish feedback to consultees. This should include its decision on the option selected before submitting a formal Airspace Change Proposal to the CAA.
+              a#ref55(href='#fn55')
+                span [55]
+          h3#new-airspace-change-process-from-january-2018 New airspace change process from January 2018
+          p
+            | A new airspace change process took effect on 2 January 2018. It is explained in detail in the CAA&rsquo;s CAP 1616 document #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf', 'Airspace Design: Guidance on the regulatory process for changing airspace design including community engagement requirements')].
+          p The #[+link('http://www.caa.co.uk/Commercial-industry/Airspace/Airspace-change/Permanent-airspace-change-proposals-under-the-new-process/', 'CAA website')] contains a list of applications processed through #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf#page%253D141', 'CAP 1616')]. These include proposals affecting Heathrow, Luton and Liverpool.
+          p
+            | The CAA launched a review of its process for airspace change in 2016. This followed a 2015 independent study of the process. The study by Helios concluded that the existing process was &ldquo;under strain and could be improved&rdquo;.
+            a#ref56(href='#fn56')
+              span [56]
+            | It proposed changes including:
+          ul
+            li greater transparency
+            li
+              | further stages to be included in the process and tighter control of the process by CAA
+            li an Airspace Change Process Oversight Committee for the most significant changes
+            li an appeal mechanism
+            li
+              | an airspace change portal to hold information on the status of all ongoing.
+              a#ref57(href='#fn57')
+                span [57]
+          p
+            | The CAA then consulted on changes in the spring of 2016 to reform the seven-stage process in line with Helios&rsquo; recommendations.
+            a#ref58(href='#fn58')
+              span [58]
+            | In October 2016 the CAA published the outcome of the consultation and its response. It said that it intended to make some changes by the summer of 2017. It went to say that it would not take forward other of Helios&rsquo; recommendations. Most notably an oversight committee and a formal appeal against a CAA decision.
+            a#ref59(href='#fn59')
+              span [59]
+            | It also stated that it would write detailed guidance about how the process would work in practice and publicly consult on that guidance before introducing the process.
+            a#ref60(href='#fn60')
+              span [60]
+            | The CAA published the for consultation on 31 March 2017. They published the outcome on 13 December.
+            a#ref61(href='#fn61')
+              span [61]
+          p #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf#page%253D141', 'CAP 1616')] was published in December. It came into effect from 2 January 2018.
+            a#ref62(href='#fn62')
+              span [62]
+            | It should be read in the context of the #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/653978/air-navigation-guidance-2017.pdf', 'Air Navigation Guidance 2017')].
+
+          h4#air-navigation-guidance-2017 Air Navigation Guidance 2017
+          p
+            | Department of Transport guidance to the CAA and the industry. It includes guidance to the CAA on its environmental goals relating to air navigation. It also provides guidance to the CAA and wider industry on airspace and noise management. It includes:
+          ul
+            li
+              | requirements to provide information which explains retrospective aircraft operational changes
+            li expectations to make information available relating to aircraft movements
+          p
+            | The Government requires the CAA to prepare and publish guidance. This is to help industry meet government expectations about community engagement. This guidance (under the heading &lsquo;airspace information&rsquo;) forms part of #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf', 'CAP 1616')].
+            a#ref63(href='#fn63')
+              span [63]
+          h4#cap-1616-consultation-requirements CAP 1616 consultation requirements
+          p
+            | There are seven stages to the Process, as set out in CAP 1616. It states that consultation should form a key part of stages 1, 2 and 3 (Design, Develop and Assess, and Consult). This is critical for those affected, likely to be, or unsure whether they would be affected by airspace change. The actions of the change sponsor during stages (or &lsquo;gateways&rsquo;) 1 and 2 should be as follows:
+          ul
+            li
+              | At the &lsquo;Define&rsquo; gateway, the change sponsor needs to provide evidence to the CAA that conversations led to the design principles being set. This must include:
+              ul
+                li
+                  | evidence of the engagement activity. This will include records and minutes of workshops and meetings. It will list those present and the context and nature of the discussion. It must cover the range of stakeholders who may be affected by the change. Sponsors must show that they provided enough information for stakeholders. This must help them to understand airspace design and enable them to play a part in the development.
+                li
+                  | what happened as a result of that activity. Sponsors must show where stakeholders agreed the principles applied. Also which principles they did not agree to, who disagreed and their reasons. The change sponsor&rsquo;s reasons for a decision in light of the feedback need to be set out.
+            li
+              | The &lsquo;Develop and assess&rsquo; gateway lists effected audiences in the Initial options appraisal. This is important for the consultation strategy during the &lsquo;Consult&rsquo; gateway (step 3A).
+              a#ref64(href='#fn64')
+                span [64]
+            li
+              | Stage 3 is the key &lsquo;gateway&rsquo; for consultation. This consists of four separate steps:
+              ul
+                li 3A: consultation preparation
+                li 3B: consultation approval
+                li 3C: start consultation
+                li 3D: Collate and review responses.
+              | The CAA needs to accept the change sponsor&apos;s consultation strategy for the &apos;Consult&apos; gateway to pass. This means that all consultation materials are ready and available.
+              a#ref65(href='#fn65')
+                span [65]
+            li
+              | Stage 5 (Decide) looks at the public evidence session for Level 1 airspace changes. That is a change that will alter traffic patterns below 7,000 feet. Sponsors must prove clear consideration of noise impacts. CAP 1616 states:
+              ul
+                li
+                  p For the CAA, the public evidence session is an important part of stakeholder engagement. The change sponsor publishes the final proposal. The CAA then gives at least four weeks&apos; notice to stakeholders of the Public Evidence Session. In giving evidence, attendees must speak themselves without formality or legal representation. This reinforces the information-receiving nature of the session.
+                  p Using the #[+link('http://www.caa.co.uk/Commercial-industry/Airspace/Airspace-change/Airspace-Change/', 'portal')], attendees book five- minute speaking slots. This is on a first-come, first-served basis. They present their views on the airspace change proposal to the CAA decision-maker. Representative groups will be able to book 10-minute slots. Attendees will not have the opportunity to challenge what other speakers say. Following the Public Evidence Session, the CAA will publish a transcript. Representative groups will be able to book 10-minute slots. Attendees will not have the opportunity to challenge what other speakers say. Following the Public Evidence Session, the CAA will publish a transcript.
+                  p
+                    | A sponsor does not attend the session as it is for third parties to speak to the decision-maker. The change sponsor may still attend although it cannot argue its case. It can only offer clarification if asked by the Chair.
+                    a#ref66(href='#fn66')
+                      span [66]
+          h4#transition-arrangements-from-cap-725 Transition arrangements from CAP 725
+          p
+            | From 2 January new airspace change applications use the new process, CAP 1616. Some applications, however, are still processed under CAP 725. The CAA provides clarity for applications crossing the 2 January 2018 dividing line:
+          ul
+            li
+              | if a proposal has not yet started when the new process takes effect it will use the new process. A proposal that has not started corresponds to Stage 1 and 2, and Steps 3A/B or Stage 3
+            li
+              | the CAA will not mandate elements of the new process if a proposal has already reached Step 3C in the new process
+          blockquote
+            p
+              | Sponsors need to show the CAA that they acknowledge the new process if an airspace change proposal started before the new CAA process. The CAA does not need sponsors to follow the new process if they started Stage 4 (under CAP 725) consultation before 2 January 2018.
+            p
+              | The CAA will consider requests for flexibility if the change sponsor is between the old and new process.
+              a#ref67(href='#fn67')
+                span [67]
+            p
+              | The Air Navigation Guidance 2017 sets out the Government&rsquo;s transition arrangements:
+            p
+              | The airspace change arrangements apply to change proposals that have been consulted on at the time of publication of the guidance. Sponsors of such proposals are encouraged to follow the new arrangements where possible.
+            p
+              | The CAA should consult the SofS if there is a doubt about whether the Air Navigation Guidance 2017 applies to an airspace change proposal.
+              a#ref68(href='#fn68')
+                span [68]
+
+
+        section.section--number#as6
+          h2 Airspace modernisation
+          h3#why-is-it-needed Why is it needed?
+          p
+            | Airspace is in need of modernisation. Many of its elements have remained unchanged for 40 years. These include infrastructure and procedures supporting landing and take-off and the location of flightpaths and holding stacks.
+            a#ref69(href='#fn69')
+              span [69]
+            | Aviation has undergone huge changes, including a hundred-fold increase in demand.
+            a#ref70(href='#fn70')
+              span [70]
+            | The CAA says that the UK&rsquo;s airspace system has become, &ldquo;complex and increasingly difficult to manage as it has been changed to meet different demands In order to meet future demand safely and efficiently a radical rethink is required&rdquo;.
+            a#ref71(href='#fn71')
+              span [71]
+          p
+            | The impact of antiquated airspace on flight delays was set out by the DfT in a February 2017 report:
+          blockquote
+            p
+              | In 2015, a lack of airspace capacity resulted in 78,000 minutes of flight delays (equivalent to 54 days of total delay and an average of 9 minutes per delayed flight). These delays, whilst not substantial, are however forecast to grow to 1 million minutes by 2020 if airspace upgrades are not delivered as a matter of urgency (equivalent to 694 days and an average of 15 minutes per delayed flight). At this level, approximately 1 in 10 flights from UK airports would be delayed by more than half an hour with delay 13 times more than that experienced in 2015, an increase of 1200%.
+            p
+              | Looking forward to 2030, the NATS analysis predicts that air traffic delays will increase to 5.6 million minutes a year (3,889 days or an average of 26.5 minutes per delayed flight), as traffic grows to an expected 3.25 million flights. If delays reach this level, more than 1 in 3 flights from all UK airports are expected to depart over half an hour late and the average delay would be 72 times more than in 2015, an increase of 7100%.
+              a#ref72(href='#fn72')
+                span [72]
+          h3#how-is-airspace-modernised How is airspace modernised?
+          p
+            | Modernisation has to be cross-industry. It involves airlines, airports, air navigation service providers and other aviation stakeholders. They need to work together to bring in the use of modern technologies and procedures. Modernisation affects every phase of flight - en-route, terminal and runway environments.
+            a#ref73(href='#fn73')
+              span [73]
+          p
+            | Switching from traditional ground-based navigation to a satellite-based system is essential to modernisation. This can improve the flight efficiency of aircraft. For example, by reducing the separation distances of aircraft and can enable the use of best practice.
+            a#ref74(href='#fn74')
+              span [74]
+            | Flying more precise routes on different days will help airspace controllers be more accurate in controlling when planes fly.
+          p
+            | Current flight paths are typically 1.5km wide. Advanced satellite navigation produces more precision. It is capable of fitting two aircraft within a single existing flight path.
+            a#ref75(href='#fn75')
+              span [75]
+            | What this means is that communities under current flight paths will experience less traffic. This will be possible by rotating paths during different periods of the day. Concentration, however, can have a significant downside for those living under those paths.
+            a#ref76(href='#fn76')
+              span [76]
+          h3#controlling-noise-concentration Controlling noise concentration
+          p
+            | Satellite navigation allows aircraft to fly more accurately than with previous navigation techniques. These more precise flight paths will see a reduction in the average noise levels per flight.
+          p
+            | The redistribution of noise between areas may lead to more disruption for some living under flight paths. It will create new, more frequent or concentrated noise. This may increase general annoyance, sleep disturbance, lower levels of productivity and health.
+            a#ref77(href='#fn77')
+              span [77]
+          p
+            | The Government aims to limit and where possible reduce the number of people in the UK affected by aircraft noise. This has meant a priority has been placed on reducing the overall number of people over flown.
+            a#ref78(href='#fn78')
+              span [78]
+          p The DfT has summarised how to deal with this problem in #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')].
+          p
+            | New technology can also track aircraft from a departure point and directed to adjust speed to make the best possible use of airspace. For example, an aircraft might be instructed to slow down in its cruise and descent phases to absorb a delay. Or stay higher for longer and only descend when the airport is ready.
+            a#ref79(href='#fn79')
+              span [79]
+          p
+            | Modernisation also involves the introduction of improved airspace procedures. For example, procedures would allow for reduced use of holding stacks which would create more airspace. This will enable aircraft to adopt a smoother and more continuous climb profile. This will reduce engine noise.
+            a#ref80(href='#fn80')
+              span [80]
+          p
+            | Modified airspace and flight paths mean aircraft can arrive and depart at steeper angles than before. They reach a fuel-efficient cruising height much sooner in their journey.
+            a#ref81(href='#fn81')
+              span [81]
+            | This reduces their noise footprint and CO2 emissions.
+            | Greater systemisation and the use of vectoring practices will decline as modernisation progresses. The DfT explains:
+          p
+            | &mldr;trials of new navigational technology have shown that intervention by controllers at the early stages of the departure flight path are much reduced, possibly by as much as 90%. So there would be a gradual reduction in the overall amount of vectoring as modern routes are implemented on departures, and the potential realised for much less direct controller intervention on arrivals in the future.
+            a#ref82(href='#fn82')
+              span [82]
+
+
+        section.section--number#as7
+          h2 Policy progress and modernization
+          p
+            | The debate to modernise the UK&rsquo;s airspace is not new. The Labour Government&rsquo;s 2003 aviation White Paper recognised the need for a:
+          blockquote
+            p
+              | structured programme for the redesign of UK airspace that would help to protect safety standards and relieve current constraints.
+              a#ref83(href='#fn83')
+                span [83]
+          p
+            | The industry is concerned about the lack of progress in developing an &ldquo;Airspace Master Plan&rdquo;. A Transport Select Committee report (2008/9) on airspace acknowledges this and recommends:
+          blockquote
+            p
+              | The CAA should present its framework recommendations for a Future Airspace Strategy (FAS) to the Department for Transport and the industry. This work should explain the nature of the FAS, the benefits to be achieved, how the strategy relates to airport development planning processes, and the impact of the strategy on the Airspace Change Process. It should describe the safeguards required to ensure that the FAS does not pre-empt the requirement for proper consultation on airspace change proposals.
+              a#ref84(href='#fn84')
+                span [84]
+          h3#future-airspace-strategy-fas Future Airspace Strategy (FAS)
+          p
+            | The CAA published its Future Airspace Strategy in June 2011. It gives details of a programme to modernise airspace across the UK up to 2030.
+            a#ref85(href='#fn85')
+              span [85]
+          p There is a move to restructure European airspace, add capacity, improve safety and increase the efficiency. This will happen through the #[+link('#', 'Single European Sky (SES)')] project.
+          p
+            | The UK and Ireland plans to meet the SES requirements through the FAS. The biggest changes in the UK are likely to be in the south east of England. Its airspace was designed over 40 years ago. London&rsquo;s five airports and smaller aerodromes create some of the world&rsquo;s busiest and most complex skies.
+          p
+            | The CAA produced FAS with the Department for Transport, Ministry of Defence and NATS. It aims to set up a &ldquo;safe, efficient airspace that has the capacity to meet reasonable demand, balances the needs of all users and mitigates the impact of aviation on the environment&rdquo;.
+            a#ref86(href='#fn86')
+              span [86]
+          p FAS proposes four big changes to the UK&rsquo;s airspace:
+          ol
+            li
+              | Making airspace simpler and more flexible. Move away from the current rigid structure of routes and different types of airspace. This would allow different users access to the same area of airspace as and when demand dictates. For example, during early morning and early evening an area of airspace may be given to commercial operations when they are busiest. At times of lower demand it could be made available to other users.
+            li
+              | Taking advantage of the latest technology. Increased accuracy and use of satellite navigation has led to advances in navigation. Direct data transfer rather than voice communications has let to better communication. This allows for increases in capacity and efficiency.
+            li
+              | Introduction of more flexible routes. This allows pilots and controllers to make more direct or flexible routes. They are able to do this through computer technology. It minimises delays and is more efficient as it reduces the amount of fuel burnt and the environmental impact.
+            li
+              | Sharing systems, technology and airspace across Europe. Removing national boundaries in the air allows a more seamless and efficient system. It removes systems that are incompatible and duplicated and procedures that change from country to country.
+              a#ref87(href='#fn87')
+                span [87]
+          p
+            | CAA says that the FAS is &ldquo;not a blueprint of an airspace design; more a shopping list of technologies and methods to be deployed&rdquo;.
+            a#ref88(href='#fn88')
+              span [88]
+            | The upgrade to UK airspace is almost entirely funded by the aviation industry.
+            a#ref89(href='#fn89')
+              span [89]
+          p Key to the success of FAS is:
+          ul
+            li
+              | the upgrade of aircraft with Performance-Based Navigation (PBN)- compatible systems
+              a#ref90(href='#fn90')
+                span [90]
+            li air traffic control providers introducing new airspace structures, and airlines
+            li
+              | airports sharing flight information into the &lsquo;system&rsquo;
+              a#ref91(href='#fn91')
+                span [91]
+          p DfT says that FAS is based around five key upgrades:
+          ol
+            li
+              | Removal of the fixed structures in the en-route airspace. This adds capacity and enabling more direct and free routes
+            li
+              | Redesign of the route network in busy terminal airspace. Taking account of advances in new technology, especially satellite navigation
+            li
+              | Stream traffic through speed controls in the en-route phase of flight. This improves arrival management and reduces reliance on stack holding in the terminal airspace
+            li
+              | Redesign airport arrival and departure routes at lower altitudes. This allows aircraft to climb and descend continuously and better manage the impacts of noise
+            li
+              | Connect airports into the network. This allows them to provide and receive accurate information about traffic flows. They can thus better manage ground delays and pinch points across the airspace.
+              a#ref92(href='#fn92')
+                span [92]
+          p
+            | The FAS Deployment Plan was published in December 2012. This considered the first phase of FAS implementation from 2013 to 2020. Aircraft operators, airports, ANSPs, the military and regulators developed the plan. This was done via the FAS Industry Implementation Group.
+            a#ref93(href='#fn93')
+              span [93]
+            | The deployment plan set out &ldquo;confirmed and proposed investments drawn from the programme plans and strategic ambitions of the key organisations involved&rdquo;.
+            a#ref94(href='#fn94')
+              span [94]
+          p
+            | The FAS Coordination and Oversight function governs implementation of the FAS Deployment Plan. NATs and the CAA has led the function since January 2013. It has representation from airlines, airports, the DfT, MoD and Irish Aviation Authority. It manages the relationship between industry implementation and the policy and regulation.
+            a#ref95(href='#fn95')
+              span [95]
+          h3#airspace-trials Airspace trials
+          p
+            | In recent years there have been airspace trials at airports across the south east. The trials included Heathrow, London City and Stansted as part of the London Airspace Management Programme (LAMP).
+            a#ref96(href='#fn96')
+              span [96]
+          p
+            | London City Airport was the first to be affected by LAMP in February 2016.
+            a#ref97(href='#fn97')
+              span [97]
+            | Gatwick has also taken trials of standalone technology/procedure enablers. These include ADNID and routes 2&amp;4. Local residents found the latter to be controversial and the proposed changes were postponed.
+          p
+            | There was also a controversial trial at Edinburgh Airport at the end of 2015. Edinburgh was the first of Scottish airport to trial a new PBN route as part of the plans to modernise Scottish airspace.
+          p
+            | Every airspace change trial is different. Its aims, conduct, timing and outcomes are determined by the airport involved. The initial trial justification and its scope and objectives must be agreed with the CAA. Its consequent initiation plan must also be approved by the CAA. The sponsor must also complete a post-trial analysis and outputs report.
+            a#ref98(href='#fn98')
+              span [98]
+            | For short-term, temporary changes (i.e. for trials of 90 days or less), consultation is not always needed. The change sponsor, in this case, should agree with the CAA the actual level of engagement.
+            a#ref99(href='#fn99')
+              span [99]
+          h3#airspace-modernisation-consultation-outcome-2017 Airspace modernisation consultation &amp; outcome 2017
+          p
+            | In February 2017 the Department of Transport published a consultation on UK airspace policy reform. In the House of Commons the same day the Transport Secretary, Chris Grayling, said:
+          blockquote
+            p
+              | I am publishing proposals to modernise the way UK airspace is managed, which will be consulted on in parallel [with the consultation on a draft National Policy Statement for Heathrow expansion]. By taking steps now to future-proof this vital infrastructure, we can harness the latest technology to make airspace more efficient as well as making journeys faster and more environmentally friendly. The policy principles set out in this airspace consultation will influence decisions taken later in the planning process for a north-west runway at Heathrow. It is therefore sensible to allow members of the public to express views on both these issues at the same time.
+            p
+              | The consultation will set out our plans to establish an independent commission on civil aviation noise and bring forward proposals to improve how communities can engage and make sure their voices are heard. To complement this, we are proposing guidance on how noise impacts should be assessed and used to inform decisions on airspace options. These proposals aim to strike a balance between the economic benefits of a thriving aviation sector and its impacts on local communities and the environment.
+              a#ref100(href='#fn100')
+                span [100]
+          p
+            | This followed pressure on the Government from the community. It pushed to prevent airspace changes happening without consulting or compensating those affected.
+          p
+            | The Government&rsquo;s intent with the consultation was to bring forward many benefits:
+          ul
+            li Greater clarity and transparency in decision making and the management of noise
+            li
+              | Improvements in the evidence used to inform airspace decisions particularly the noise impacts
+            li
+              | Find ways for industry and communities working together to manage noise which work best for local circumstances
+            li Clarity and consistency in who makes airspace decisions, and why
+            li
+              | Make sure that the airspace change framework provides what industry needs to deliver change
+            li
+              | Noise management outside of airspace change which takes advantage of the latest technology
+              a#ref101(href='#fn101')
+                span [101]
+          h4#the-main-proposals-in-the-2017-consultation The main proposals in the 2017 consultation
+          ul
+            li
+              | Establishing an Independent Commission on Civil Aviation Noise. This is to make sure noise impacts are properly and transparently considered
+            li
+              | Providing industry with ways to assess noise impacts and choose between route options. This will help them manage change better
+            li
+              | Bringing compensation policy for airspace changes in line with policy on changes to aviation infrastructure
+            li
+              | Offering greater flexibility to three of London&rsquo;s major airports. This will allow them to adapt their noise management to the needs of their local communities. This is already in place at other airports across the UK already can
+              a#ref102(href='#fn102')
+                span [102]
+          h4#main-changes-from-the-2017-consultation
+            | Main changes from the 2017 consultation
+            a#ref103(href='#fn103')
+              span [103]
+          p
+            | New call-in role for the Secretary of State for permanent structural (Tier 1) changes to airspace. This would be only for airspace changes deemed to be of national importance.
+            a#ref104(href='#fn104')
+              span [104]
+            | The power would be at the SofS&rsquo;s discretion. The only environmental trigger would be the likely noise impact on local communities. Environmental factors other than noise may be important to an airspace proposal. These would only be a factor in a call-in decision if their impact was expected to be as significant.
+            a#ref105(href='#fn105')
+              span [105]
+          h4#compensation---four-main-changes-to-current-policy Compensation - four main changes to current policy
+          ol
+            li
+              | Change the policy wording to remove the word &lsquo;development&rsquo; in terms of when financial assistance towards insulation is expected so that compensation is applicable regardless of the type of change (infrastructure or airspace change)
+            li
+              | Change the policy wording to allow for financial assistance towards insulation in the 63dB LAeq level or above. This should be applicable regardless of the level of change that causes a property to be in that noise contour level. So to remove the requirement for a minimum 3dB change.
+            li
+              | Inclusion of additional wording in the policy to encourage an airspace change promoter to consider compensation for significantly increased overflight as a result of the change based on appropriate metrics, which could be decided upon according to the local circumstances and economics of the change proposal
+            li
+              | To pay insulation for homes within the 69dB LAeq or more contour, where the home owners do not want to move.
+              a#ref106(href='#fn106')
+                span [106]
+          p
+            | The purpose of these changes was to include airspace changes into the current compensation policy:
+          blockquote
+            p
+              | &quot;so that compensation policy would be the same for all changes which affect noise impacts regardless of whether they are a result of infrastructure change or a tier 1 or 2 airspace change overseen by the CAA&rdquo;.
+          p
+            | It also included some refinements to existing policy with the aim of &ldquo;making it fairer to those impacted by higher noise levels&rdquo;.
+            a#ref107(href='#fn107')
+              span [107]
+          h4#transparent-airspace-change-proposals Transparent airspace change proposals
+          p
+            | It stated that options analysis should be carried out as part of change processes for airspace. This options analysis would:
+          blockquote
+            p
+              | &quot;&mldr; allow communities to understand the options which have been considered, and the evidence that has informed a decision, including on whether single or multiple routes are appropriate in the circumstances. It would bring the appraisal of airspace changes in line with those for Government decisions on transport investment, including airport infrastructure. Options analysis will demonstrate an objective approach, and thereby ensure that the needs of different groups have been treated equally. This is particularly important when some groups are more able to engage with the change process than others. For example, when communities from different socio-economic groups or backgrounds are affected by an airspace change, some groups may have more time and ability to feed in their views than others.&quot;
+              a#ref108(href='#fn108')
+                span [108]
+          h4#adverse-effects-of-aviation-noise-proposals Adverse effects of aviation noise proposals
+          p
+            | The consultation states that Government policy &ldquo;should be interpreted to mean that the number of people experiencing adverse effects as a result of aviation noise should be limited and, where possible, reduced.&rdquo;
+            a#ref109(href='#fn109')
+              span [109]
+            | Adverse effects were considered to be those related to health and quality of life.
+          h4#operating-restrictions-proposals Operating restrictions proposals
+          p
+            | It proposed two different routes for decisions within the planning process. It makes SofS the authority for Nationally Significant Infrastructure Projects (NSIPs) in England and Wales. This copies how it works elsewhere.
+            a#ref110(href='#fn110')
+              span [110]
+            | It did not speak of arrangements in Scotland and Northern Ireland where this is a devolved issue.
+          p
+            | It proposed that noise controls and management of NPRs should be devolved to the airports themselves. It excludes operating restrictions at Heathrow, Gatwick and Stansted.
+            a#ref111(href='#fn111')
+              span [111]
+            | The paper argued that this would &ldquo;allow the designated airports to manage noise in the way that best reflects the issues faced by their communities&rdquo;.
+            a#ref112(href='#fn112')
+              span [112]
+          p The consultation closed on 25 May. On 24 October 2017 the Government published:
+          ul
+            li
+              | its updated Air Navigation Guidance 2017
+              a#ref113(href='#fn113')
+                span [113]
+            li
+              | the response to the consultation setting out how the Government intends to proceed
+            li
+              | a summary of responses to the consultation
+              a#ref114(href='#fn114')
+                span [114]
+            li
+              | a series of impact assessments
+              a#ref115(href='#fn115')
+                span [115]
+          p
+            | The consultation response and policy document said that it would put in place all the key policy changes set out in the consultation. There were two notable exceptions:
+          ol
+            li
+              | It will not transfer responsibility for noise controls to Heathrow, Gatwick and Stansted
+            li
+              | It will not introduce a &lsquo;tier&rsquo; system to describe airspace change. It will instead use the terms:
+            li &lsquo;airspace change&rsquo;
+            li &lsquo;permanent and planned redistribution of air traffic&rsquo;
+            li
+              | &lsquo;aircraft operational changes to airspace usage&rsquo; to describe the three categories of change (&lsquo;airspace change&rsquo; being the most serious).
+              a#ref116(href='#fn116')
+                span [116]
+
+
+        section#as8
+          .block--border__bottom
+            .footnotes
+              h2 References
+              ol
+                li#fn1
+                  a(href='#ref1')
+                    span jump to footnote
+                    span 1
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | DfT, UK airspace policy: a framework for balanced decisions on the design and use of airspace, CM 9397, 2 February 2017, p17
+                li#fn2
+                  a(href='#ref2')
+                    span jump to footnote
+                    span 2
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., p17
+                li#fn3
+                  a(href='#ref3')
+                    span jump to footnote
+                    span 3
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Published in the Manual of Air Traffic Services (MATS). Part 1 is standard to all ANSPs and published by the CAA. It is not location specific, and provides a general set of rules on vectoring for air traffic controllers; Part 2 is an internal document, specific to an individual ANSP (e.g. NATS) and gives location specific instructions; see: CAA, Manual of Air Traffic Services &ndash; Part 1, CAP 493, 6th ed., April 2015
+
+                li#fn4
+                  a(href='#ref4')
+                    span jump to footnote
+                    span 4
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p More on North Atlantic operations can be found in: &ldquo; #[+link('http://nats.aero/blog/2014/06/north-atlantic-skies-gateway-europe/', 'North Atlantic Skies &ndash; The gateway to Europe')], &nbsp;
+                      em NATS blog
+                      | , 26 June 2014
+                li#fn5
+                  a(href='#ref5')
+                    span jump to footnote
+                    span 5
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p All of the above from: NATS, #[+link('http://www.nats.aero/about-us/what-we-do/our-ownership-2014/', 'Our ownership')] [accessed 27 March 2017]
+                li#fn6
+                  a(href='#ref6')
+                    span jump to footnote
+                    span 6
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | NATS press notice, &ldquo;
+                      span NATS statement on the Airline Group share sale to USS
+                      | &rdquo;, 19 November 2013
+                li#fn7
+                  a(href='#ref7')
+                    span jump to footnote
+                    span 7
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | &ldquo;Air traffic chief voices sale concerns&rdquo;,
+                      em Financial Times
+                      | , 5 July 2010
+                li#fn8
+                  a(href='#ref8')
+                    span jump to footnote
+                    span 8
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | &ldquo;Proposed sale of air traffic controller angers airlines&rdquo;,
+                      em Financial Times
+                      | , 23 June 2010
+                li#fn9
+                  a(href='#ref9')
+                    span jump to footnote
+                    span 9
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | &ldquo;Air traffic sell-off plans attacked&rdquo;,
+                      em Financial Times
+                      | , 9 June 2011
+                li#fn10
+                  a(href='#ref10')
+                    span jump to footnote
+                    span 10
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p #[+link('http://www.publications.parliament.uk/pa/cm201213/cmhansrd/cm120710/wmstext/120710m0001.htm#12071076000022', 'HC Deb 10 July 2012, c22WS')]
+
+                li#fn11
+                  a(href='#ref11')
+                    span jump to footnote
+                    span 11
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO) is a UN specialised agency, established in 1944 to manage the administration and governance of the Convention on International Civil Aviation (Chicago Convention); see: ICAO, #[+link('http://www.icao.int/about-icao/Pages/default.aspx', 'About ICAO')] [accessed 14 March 2017]
+                li#fn12
+                  a(href='#ref12')
+                    span jump to footnote
+                    span 12
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO, #[+link('http://www.icao.int/safety/airnavigation/nationalitymarks/annexes_booklet_en.pdf', 'Convention on International Civil Aviation, Annexes 1 to 18')] [accessed 14 March 2017];
+                      em
+                        | PANS-OPS, (Doc 8168), Procedures for Air Navigation Services &mdash; Aircraft Operations
+                      | (two vols.) and
+                      em PANS-TRG, (Doc 9868), Procedures for Air Navigation Services &mdash; Training
+                      | both available from ICAO
+                li#fn13
+                  a(href='#ref13')
+                    span jump to footnote
+                    span 13
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO, #[+link('http://www.icao.int/Meetings/a38/Documents/GANP_en.pdf', '2013&ndash;2028 Global Air Navigation Plan')], Doc 9750&dash;AN/963, 4th ed., 2013
+                li#fn14
+                  a(href='#ref14')
+                    span jump to footnote
+                    span 14
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO, #[+link('http://www.icao.int/airnavigation/Documents/ICAO_AN%25202016_final_19July.pdf', 'Air Navigation Report')], 2016 ed., 19 July 2016, p2
+                li#fn15
+                  a(href='#ref15')
+                    span jump to footnote
+                    span 15
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO, #[+link('http://www.icao.int/environmental-protection/Pages/noise.aspx', 'Aircraft Noise')] [accessed 14 March 2017]
+                li#fn16
+                  a(href='#ref16')
+                    span jump to footnote
+                    span 16
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p ICAO, #[+link('http://www.icao.int/safety/pbn/Pages/Overview.aspx', 'Performance Based Navigation &ndash; Overview')] [accessed 14 March 2017]
+                li#fn17
+                  a(href='#ref17')
+                    span jump to footnote
+                    span 17
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Eurocontrol, #[+link('http://www.eurocontrol.int/articles/1960-%25E2%2580%2593-1970-building-foundations', '1960 &ndash; 1970: Building the foundations')] [accessed 16 March 2017]
+                li#fn18
+                  a(href='#ref18')
+                    span jump to footnote
+                    span 18
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p EC, #[+link('https://ec.europa.eu/transport/modes/air/single_european_sky/co-operation_icao_en', 'Co-operation with ICAO')] [accessed 14 March 2017]
+                li#fn19
+                  a(href='#ref19')
+                    span jump to footnote
+                    span 19
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use')], p72
+                li#fn20
+                  a(href='#ref20')
+                    span jump to footnote
+                    span 20
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Transport Committee, #[+link('https://www.publications.parliament.uk/pa/cm200809/cmselect/cmtran/163/163.pdf', 'The use of air space')] (Fifth Report of Session 2008&ndash;09), HC 163, 10 July 2009, para 73
+                li#fn21
+                  a(href='#ref21')
+                    span jump to footnote
+                    span 21
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Eurocontrol, #[+link('http://www.eurocontrol.int/faq/corporate', 'Frequently Asked Questions (FAQ)')] [accessed 16 March 2017]
+                li#fn22
+                  a(href='#ref22')
+                    span jump to footnote
+                    span 22
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p72
+                li#fn23
+                  a(href='#ref23')
+                    span jump to footnote
+                    span 23
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p European Parliament, #[+link('http://www.europarl.europa.eu/atyourservice/en/displayFtu.html?ftuId=FTU_5.6.9.html', 'Air transport: Single European Sky')], December 2016
+                li#fn24
+                  a(href='#ref24')
+                    span jump to footnote
+                    span 24
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p For more information on the CTP, see: European Parliament, #[+link('http://www.europarl.europa.eu/atyourservice/en/displayFtu.html?ftuId=FTU_5.6.1.html', 'Common transport  policy: overview')], October 2016
+                li#fn25
+                  a(href='#ref25')
+                    span jump to footnote
+                    span 25
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('http://www.europarl.europa.eu/atyourservice/en/displayFtu.html?ftuId=FTU_5.6.9.html', 'Air transport: Single European Sky')]
+                li#fn26
+                  a(href='#ref26')
+                    span jump to footnote
+                    span 26
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p EC, #[+link('http://ec.europa.eu/transport/modes/air/single_european_sky/ses_2_en', 'Single European Sky II')] ccessed 16 March 2017]
+                li#fn27
+                  a(href='#ref27')
+                    span jump to footnote
+                    span 27
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p EASA develops common safety and environmental rules at the European level. It monitors the implementation of standards through inspections in the Member States and provides the necessary technical expertise, training and research; see: EASA, #[+link('https://www.easa.europa.eu/the-agency/faqs/agency', 'About EASA')] [accessed 16 March 2017]
+                li#fn28
+                  a(href='#ref28')
+                    span jump to footnote
+                    span 28
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p EC, #[+link('http://ec.europa.eu/transport/modes/air/single_european_sky/ses_2_en', 'Single European Sky II')] accessed 16 March 2017]
+                li#fn29
+                  a(href='#ref29')
+                    span jump to footnote
+                    span 29
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p NATS, #[+link('http://www.nats.aero/about-us/ses/uk-ireland-fab/', 'UK-Ireland FAB')] accessed 16 March 2017]
+                li#fn30
+                  a(href='#ref30')
+                    span jump to footnote
+                    span 30
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p EC, #[+link('https://ec.europa.eu/transparency/regdoc/rep/1/2015/EN/1-2015-663-EN-F1-1.PDF', 'Report&mldr; on the implementation and progress of the Single European Sky during the 2012-2014 Period')], COM(2015) 663 final, 16 December 2015, pp3-4
+                li#fn31
+                  a(href='#ref31')
+                    span jump to footnote
+                    span 31
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p15
+                li#fn32
+                  a(href='#ref32')
+                    span jump to footnote
+                    span 32
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('http://www.caa.co.uk/uploadedFiles/CAA/Content/News/Speeches_files/GADspeech_AndrewHaines_011216.pdf', 'The future of open skies post-Brexit')], 1 December 2016
+                li#fn33
+                  a(href='#ref33')
+                    span jump to footnote
+                    span 33
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')],  p12
+                li#fn34
+                  a(href='#ref34')
+                    span jump to footnote
+                    span 34
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p NSIPs are large scale developments (relating to energy, transport, water, or waste) which require a type of consent known as &lsquo;development consent&rsquo;; for more information see HC Library briefing paper #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN06881', 'SN6881')]
+                li#fn35
+                  a(href='#ref35')
+                    span jump to footnote
+                    span 35
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p69
+                li#fn36
+                  a(href='#ref36')
+                    span jump to footnote
+                    span 36
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p15
+                li#fn37
+                  a(href='#ref37')
+                    span jump to footnote
+                    span 37
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('https://www.caa.co.uk/WorkArea/DownloadAsset.aspx?id=4294972749', 'DAP Guidance: CAA Air Navigation Directions 2001')], 4 December 2007, p1
+                li#fn38
+                  a(href='#ref38')
+                    span jump to footnote
+                    span 38
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('http://publicapps.caa.co.uk/docs/33/CAP%25201389%2520March%25202016.pdf', 'Consultation on proposals for a revised airspace change process')], CAP 1389, 15 March 2016, para 6.5
+                li#fn39
+                  a(href='#ref39')
+                    span jump to footnote
+                    span 39
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 2.4
+                li#fn40
+                  a(href='#ref40')
+                    span jump to footnote
+                    span 40
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p DfT, Guidance to the Civil Aviation Authority on environmental objectives relating to the exercise of its air navigation functions 8 January 2014; following consultation, see: DfT, #[+link('https://www.gov.uk/government/consultations/air-navigation-guidance-for-the-civil-aviation-authority', 'Consultation on &apos;Guidance to the civil aviation authority on environmental objectives relating to the exercise of its air navigation functions&apos;')], 25 June 2013
+
+                li#fn41
+                  a(href='#ref41')
+                    span jump to footnote
+                    span 41
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p26
+                li#fn42
+                  a(href='#ref42')
+                    span jump to footnote
+                    span 42
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid, p34
+                li#fn43
+                  a(href='#ref43')
+                    span jump to footnote
+                    span 43
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, CAA Guidance on the Application of the Airspace Change Process, CAP 725, 15 March 2016, para 6; the AIP is the #[+link('https://www.caa.co.uk/Commercial-industry/Airspace/Communication-navigation-and-surveillance/Aeronautical-information/', 'UK Integrated Aeronautical Information Package')]
+                li#fn44
+                  a(href='#ref44')
+                    span jump to footnote
+                    span 44
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | For more on this, see: CAA,
+                      em
+                        span The Application of ICAO Airspace Classifications in UK
+                        span Flight Information Regions
+                      | , 13 November 20144
+                li#fn45
+                  a(href='#ref45')
+                    span jump to footnote
+                    span 45
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | A SID provides a specified Instrument Flight Rules (IFR) departure procedure that remains wholly within Controlled Airspace and permits connectivity with the en- route ATS route system; see: CAA,
+                      em
+                        span Policy and Guidance for the Design and
+                        span Operation of Departure Procedures in UK Airspace
+                      | , CAP 778, 1 November 2012
+                li#fn46
+                  a(href='#ref46')
+                    span jump to footnote
+                    span 46
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | As arriving aircraft begin their descent, they have to leave the Airway structure. At this point they join one of a series of STARs to their destination airport. Each airport has multiple STARs feeding their arrivals; see CAA,
+                      em
+                        span Description of Today&rsquo;s ATC Route
+                        span Structure and Operational Techniques
+                      | , CAP 1379, March 2016, pp10-12
+                li#fn47
+                  a(href='#ref47')
+                    span jump to footnote
+                    span 47
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | NPRs seek to reduce the noise impacts of departing aircraft by avoiding, as far as practicable, overflight of noise-sensitive areas in the vicinity of the aerodrome, for more see chapter 6 of op cit.,
+                      em
+                        span Policy and Guidance for the Design and Operation of
+                        span Departure Procedures in UK Airspace
+                li#fn48
+                  a(href='#ref48')
+                    span jump to footnote
+                    span 48
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | This term is being phased out in the UK, for an explanation as to why, see ibid., para 1.3
+                li#fn49
+                  a(href='#ref49')
+                    span jump to footnote
+                    span 49
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | &lsquo;Significant&rsquo; is determined as a complete re-alignment or re-orientation of the hold or a lowering of the minimum holding altitude. Changes due to magnetic variation do not need to be addressed by means of an airspace change.
+                li#fn50
+                  a(href='#ref50')
+                    span jump to footnote
+                    span 50
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span CAA Guidance on the Application of the Airspace Change Process
+                      | , para 6
+                li#fn51
+                  a(href='#ref51')
+                    span jump to footnote
+                    span 51
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span CAA Guidance on the Application of the Airspace Change Process
+                      | , para 11
+                li#fn52
+                  a(href='#ref52')
+                    span jump to footnote
+                    span 52
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p And the accompanying information pack: CAA, #[+link('http://publicapps.caa.co.uk/docs/33/CAP1465b%2520OCT.pdf', 'Airspace change process: Information pack')], CAP1465b, 28 October 2016
+                li#fn53
+                  a(href='#ref53')
+                    span jump to footnote
+                    span 53
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | In accordance with Annex D
+                li#fn54
+                  a(href='#ref54')
+                    span jump to footnote
+                    span 54
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Set out in the #[+link('https://www.gov.uk/government/publications/consultation-principles-guidance', 'Government&rsquo;s Consultation Principles')] updated January 2016] and para 37 of CAP 725
+                li#fn55
+                  a(href='#ref55')
+                    span jump to footnote
+                    span 55
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span CAA Guidance on the Application of the Airspace Change Process
+                      | , paras 30- 45
+                li#fn56
+                  a(href='#ref56')
+                    span jump to footnote
+                    span 56
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Helios for CAA,
+                      em
+                        | Independent review of the Civil Aviation Authority&apos;s Airspace Change
+                        span Process
+                      | , CAP 1356, 8 December 2015, executive summary
+                li#fn57
+                  a(href='#ref57')
+                    span jump to footnote
+                    span 57
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., executive summary
+                li#fn58
+                  a(href='#ref58')
+                    span jump to footnote
+                    span 58
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | CAA,
+                      em
+                        span Consultation on amendments to the airspace change proposal process
+                      | , CAP 1389, 15 March 2016
+                li#fn59
+                  a(href='#ref59')
+                    span jump to footnote
+                    span 59
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('http://publicapps.caa.co.uk/docs/33/CAP%25201465%2520OCT16.pdf', 'Outcome of the CAA consultation on proposals for a revised airspace change process')], CAP 1465, 21 October 2016, para 2.2
+                li#fn60
+                  a(href='#ref60')
+                    span jump to footnote
+                    span 60
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 2.3
+                li#fn61
+                  a(href='#ref61')
+                    span jump to footnote
+                    span 61
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('https://consultations.caa.co.uk/policy-development/draft-airspace-design-guidance/', 'Draft airspace design guidance')], 31 March 2017
+                li#fn62
+                  a(href='#ref62')
+                    span jump to footnote
+                    span 62
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf', 'Airspace Design: guidance on the regulatory process for changing airspace design including community engagement requirements')], CAP 1616, 13 December 2017
+                li#fn63
+                  a(href='#ref63')
+                    span jump to footnote
+                    span 63
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p DfT, #[+link('https://www.gov.uk/government/publications/uk-air-navigation-guidance-2017', 'UK air navigation guidance 2017')], 24 October 2017
+                li#fn64
+                  a(href='#ref64')
+                    span jump to footnote
+                    span 64
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://publicapps.caa.co.uk/docs/33/CAP1616%2520Airspace%2520Design%2520interactive.pdf', 'Airspace Design: guidance on the regulatory process for changing airspace design including community engagement requirements')], pp138-9
+                li#fn65
+                  a(href='#ref65')
+                    span jump to footnote
+                    span 65
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 142
+                li#fn66
+                  a(href='#ref66')
+                    span jump to footnote
+                    span 66
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid, paras C52-4
+                li#fn67
+                  a(href='#ref67')
+                    span jump to footnote
+                    span 67
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('http://www.caa.co.uk/Commercial-industry/Airspace/Airspace-change/Transitioning-to-the-new-airspace-change-process/', 'Transitioning to the new airspace change process')] [accessed 30 January 2018]
+                li#fn68
+                  a(href='#ref68')
+                    span jump to footnote
+                    span 68
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/publications/uk-air-navigation-guidance-2017', 'UK air navigation guidance 2017')], paras 6.10-11
+
+                li#fn69
+                  a(href='#ref69')
+                    span jump to footnote
+                    span 69
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 3.5
+                li#fn70
+                  a(href='#ref70')
+                    span jump to footnote
+                    span 70
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | CAA,
+                      em
+                        span Future Airspace Strategy: Deployment Plan
+                      | , Level 1, iteration 3, version 1.2, December 2012, p11
+                li#fn71
+                  a(href='#ref71')
+                    span jump to footnote
+                    span 71
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | CAA,
+                      em
+                        span Future Airspace Strategy, in focus briefing
+                      | , May 2011, p1
+                li#fn72
+                  a(href='#ref72')
+                    span jump to footnote
+                    span 72
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p DfT, #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], 2 February 2017, p7
+                li#fn73
+                  a(href='#ref73')
+                    span jump to footnote
+                    span 73
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span Future Airspace Strategy: Deployment Plan
+                      | , p16
+                li#fn74
+                  a(href='#ref74')
+                    span jump to footnote
+                    span 74
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | e.g. a Continuous Descent Approach (CDA), which involves an aircraft descending towards an airport in a gradual, uninterrupted approach with the engine power cut back; for more see: Eurocontrol,
+                      em
+                        span A guide to implementing Continuous Descent
+                      | , October 2011
+                li#fn75
+                  a(href='#ref75')
+                    span jump to footnote
+                    span 75
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Heathrow Airport, #[+link('http://www.heathrow.com/noise/airspace-modernisation/modernising-uk-airspace/modern-aircraft-and-technologies', 'Modern aircraft and technologies')] [accessed 29 March 2017]
+                li#fn76
+                  a(href='#ref76')
+                    span jump to footnote
+                    span 76
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p See, e.g. &ldquo; #[+link('http://hacan.org.uk/blog/?p=470', 'Flight paths for people on the way?')] HACAN Clearskies blog, 2 April 2016
+                li#fn77
+                  a(href='#ref77')
+                    span jump to footnote
+                    span 77
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], para 1.27
+                li#fn78
+                  a(href='#ref78')
+                    span jump to footnote
+                    span 78
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 11.2
+                li#fn79
+                  a(href='#ref79')
+                    span jump to footnote
+                    span 79
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], p23
+                li#fn80
+                  a(href='#ref80')
+                    span jump to footnote
+                    span 80
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p As NATS explains: &ldquo;holding stacks are the airport&rsquo;s &lsquo;waiting rooms&rsquo; for arriving aircraft. Whenever aircraft cannot proceed to land immediately, flights enter at the top of the stack &ndash; usually at around 11 or 12 thousand feet before gradually spiralling down to 7,000ft.&rdquo;, from: &ldquo; #[+link('http://nats.aero/blog/2016/05/is-this-the-end-of-stack-holding/', 'Is this the end of stack holding?')]
+                      | &rdquo;,
+                      em NATS blog
+                      | , 20 May 2016
+                li#fn81
+                  a(href='#ref81')
+                    span jump to footnote
+                    span 81
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Heathrow Airport, #[+link('http://www.heathrow.com/noise/airspace-modernisation/modernising-uk-airspace/modern-aircraft-and-technologies', 'Modern aircraft and technologies')] [accessed 29 March 2017]
+                li#fn82
+                  a(href='#ref82')
+                    span jump to footnote
+                    span 82
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., p31
+
+                li#fn83
+                  a(href='#ref83')
+                    span jump to footnote
+                    span 83
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | DfT,
+                      em
+                        span The Future of Air Transport
+                      | , Cm 6046, December 2003, para 12.26
+                li#fn84
+                  a(href='#ref84')
+                    span jump to footnote
+                    span 84
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Transport Select Committee, #[+link('https://www.publications.parliament.uk/pa/cm200809/cmselect/cmtran/163/163.pdf', 'The use of air space')] (Fifth Report of Session 2008&ndash;09), HC 163, 10 July 2009, para 35
+                li#fn85
+                  a(href='#ref85')
+                    span jump to footnote
+                    span 85
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | CAA,
+                      em
+                        span Future Airspace Strategy for the United Kingdom 2011 to 2030
+                      | , 30 June 2011
+                li#fn86
+                  a(href='#ref86')
+                    span jump to footnote
+                    span 86
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., p8
+                li#fn87
+                  a(href='#ref87')
+                    span jump to footnote
+                    span 87
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span Future Airspace Strategy, in focus briefing
+                      | , pp2-3
+                li#fn88
+                  a(href='#ref88')
+                    span jump to footnote
+                    span 88
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p CAA, #[+link('http://www2.westsussex.gov.uk/ds/cttee/gat/gat140716i15a.pdf', 'Future Airspace Strategy: Overview')], 6 July 2016, slide 6
+                li#fn89
+                  a(href='#ref89')
+                    span jump to footnote
+                    span 89
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], para 1.20
+                li#fn90
+                  a(href='#ref90')
+                    span jump to footnote
+                    span 90
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | A route system using PBN standards allows more flexible positioning of routes and enables aircraft to fly them more accurately. This helps improve operational performance in terms of safety and capacity, and also offers the flexibility to attempt to design routes to mitigate the environmental impact of aviation, for more information see: CAA,
+                      em
+                        span Airspace Design Guidance: Noise mitigation considerations
+                        span when designing PBN departure and arrival procedures
+                      | , CAP 1378, March 2016
+                li#fn91
+                  a(href='#ref91')
+                    span jump to footnote
+                    span 91
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | CAA,
+                      span
+                        em  In Focus: Updating the UK&rsquo;s airspace - The Future Airspace Strategy (FAS)
+                      | , November 2012, p2
+                li#fn92
+                  a(href='#ref92')
+                    span jump to footnote
+                    span 92
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/586871/upgrading-uk-airspace-strategic-rationale.pdf', 'Upgrading UK Airspace: Strategic Rationale')], para 1.23
+                li#fn93
+                  a(href='#ref93')
+                    span jump to footnote
+                    span 93
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | The group was formed in 2011 following publication of the FAS to link major airspace programmes and industry investment plans
+                li#fn94
+                  a(href='#ref94')
+                    span jump to footnote
+                    span 94
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span Future Airspace Strategy: Deployment Plan
+                      | , p4
+                li#fn95
+                  a(href='#ref95')
+                    span jump to footnote
+                    span 95
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 116
+                li#fn96
+                  a(href='#ref96')
+                    span jump to footnote
+                    span 96
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p All the documentation relating to the London Airspace Consultation, about the implementation of LAMP can be found on the #[+link('http://www.londonairspaceconsultation.co.uk/', 'dedicated website')] accessed 29 March 2017]
+                li#fn97
+                  a(href='#ref97')
+                    span jump to footnote
+                    span 97
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p NATS press notice, &ldquo; #[+link('http://www.nats.aero/news/newsbrief/janfeb-2016/lamp-phase-1a-airspace-change-now-live/', 'LAMP Phase 1a airspace change now live')] &rdquo;, 4 February 2016
+                li#fn98
+                  a(href='#ref98')
+                    span jump to footnote
+                    span 98
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | For full details see: CAA,
+                      em
+                        span Policy for the Conduct of Operational Airspace Trials
+                      | , 3 June 2015
+                li#fn99
+                  a(href='#ref99')
+                    span jump to footnote
+                    span 99
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Op cit.,
+                      em
+                        span Guidance to the Civil Aviation Authority on environmental objectives relating
+                        span to the exercise of its air navigation functions
+                      | , paras 9.10-9.11
+                li#fn100
+                  a(href='#ref100')
+                    span jump to footnote
+                    span 100
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p #[+link('https://hansard.parliament.uk/commons/2017-02-02/debates/35730F10-B97C-480B-B3B2-729D5D408BAC/AirportCapacityAndAirspacePolicy', 'HC Deb 2 February 2017, cc1182-3')]
+                li#fn101
+                  a(href='#ref101')
+                    span jump to footnote
+                    span 101
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], para 1.14
+                li#fn102
+                  a(href='#ref102')
+                    span jump to footnote
+                    span 102
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 1.19
+                li#fn103
+                  a(href='#ref103')
+                    span jump to footnote
+                    span 103
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | This list only includes those changes likely to be of most interest to MPs or are of the most significance. It also excludes the proposed Independent Commission on Civil Aviation Noise as this is dealt with in some detail in HC Library briefing paper #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN00261', 'SN261')]
+                li#fn104
+                  a(href='#ref104')
+                    span jump to footnote
+                    span 104
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Mirroring in existing powers for land-based planning applications; for more information see HC Library briefing paper #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN00930', 'SN930')]
+                li#fn105
+                  a(href='#ref105')
+                    span jump to footnote
+                    span 105
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], aras 4.22-4.30
+                li#fn106
+                  a(href='#ref106')
+                    span jump to footnote
+                    span 106
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 4.45
+                li#fn107
+                  a(href='#ref107')
+                    span jump to footnote
+                    span 107
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 4.44; more detail is given in paras 4.46-4.50
+                li#fn108
+                  a(href='#ref108')
+                    span jump to footnote
+                    span 108
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Ibid., para 5.19; more detail on options analysis is given in section 3 of the updated draft guidance published alongside the consultation: DfT, #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/587669/air-navigation-guidance-on-airspace-and-noise-management-and-environmental-objectives.pdf', 'Air Navigation Guidance: Guidance on airspace &amp; noise management and environmental objectives')], 2 February 2017
+                li#fn109
+                  a(href='#ref109')
+                    span jump to footnote
+                    span 109
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | Ibid., para 5.48, see also paras 5.49-5.53
+                li#fn110
+                  a(href='#ref110')
+                    span jump to footnote
+                    span 110
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Ibid., paras 7.23-7.24; more information on NSIPs can be found in HC Library briefing paper #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN06881', 'SN6881')]
+                li#fn111
+                  a(href='#ref111')
+                    span jump to footnote
+                    span 111
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p For more information on the night flight regimes at these airports see HC Library briefing paper #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN01252', 'SN1252')]
+                li#fn112
+                  a(href='#ref112')
+                    span jump to footnote
+                    span 112
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p Op cit., #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/588186/uk-airspace-policy-a-framework-for-balanced-decisions-on-the-design-and-use-of-airspace-web-version.pdf', 'UK airspace policy: a framework for balanced decisions on the design and use of airspace')], paras 7.31-7.37
+                li#fn113
+                  a(href='#ref113')
+                    span jump to footnote
+                    span 113
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p
+                      | See also section 4.3, above
+                li#fn114
+                  a(href='#ref114')
+                    span jump to footnote
+                    span 114
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p OPM Group for DfT, #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/653803/summary-of-responses-to-the-consultation-on-uk-airspace-policy.PDF', 'Consultation on UK Airspace Policy: A framework for balanced decisions on the design and use of airspace: Summary report of consultation feedback')], 1 October 2017
+                li#fn115
+                  a(href='#ref115')
+                    span jump to footnote
+                    span 115
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p DfT, #[+link('https://www.gov.uk/government/publications/uk-airspace-policy-reform-impact-assessments', 'UK airspace policy reform impact assessments')], 24 October 2017
+                li#fn116
+                  a(href='#ref116')
+                    span jump to footnote
+                    span 116
+                    include ../../icons/download.svg
+                  div.reference--text
+                    p DfT, #[+link('https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/653801/consultation-response-on-uk-airspace-policy-web-version.pdf', 'Consultation Response on UK Airspace Policy: A framework for balanced decisions on the design and use of airspace')], Cm 9520, 24 October 2017, pp7 &amp; 9
+
+
+        section#as9
+          h2 Related topic
+          a.btn--grey(href='#') Airspace
+          a.btn--grey(href='#') Transport
+          a.btn--grey(href='#') Infrastructure
+          a.btn--grey(href='#') Aviation
+          a.btn--grey(href='#') Technology
+          a.btn--grey(href='#') Heathrow Expansion
+          a.btn--grey(href='#') Travel
+          a.btn--grey(href='#') Defense and aerospace industry
+          a.btn--grey(href='#') European Union
+
+
+      footer
+        .block.theme--commons
+          p.beta House of Commons Library research CBP-7682
+          p Written by Louise Butcher

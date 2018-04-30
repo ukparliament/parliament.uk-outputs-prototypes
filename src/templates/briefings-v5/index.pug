@@ -1,0 +1,173 @@
+extends ../../layouts/layout_v5.pug
+
+block content
+
+  .section--primary
+    .container
+      h1 Research
+      .flex--2__2-1
+        div
+          p Parliamentary research provides in depth information about events in the UK and around the world. It is impartial, and covers topics from technology, to taxation, and themes like Donald Trump and the future of work. Learn more about research at Parliament.
+        div
+          p #[+link('#', 'Get notifications')] about new research by topic by email.
+
+
+  section
+    .container
+      +form('javascript:console.log("search submitted")', 'post')
+        .input-group
+          label(for='search_briefing', class='sr-onlyX')='Search for a briefing or topic'
+          input(type='search', id='search_briefing', name='searchbriefing', maxlength='1000', pattern='^(?!.*<script|<Script).*$' aria-label="enter a search term" required)
+          button(type='submit', class='btn--primary', data-tracking='search', aria-label='submit search')
+            include ../../../node_modules/parliamentuk-pugin/src/icons/search.svg
+
+
+  section
+    .container
+      h2 Research by topic
+      .list--wrapper
+        ul.list--pipe.list--2
+          li
+            .list--details
+              | #[+link('#', 'Transport')]
+          li
+            .list--details
+              | #[+link('#', 'Artificial Intelligence')]
+          li
+            .list--details
+              | #[+link('#', 'Brexit')]
+          li
+            .list--details
+              | #[+link('#', 'Animal rights')]
+          li
+            .list--details
+              | #[+link('#', 'Immigration')]
+          li
+            .list--details
+              | #[+link('#', 'Obesity')]
+          li
+            .list--details
+              | #[+link('#', 'National Health Service')]
+          li
+            .list--details
+              | #[+link('#', 'Data protection')]
+          li
+            .list--details
+              | #[+link('#', 'Technology')]
+          li
+            .list--details
+              | #[+link('#', 'Pollution')]
+
+      p #[+link('#', 'All topics')]
+
+
+  section#content
+    .container
+      h2 Latest research
+
+      //------ Filter -------//
+        .dropdown.theme--transparent
+          .dropdown__toggle
+            h2 #[+link('#', 'Find by date')]
+          .dropdown__content
+            +form('javascript:console.log("research filter submitted")', 'post')
+              +input--text('day', 'txtDay', 'Day')(class='input__sm', maxlength='2')
+              label(for='ddlMonth') Month
+              select#ddlMonth(name='month', class='input__sm')
+                option(value='January') January
+                option(value='February') February
+                option(value='March') March
+                option(value='April') April
+                option(value='May') May
+                option(value='June') June
+                option(value='July') July
+                option(value='August') August
+                option(value='September') September
+                option(value='October') October
+                option(value='November') November
+                option(value='December') December
+              +input--text('year', 'txtYear', 'Year')(class='input__sm', maxlength='4')
+              +button('Find', 'btn--primary', 'submit')
+            p #[+link('#', 'Add a date range')]
+      //--------------------------//
+
+
+      .list--pipe__events
+        li
+          div
+            h3
+              time(datetime='2018-04-16') 16 April 2018
+          ol.list--pipe
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('/templates/briefings-v5/summary.html', 'Mordernising UK airspace')]
+                  span.hint.theme--vibrant-orange beta
+                  p Research looking at the structure and management of airspace in the UK and in the wider international context. It includes how airspace works at the moment and proposals to upgrade and improve it, the EU Single European Sky programme and the UK’s Future Airspace Strategy.
+            li
+              .card
+                .card__details
+                  p.delta House of Lords Library
+                  h4 #[+link('/research/house-of-lord-largest-votes-ever-recorded', 'House of Lords: largest votes ever recorded')]
+                  span.hint pdf
+                  p This House of Lords Library Briefing provides information about the largest votes that have taken place in the House of Lords.
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('#', 'NHS cancer targets')]
+                  p There will be a debate entitled "NHS cancer targets". This will be led by Mr John Baron MP and will take place in Westminster Hall at 2.30pm on Tuesday 1 May 2018.
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('#', 'British Steel Pension Scheme')]
+                  p An overview to recent debates on the British Steel Pension Scheme.
+
+        li
+          div
+            h3
+              time(datetime='2018-04-15') 15 April 2018
+          ol.list--pipe
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('/templates/briefings-v5/summary.html', 'Mordernising UK airspace')]
+                  span.hint.theme--vibrant-orange beta
+                  p Research looking at the structure and management of airspace in the UK and in the wider international context. It includes how airspace works at the moment and proposals to upgrade and improve it, the EU Single European Sky programme and the UK’s Future Airspace Strategy.
+            li
+              .card
+                .card__details
+                  p.delta House of Lords Library
+                  h4 #[+link('/research/house-of-lord-largest-votes-ever-recorded', 'House of Lords: largest votes ever recorded')]
+                  span.hint pdf
+                  p This House of Lords Library Briefing provides information about the largest votes that have taken place in the House of Lords.
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('#', 'NHS cancer targets')]
+                  p There will be a debate entitled "NHS cancer targets". This will be led by Mr John Baron MP and will take place in Westminster Hall at 2.30pm on Tuesday 1 May 2018.
+            li
+              .card
+                .card__details
+                  p.delta House of Commons Library
+                  h4 #[+link('#', 'British Steel Pension Scheme')]
+                  p An overview to recent debates on the British Steel Pension Scheme.
+
+
+  section
+    .container
+      nav(class='navigation--number', aria-label='Pagination')
+        each object in [{val: 'Next', class: 'navigation-control--right'}]
+          a(data-number-see='true', href='#', class='navigation-control ' + object.class)= object.val
+
+        ol
+          each val, index in ['1', '2', '3', '4', '5']
+            li(data-number=val, class= (index === 0 ? "active" : undefined))
+              if index === 0
+                span(data-number-see='true')= val
+              else
+                a(data-number-see='true', href='#')= val

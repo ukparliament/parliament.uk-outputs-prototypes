@@ -9,35 +9,41 @@ block content
 
   section
     .container
-      h2 Research briefings
-      h3 Current version
+      h2 Current version
+      ul.list--bullet
+        //- li #[+link('/research', 'Briefings Index Page')]
+        li #[+link('/templates/briefings-v5/pdf.html', 'Like for like (PDF)')]
+        li #[+link('/templates/briefings-v5/brief.html', 'Long Briefing')]
+        li #[+link('/templates/briefings-v5/summary.html', 'Sectioned Briefing')]
+
+      h3 Version four
       ul.list--bullet
         li #[+link('/templates/briefings-v4/brief.html', 'Briefing scenario')]
 
-      h3 Version three
-      ul.list--bullet
-        li #[+link('/templates/briefings-v3/brief.html', 'Briefing scenario')]
-        li #[+link('/templates/briefings-v3/notification.html', 'Briefing with notification scenario')]
-        li #[+link('/templates/briefings-v3/history.html', 'Publishing history scenario')]
-        li #[+link('/templates/briefings-v3/reference.html', 'Reference scenario')]
+      //- h3 Version three
+      //- ul.list--bullet
+      //-   li #[+link('/templates/briefings-v3/brief.html', 'Briefing scenario')]
+      //-   li #[+link('/templates/briefings-v3/notification.html', 'Briefing with notification scenario')]
+      //-   li #[+link('/templates/briefings-v3/history.html', 'Publishing history scenario')]
+      //-   li #[+link('/templates/briefings-v3/reference.html', 'Reference scenario')]
 
-      h3 Version two
-      ul.list--bullet
-        li #[+link('/templates/briefings-v2/medium.html', 'Medium scenario')]
-        li #[+link('/templates/briefings-v2/stats.html', 'Stats scenario')]
+      //- h3 Version two
+      //- ul.list--bullet
+      //-   li #[+link('/templates/briefings-v2/medium.html', 'Medium scenario')]
+      //-   li #[+link('/templates/briefings-v2/stats.html', 'Stats scenario')]
 
-      h3 Version one
-      ul.list--bullet
-        li #[+link('/templates/briefings-v1/debate.html', 'Debate scenario')]
-        li #[+link('/templates/briefings-v1/medium.html', 'Medium scenario')]
-        li #[+link('/templates/briefings-v1/long.html', 'Long scenario')]
+      //- h3 Version one
+      //- ul.list--bullet
+      //-   li #[+link('/templates/briefings-v1/debate.html', 'Debate scenario')]
+      //-   li #[+link('/templates/briefings-v1/medium.html', 'Medium scenario')]
+      //-   li #[+link('/templates/briefings-v1/long.html', 'Long scenario')]
 
-  section
-    .container
-      h2 Research briefings, Gateway
-      h3 Current version
-      ul.list--bullet
-        li #[+link('/templates/briefings-gateway-v1/type.html', 'Briefings by Type')]
-        li #[+link('/templates/briefings-gateway-v1/topic.html', 'Briefings by Topic')]
-        li #[+link('/templates/briefings-gateway-v1/recent.html', 'Briefings by Most recent')]
-        li #[+link('/templates/briefings-gateway-v1/mix.html', 'Mix')]
+  //- section
+  //-   .container
+  //-     h2 Research briefings, Gateway
+  //-     h3 Current version
+  //-     ul.list--bullet
+  //-       li #[+link('/templates/briefings-gateway-v1/type.html', 'Briefings by Type')]
+  //-       li #[+link('/templates/briefings-gateway-v1/topic.html', 'Briefings by Topic')]
+  //-       li #[+link('/templates/briefings-gateway-v1/recent.html', 'Briefings by Most recent')]
+  //-       li #[+link('/templates/briefings-gateway-v1/mix.html', 'Mix')]
