@@ -1,0 +1,215 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        li.active
+          span Airspace management
+
+block content
+
+  .container
+    .flex--2__2-1
+      header
+        h1 Airspace management
+    .article--wrapper
+      article(tabindex=0)#content
+        //- header
+        //-   h1 Airspace management
+
+        div(role='main')
+          p Three main organisations have responsibility for UK airspace management and design:
+          ul
+            li The government, mainly the Department for Transport or DfT. It sets aviation policy and gives direction to the Civil Aviation Authority (CAA), the UK&apos;s aviation regulator.
+            li The CAA plans and regulates of all UK airspace. Its main duty is to maintain a high standard of safety in the provision of air traffic services. Its other duties include:
+              ul
+                li securing the most efficient use of airspace
+                li satisfying the needs of users of all aircraft (commercial aviation, military, and general aviation)
+                li taking account of environmental objectives in line with Government guidance
+            li NATS Holdings (formerly National Air Traffic Services) is the sole provider of en-route air traffic services. It provides this service to aircraft flying in UK airspace and over the eastern North Atlantic
+              a#ref4(href='#fn4')
+                span [4]
+              | There is competition in some of its activities, terminal control for example.
+          p Other organisations involved on an international level:
+          ul
+            li the International Civil Aviation Organization (ICAO). It has set a common regulatory framework and international standards on various issues. These include the access to and use of airspace.
+            li Eurocontrol is the European Organisation for the Safety of Air Navigation. It is an intergovernmental organisation with 41 Member and 2 Comprehensive Agreement States. Its primary goal is the development of a pan-European ATM system.
+            li The EU Common Transport Policy governs air traffic management. Set up in 2004 it lays down common rules for international transport coming to and from, as well as passing through, countries in EU member states. The European Commission leads on Single European Sky initiative. It aims to create a coordinated European air traffic management system.
+
+          h3#ownership-of-national-air-traffic-service Ownership of National Air Traffic Service
+          p NATS Holdings Ltd. (NATS, formerly National Air Traffic Services) is a UK air navigation service provider. It is the sole provider of en-route air traffic services within UK and Eastern North Atlantic airspace.
+          p It operates through UK controlled airspace and at several UK and international airports. It moves over 6,000 flights daily.
+          p NATS was part-privatised in 2001 by the Labour Government. NATS is a public private partnership between:
+          ul
+            li the Airline Group, a consortium of six airlines and two other investors, which holds 42%
+            li NATS staff who hold 5%
+            li UK airport operator Heathrow Airport Holdings Limited (HAHL) with 4%
+            li and the Government which holds 49%, and a golden share
+          p The Airline Group comprises:
+          ul
+            li USS Sherwood [the Universities Superannuation Scheme]
+            li British Airways
+            li The Pension Protection Fund (PPF)
+            li easyJet
+            li Virgin Atlantic
+            li Lufthansa
+            li Thomson
+            li Thomas Cook
+              a#ref5(href='#fn5')
+                span [5]
+          p USS, a pension fund, in turn owns just less than 50% of the Airlines Group.
+            a#ref6(href='#fn6')
+              span [6]
+          p For further information on NATS, #[+link('http://researchbriefings.parliament.uk/ResearchBriefing/Summary/SN01309', 'Aviation: National Air Traffic Services (NATS)')].
+
+          h3#privatisation-of-nats Privatisation of NATS
+          p There have been various calls for the Government to sell the rest of its shares in NATS. The last time was about five years ago. Richard Deakin, then Chief Executive of NATS, was not in favour of a &lsquo;full privatisation&rsquo; of the company.
+            a#ref7(href='#fn7')
+              span [7]
+          p The proposal was also criticised by some airlines (for example easyJet) and unions.
+            a#ref8(href='#fn8')
+              span [8]
+            | The Labour Party called the proposals &ldquo;ideologically driven&rdquo;.
+            a#ref9(href='#fn9')
+              span [9]
+          p Justine Greening, former Secretary of State for Transport, considered the sale in 2012. In July, she announced that the Government decided not to go ahead with the sale of Government shares:
+          blockquote
+            p My Department ran a call for evidence last year to explore the options for the future of the Government&rsquo;s 49% shareholding in the UK&rsquo;s air traffic control provider, NATS Holdings plc (NATS).
+            p The responses, along with work done by my officials in conjunction with other stakeholders, highlighted the strategic importance of NATS to the UK and the far-reaching implications of a sale at this time. These include the continued development of the single European sky agenda and the ongoing work on the single European sky air traffic management research programme (SESAR).
+            p In parallel, I have considered the potential value that could be realised through a sale of the shares alongside the benefits from receiving dividends from a retained shareholding.
+            p After considering these factors, I have concluded that it is in the best interests of the British taxpayer, the travelling public and the company itself to retain the Government&rsquo;s shares in NATS at this time.
+              a#ref10(href='#fn10')
+                span [10]
+
+
+      aside
+        p Part of #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        .block
+          nav.navigation--related
+            ul
+              li
+                +link('/templates/briefings-v5/section.1.html', 'An introduction to airspace')
+              li.active
+                | Airspace management
+              li
+                +link('/templates/briefings-v5/section.3.html', 'Airspace standards and regulation')
+              li
+                +link('/templates/briefings-v5/section.4.html', 'Planning airspace change')
+              li
+                +link('/templates/briefings-v5/section.5.html', 'Airspace modernisation')
+              li
+                +link('/templates/briefings-v5/section.6.html', 'Policy progress and modernisation')
+
+  div
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          nav.navigation--article
+            ul
+              li
+                a(href='/templates/briefings-v5/section.1.html')
+                  span.link-direction(aria-hidden='true') &lt; Previous
+                  span.link-title An introduction to airspace
+              li
+                a(href='/templates/briefings-v5/section.3.html')
+                  span.link-direction(aria-hidden='true') Next &gt;
+                  span.link-title Airspace standards and regulation
+
+        ul.list--inline
+          li.visually-hidden(aria-hidden='true')
+            .list--details
+              include ../../icons/print.svg
+              +link('#', 'Print this page').btn--print
+
+  section
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          .footnotes
+            h2 References
+            ol
+              li#fn4
+                a(href='#ref4')
+                  span linkText
+                  span 4
+                  include ../../icons/download.svg
+                div.reference--text
+                  p More on North Atlantic operations can be found in: &ldquo; #[+link('http://nats.aero/blog/2014/06/north-atlantic-skies-gateway-europe/', 'North Atlantic Skies &ndash; The gateway to Europe')], &nbsp;
+                    em NATS blog
+                    | , 26 June 2014
+              li#fn5
+                a(href='#ref5')
+                  span linkText
+                  span 5
+                  include ../../icons/download.svg
+                div.reference--text
+                  p All of the above from: NATS, #[+link('http://www.nats.aero/about-us/what-we-do/our-ownership-2014/', 'Our ownership')] [accessed 27 March 2017]
+              li#fn6
+                a(href='#ref6')
+                  span linkText
+                  span 6
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | NATS press notice, &ldquo;
+                    span NATS statement on the Airline Group share sale to USS
+                    | &rdquo;, 19 November 2013
+              li#fn7
+                a(href='#ref7')
+                  span linkText
+                  span 7
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | &ldquo;Air traffic chief voices sale concerns&rdquo;,
+                    em Financial Times
+                    | , 5 July 2010
+              li#fn8
+                a(href='#ref8')
+                  span linkText
+                  span 8
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | &ldquo;Proposed sale of air traffic controller angers airlines&rdquo;,
+                    em Financial Times
+                    | , 23 June 2010
+              li#fn9
+                a(href='#ref9')
+                  span linkText
+                  span 9
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | &ldquo;Air traffic sell-off plans attacked&rdquo;,
+                    em Financial Times
+                    | , 9 June 2011
+              li#fn10
+                a(href='#ref10')
+                  span linkText
+                  span 10
+                  include ../../icons/download.svg
+                div.reference--text
+                  p #[+link('http://www.publications.parliament.uk/pa/cm201213/cmhansrd/cm120710/wmstext/120710m0001.htm#12071076000022', 'HC Deb 10 July 2012, c22WS')]
+
+  section
+    .container
+      h2 Related topics
+      a.btn--grey(href='#') Airspace
+      a.btn--grey(href='#') Transport
+      a.btn--grey(href='#') Infrastructure
+      a.btn--grey(href='#') Aviation
+      a.btn--grey(href='#') Technology
+      a.btn--grey(href='#') Heathrow Expansion
+      a.btn--grey(href='#') Travel
+      a.btn--grey(href='#') Defense and aerospace industry
+      a.btn--grey(href='#') European Union
+
+  section
+    .container
+      .block.theme--commons
+        h2.beta House of Commons Library research CBP-7682
+        p Written by Louise Butcher

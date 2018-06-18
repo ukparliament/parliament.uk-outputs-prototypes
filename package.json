@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "express": "^4.15.4",
-    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git"
+    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git#1.9.1"
   }
 }

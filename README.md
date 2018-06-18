@@ -1,6 +1,6 @@
 
 # Parliament.uk-pugin-composition
-[Parliament.uk-pugin-composition][parliament.uk-pugin-composition] is a [Node][node] application designed to provide developers the ability to work with [Pugin][parliament.uk-pugin].
+[Parliament.uk-pugin-composition][parliament.uk-pugin-composition] is a [Node][node] application designed to provide developers the ability to work with [Pugin][parliament.uk-pugin]..
 
 ### Contents
 - [Requirements](#requirements)

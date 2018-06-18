@@ -21,7 +21,9 @@ PUG=$(PUGIN)/node_modules/.bin/pug
 SVGO=$(PUGIN)/node_modules/.bin/svgo
 UGLIFY_JS=$(PUGIN)/node_modules/.bin/uglifyjs
 LEAFLET=$(PUGIN)/node_modules/leaflet/dist/leaflet.js
+PA11Y=$(PUGIN)/node_modules/.bin/pa11y-ci
 PRETTY_MINI_JSON=$(PUGIN)/node_modules/pretty-mini-json/pretty-mini-json.js
+VALIMATE=$(PUGIN)/node_modules/.bin/valimate
 
 # Installs npm packages
 install:
@@ -81,11 +83,13 @@ watch:
 	@node $(PUGIN)/scripts/watch.js $(STYLESHEETS_LOC)=css $(JAVASCRIPTS_LOC)=js $(IMAGES_LOC)=images $(SRC_FOLDER)/layouts=templates $(SRC_FOLDER)/elements=templates $(SRC_FOLDER)/components=templates $(SRC_FOLDER)/templates=templates
 
 # Runs accessibility testing
-test:
-	@mkdir -p $(REPORTS_FOLDER)
-	@rm -rf $(REPORTS_FOLDER)/*
-	@node $(PUGIN)/scripts/pa11y.js
-	@node $(PUGIN)/scripts/w3c.js
+test_pa11y:
+	@$(PA11Y) --config test/paths.json
+
+test_valimate:
+	@$(VALIMATE) test/paths.json
+
+test: test_pa11y test_valimate
 
 # Builds application
 build: lint css js images icons templates json

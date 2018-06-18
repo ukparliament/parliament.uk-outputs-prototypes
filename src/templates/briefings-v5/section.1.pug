@@ -1,0 +1,136 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        li.active
+          span An introduction to airspace
+
+block content
+
+  .container
+    .flex--2__2-1
+      header
+        h1 An introduction to airspace
+
+    .article--wrapper
+      article(tabindex=0)#content
+        //- header
+        //-   h1 An introduction to airspace
+
+        div(role='main')
+          h2 What is airspace?
+          p Airspace is the volume of space above ground level. It extends as far as planes can fly. UK airspace contains a network of corridors, or airways. These are usually ten miles wide and reach up to a height of 24,000 feet from a base of between 5,000 and 7,000 feet. Controlled airspace can go from ground level to 66,000 feet in some cases, and &apos;air routes&apos; can have bases down to 3,500 feet.
+          p In the UK airspace is either considered to be &lsquo;controlled&rsquo; or &lsquo;uncontrolled&rsquo;. Air Traffic Control (ATC) manage air traffic control services. They oversee the airspace and track the separation of aircraft to keep them safe as they head towards their destinations.
+          p A large volume of airspace in the UK is uncontrolled. This is where the pilot of the aircraft does not receive a service from the ground. The pilot has to &ldquo;see and avoid&rdquo; other aircraft and navigate independently. Most light aircraft and some military and commercial aircraft operate in this airspace. Arrangements for UK airspace follow internationally agreed safety and operational practices and requirements.
+            a#ref1(href='#fn1')
+              span [1]
+
+          h3#flight-paths Flight Paths
+          p Within controlled airspace commercial aircraft fly within permanent airspace structures. These are set out in the UK Integrated Aeronautical Information Package (IAIP). They include departure and arrival routes.
+          p A flight path is the actual or planned course of an aircraft. The government&rsquo;s February 2017 consultation explains how aircraft follow flight paths over the course of a journey:
+          blockquote
+            p After take-off from the runway, aircraft will typically follow a pre- defined route up to a given altitude above ground level (usually 4,000 feet). The route is determined by the Standard Instrument Departure procedure (SID). This is a programme on the aircraft&rsquo;s computer system. Next, the aircraft will be directed or &lsquo;vectored&rsquo;
+            p &mldr; by air traffic controllers until they reach an airway. Airways are high-altitude routes which aircraft follow to their eventual destination.
+            p During landing, aircraft leave their airway and enter a Standard Arrival Route (STAR). They may be &lsquo;held&rsquo; in a stack until it is safe to bring them in for landing. Once it is safe, the aircraft are vectored with the assistance of air traffic control to safely approach the runway. For safety reasons, this closing stage requires aircraft to fly in a very straight line on their final approach. An Instrumental Landing System (&lsquo;ILS&rsquo;), is often used to assist with this. It helps pilots to line up with the runway by providing vertical and horizontal guidance, even when they cannot physically see the runway.
+              a#ref2(href='#fn2')
+                span [2]
+          p Air traffic controllers direct aircraft by way of &lsquo;vectoring&rsquo;. This is the practice of giving a pilot a &apos;heading&apos;. This is a direction to travel towards, as a step on the way to a destination. Controllers give headings depending on a number of factors.
+          p The headings depend to some extent on individual circumstances. They are mainly determined by location. Also by non-location specific Air Navigation Service Provider (ANSP) standard procedures.
+            a#ref3(href='#fn3')
+              span [3]
+
+
+      aside
+        p Part of #[+link('/templates/briefings-v5/summary.html', 'Modernising UK airspace')]
+        .block
+          nav.navigation--related
+            ul
+              li.active
+                | An introduction to airspace
+              li
+                +link('/templates/briefings-v5/section.2.html', 'Airspace management')
+              li
+                +link('/templates/briefings-v5/section.3.html', 'Airspace standards and regulation')
+              li
+                +link('/templates/briefings-v5/section.4.html', 'Planning airspace change')
+              li
+                +link('/templates/briefings-v5/section.5.html', 'Airspace modernisation')
+              li
+                +link('/templates/briefings-v5/section.6.html', 'Policy progress and modernisation')
+
+  div
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          nav.navigation--article
+            ul.list--2
+              li
+                a(href='/templates/briefings-v5/summary.html')
+                  span.link-direction(aria-hidden='true') &lt; Previous
+                  span.link-title Summary
+              li
+                a(href='/templates/briefings-v5/section.2.html')
+                  span.link-direction(aria-hidden='true') Next &gt;
+                  span.link-title Airspace management
+
+        ul.list--inline
+          li.visually-hidden(aria-hidden='true')
+            .list--details
+              include ../../icons/print.svg
+              +link('#', 'Print this page').btn--print
+
+  section
+    .container
+      .block--border__bottom
+        .flex--2__2-1
+          .footnotes
+            h2 References
+            ol
+              li#fn1
+                a(href='#ref1')
+                  span jump to footnote
+                  span 1
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | DfT, UK airspace policy: a framework for balanced decisions on the design and use of airspace, CM 9397, 2 February 2017, p17
+              li#fn2
+                a(href='#ref2')
+                  span jump to footnote
+                  span 2
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Ibid., p17
+              li#fn3
+                a(href='#ref3')
+                  span jump to footnote
+                  span 3
+                  include ../../icons/download.svg
+                div.reference--text
+                  p
+                    | Published in the Manual of Air Traffic Services (MATS). Part 1 is standard to all ANSPs and published by the CAA. It is not location specific, and provides a general set of rules on vectoring for air traffic controllers; Part 2 is an internal document, specific to an individual ANSP (e.g. NATS) and gives location specific instructions; see: CAA, Manual of Air Traffic Services &ndash; Part 1, CAP 493, 6th ed., April 2015
+
+  section
+    .container
+      h2 Related topics
+      a.btn--grey(href='#') Airspace
+      a.btn--grey(href='#') Transport
+      a.btn--grey(href='#') Infrastructure
+      a.btn--grey(href='#') Aviation
+      a.btn--grey(href='#') Technology
+      a.btn--grey(href='#') Heathrow Expansion
+      a.btn--grey(href='#') Travel
+      a.btn--grey(href='#') Defense and aerospace industry
+      a.btn--grey(href='#') European Union
+
+
+  section
+    .container
+      .block.theme--commons
+        h2.beta House of Commons Library research CBP-7682
+        p Written by Louise Butcher

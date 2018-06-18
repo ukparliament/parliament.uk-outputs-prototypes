@@ -1,0 +1,137 @@
+extends ../../layouts/layout_v5.pug
+
+block navcrumb
+  nav.navigation--breadcrumb(aria-label='breadcrumbs')
+    .container
+      ul
+        li #[+link('#', 'Research')]
+        li.active
+          span Modernising UK airspace
+
+block content
+
+  .section--primary
+    .container.flex--2__2-1
+      div
+        h1 Modernising UK airspace
+        p Last edited on 2 April 2017
+
+        ul.list--inline
+          li
+            .list--details
+              include ../../icons/download.svg
+              +link('#', 'Download as a PDF (1.2MB)')
+          li.visually-hidden(aria-hidden='true')
+            .list--details
+              include ../../icons/print.svg
+              +link('#', 'Print long read').btn--print
+
+
+  section
+    .container
+      .flex--2__2-1
+        .block.theme--blue
+          h2 Short read
+          p This research looks at the structure and management of airspace in the UK and around the globe. It includes how airspace works at the moment and proposals to upgrade and improve it, the EU Single European Sky programme and the UK’s Future Airspace Strategy.
+
+          .dropdown
+            .dropdown__toggle
+              h2 #[+link('#', 'Show more')]
+            .dropdown__content
+              dl.list--definition__col
+                dt
+                  p What is airspace?
+                dd
+                  p UK airspace is a network of corridors or airways. It is the volume of space above ground level that extends as far as planes can fly. It is either ‘controlled’ or ‘uncontrolled’. Air Traffic Control (ATC) manages aircraft in controlled airspace through a system of structured routes. Uncontrolled airspace is not managed from the ground. Planes have to “see and avoid” other aircraft and navigate on their own.
+              dl.list--definition__col
+                dt
+                  p Who manages airspace?
+                dd
+                  p Three organisations have responsibility for UK airspace. The Department of Transport manages aviation policy. It creates airspace laws and policy within international and European standards and requirements. The Civil Aviation Authority (CAA) is the UK’s aviation regulator. It plans and regulates all UK airspace. National Air Traffic Services (NATS) provides en-route air traffic services to planes flying in UK airspace.
+              dl.list--definition__col
+                dt
+                  p What are airspace standards?
+                dd
+                  p The UK is a member of the International Civil Aviation Organisation (ICAO). Members of the ICAO agree regulations and international standards on a range of issues including access and use of airspace. EU laws put in place several of ICAO’s resolutions. The EU’s main initiative, the Single European Sky (SES) was launched in 1999. Its aim was to reform the European air traffic management and increase the efficiency of the European air transport system.
+              dl.list--definition__col
+                dt
+                  p Planned changes to airspace
+                dd
+                  p The UK and Ireland are working together to meet SES requirements through its Future Airspace Strategy. Published in 2011, the strategy aims to modernise UK airspace by 2030. The biggest changes are likely to come in the south east of England where 5 airports and many aerodromes create much of the world’s air traffic.
+              dl.list--definition__col
+                dt
+                  p Government aims with airspace modernisation
+                dd
+                  p In February 2017 the DoT published a consultation on UK airspace policy reform. In October the government said it would proceed with most of the proposals in the paper. This included proposals for an Independent Commission on Civil Aviation Noise which would:
+                  ul
+                    li provide ways for industry to assess noise
+                    li help industry manage change by providing best route options
+                    li bring compensation for airspace changes in line with changes to aviation infrastructure
+                  p New Air Navigation Guidance took effect from 1 January 2018. The new airspace change process began on 2 January under CAP 1616.
+
+              ul.list--inline
+                li.visually-hidden(aria-hidden='true')
+                  .list--details
+                    include ../../icons/print.svg
+                    +link('#', 'Print short read').btn--print
+
+
+  section#content
+    .container
+      .block--border__bottom
+        h2 Long read
+        ul.list--3
+          li
+            h3 #[+link('/templates/briefings-v5/section.1.html', 'An introduction to airspace')]
+            p Airspace is the volume of space above ground level. It extends as far as planes can fly. UK airspace contains a network of corridors, or airways. These are usually ten miles wide
+          li
+            h3 #[+link('/templates/briefings-v5/section.2.html', 'Who manages airspace?')]
+            p Airspace is managed by the Government, Civil Aviation Authority, and the National Air Traffic Services. Three main organisations have responsibility for UK airspace management
+          li
+            h3 #[+link('/templates/briefings-v5/section.3.html', 'Airspace standards and regulation')]
+            p The current laws and policies on airspace are set by Government. It is guided in this by International and European standards and requirements
+          li
+            h3 #[+link('/templates/briefings-v5/section.4.html', 'Planning airspace change')]
+            p Airspace change – whether temporary or permanent – can have unwelcome impacts for local communities. There have been concerns about airports consulting those affected by
+          li
+            h3 #[+link('/templates/briefings-v5/section.5.html', 'Airspace modernisation')]
+            p Modernisation has to be cross-industry.  It involves airlines, airports, air navigation service providers and other aviation stakeholders. They need to work together
+          li
+            h3 #[+link('/templates/briefings-v5/section.6.html', 'Policy progress and modernisation')]
+            p Airspace is in need of modernisation. Many of its elements have remained unchanged for 40 years. These include infrastructure and procedures supporting landing and take-off
+
+
+  section
+    .container
+      .block--border__bottom
+        h2 Related research
+        ol.list--block.list--2
+          li.theme--grey-3
+            .list--details
+              p Transport
+              h3 #[+link('#', 'Modernising UK airspace')]
+              p 7 December 2017
+          li
+            .list--details
+              p Transport
+              h3 #[+link('#', 'Modernising UK airspace')]
+              p 7 December 2017
+
+  section
+    .container
+      h2 Related topics
+      a.btn--grey(href='#') Airspace
+      a.btn--grey(href='#') Transport
+      a.btn--grey(href='#') Infrastructure
+      a.btn--grey(href='#') Aviation
+      a.btn--grey(href='#') Technology
+      a.btn--grey(href='#') Heathrow Expansion
+      a.btn--grey(href='#') Travel
+      a.btn--grey(href='#') Defense and aerospace industry
+      a.btn--grey(href='#') European Union
+
+  section
+    .container
+      .block.theme--commons
+        h2.beta House of Commons Library research CBP-7682
+        p Written by Louise Butcher
